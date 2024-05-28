@@ -65,7 +65,7 @@ _Below is an example of how you can installing and setting up your express app.
 1. Clone the repo
 
 ```sh
- git clone D-Savel/express-typescript-template
+ git clone https://github.com/D-Savel/express-typescript-template.git
 ```
 2. Install NPM packages
 
@@ -76,6 +76,8 @@ _Below is an example of how you can installing and setting up your express app.
 
 /.env
 ```sh
+touch .env
+/.env
  PORT=yourPort
 ```
 
