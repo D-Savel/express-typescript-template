@@ -57,7 +57,7 @@ _Below is an example of how you can installing and setting up your express app.
 
 ```sh
 // Clone the repo
-git clone --depth=1 git://someserver/somerepo yourProjectDirectory
+git clone --depth=1 https://github.com/D-Savel/express-typescript-template.git yourProjectDirectory
 // Remove the .git directory
 cd yourProjectDirectory
 rm -rf !$/.git
