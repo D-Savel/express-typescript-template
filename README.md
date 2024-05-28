@@ -78,7 +78,7 @@ _Below is an example of how you can installing and setting up your express app.
 ```sh
  ~/express-typescript-template:npm -i
  ```
-3. Create .env at root of your project and choose the port you want to run the express-server on localhost
+4. Create .env at root of your project and choose the port you want to run the express-server on localhost
 
 /.env
 ```sh
@@ -87,7 +87,15 @@ touch .env
  PORT=yourPort
 ```
 
-4. Start server
+5.
+
+4. Define node version
+
+```sh
+ ~/express-typescript-template:nvm use
+ ```
+
+6. Start server
 ```sh
  npm run dev
 ```
