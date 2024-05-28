@@ -58,7 +58,7 @@ app.use(morganMiddleware)
 
 
 app.get('/', (req: Request, res: Response) => {
-  res.send(`😓  😺  Hello World express server is running on ${PORT} Great😺  😓`);
+  res.send(`😓  😺  Hello World ! - Express server is running on ${PORT} - great!!  😺  😓`);
 });
 
 // ==========
