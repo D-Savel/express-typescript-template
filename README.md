@@ -35,9 +35,8 @@ This is an express TypeScript Template
 copy the boilerplate template and run an express server in few seconds
 2 routes are defined by default on this template:
  -localhost:PORT/
- -localhost:PORT/users
+ -localhost:PORT/usersApi/users
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
@@ -45,7 +44,6 @@ copy the boilerplate template and run an express server in few seconds
 # Node.js v20.10.0
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
@@ -58,6 +56,7 @@ _Below is an example of how you can installing and setting up your express app.
 1. Clone the repo
 
 ```sh
+// In terminal
 // Clone the repo
 git clone --depth=1 https://github.com/D-Savel/express-typescript-template.git yourProjectDirectory
 // Remove the .git directory

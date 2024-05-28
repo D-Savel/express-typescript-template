@@ -1,14 +1,14 @@
 import express from "express";
 
-import { userController } from "../controllers/userController";
+import userController from "../controllers/user/userController";
 // import {...} from "../controllers/...";
 
 const router = express.Router();
 
-/*user/users GET */
+/* /users GET */
 
 
-router.get("/", userController);
+router.get("/users", userController);
 // router.get("/id/:id", userByIdController);
 // /* Address /adresses POST */
 // router.post("/ajouter", createUserControler);

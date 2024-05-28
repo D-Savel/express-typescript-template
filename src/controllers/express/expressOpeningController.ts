@@ -10,7 +10,9 @@ const app: Express = express();
 dotenv.config();
 const PORT = process.env.PORT || 9000;
 
-export const expressOpeningController = (req: Request, res: Response) => {
+const expressOpeningController = (req: Request, res: Response) => {
   res.status(200).send(`😓  😺  Hello World ! - Express server is running on ${PORT} - great!!  😺  😓`);
 };
+
+export default expressOpeningController
 
