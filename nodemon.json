@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "./",
+    "src"
+  ],
+  "ext": "ts,json",
+  "delay": "1",
+  "execMap": {
+    "ts": "concurrently \"npx tsc --watch\" \"ts-node src/server.ts\""
+  }
+}
