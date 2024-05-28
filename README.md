@@ -33,7 +33,9 @@
 
 This is an express TypeScript Template
 copy the boilerplate template and run an express server in few seconds
-
+2 routes are defined by default on this template:
+ -localhost:PORT/
+ -localhost:PORT/users
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 

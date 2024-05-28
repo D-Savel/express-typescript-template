@@ -1,17 +1,19 @@
 import express, { Express, Request, Response } from 'express';
-const app: Express = express();
-import path from "node:path";
 import cors from "cors";
 import helmet from "helmet";
 import * as dotenv from 'dotenv';
 import morganMiddleware from './middlewares/morgan/morganMiddleware';
 import { overAllLimiter } from './config/express-rate-limit/rateLimit';
+import route from "./routes/routes";
 
 // ==========
 // App initialization
 // ==========
+const app: Express = express();
+
 dotenv.config();
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9000
+
 
 // ==========
 // middlewares config
@@ -56,10 +58,7 @@ app.use(morganMiddleware)
 // App routers
 // ==========
 
-
-app.get('/', (req: Request, res: Response) => {
-  res.send(`😓  😺  Hello World ! - Express server is running on ${PORT} - great!!  😺  😓`);
-});
+app.use("/", route);
 
 // ==========
 // App start
