@@ -40,16 +40,7 @@ copy the boilerplate template and run an express server in few seconds
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+# Node.js v20.10.0
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -58,42 +49,45 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-Install libraries
-* npm
+Choose your code editor
+* // example vs code
   ```sh
-  npm install 
+  cd <yourProjectDirectory>
+  ~yourProjectDirectory : code .
   ```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you can installing and setting up your express app.
 
 1. Clone the repo
-   ```sh
-  git clone D-Savel/express-typescript-template
-   ```
+
+```sh
+ git clone D-Savel/express-typescript-template
+```
 2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Create .env at root of your project and choose the port you want tu run the express-server on localhost
-// .env
-PORT=YourPort
+
+```sh
+ npm install
+ ```
+3. Create .env at root of your project and choose the port you want to run the express-server on localhost
+
+/.env
+```sh
+ PORT=yourPort
+```
 
 4. Start server
-   ```sh
-  npm run dev
-   ```
+```sh
+ npm run dev
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## License
 
-Distributed under the ISC License.
+# Distributed under the ISC License.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
