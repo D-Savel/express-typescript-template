@@ -51,11 +51,9 @@ copy the boilerplate template and run an express server in few seconds
 
 ### Prerequisites
 
-Choose your code editor
-* // example vs code
   ```sh
   cd <yourProjectDirectory>
-  ~yourProjectDirectory : code .
+  ~yourProjectDirectory :
   ```
 
 ### Installation
@@ -66,11 +64,19 @@ _Below is an example of how you can installing and setting up your express app.
 
 ```sh
  git clone https://github.com/D-Savel/express-typescript-template.git
+ // 
+ cd express-typescript-template
 ```
-2. Install NPM packages
+2. Open in editor (ex: vs code => type code .)
 
 ```sh
- npm install
+ ~/express-typescript-template:code .
+```
+
+3. Install NPM packages
+
+```sh
+ ~/express-typescript-template:npm -i
  ```
 3. Create .env at root of your project and choose the port you want to run the express-server on localhost
 
