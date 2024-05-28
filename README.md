@@ -88,6 +88,25 @@ touch .env
 
 ```sh
  ~/yourProjectDirectory:nvm use
+OR automatic update on bash terminal opening (use bash terminal in vs code with WSL in windows)
+edit .bashrc in your ubuntu wsl config
+cd /home/{user_name}
+~/vi .bashrc (using vi)
+~/vim .bashrc (using vim)
+ADD this code at the end of file
+
+_nvmrc_hook() {
+  if [[ $PWD == $PREV_PWD ]]; then
+    return
+  fi
+
+  PREV_PWD=$PWD
+  [[ -f ".nvmrc" ]] && nvm use
+}
+
+if ! [[ "${PROMPT_COMMAND:-}" =~ _nvmrc_hook ]]; then
+  PROMPT_COMMAND="_nvmrc_hook${PROMPT_COMMAND:+;$PROMPT_COMMAND}"
+fi
  ```
 
 6. Start server
