@@ -1,13 +1,11 @@
 import express from "express";
 
-import userController from "../controllers/user/userController";
+import userController from "../../controllers/user/users";
 // import {...} from "../controllers/...";
 
 const router = express.Router();
 
 /* /users GET */
-
-
 router.get("/users", userController);
 // router.get("/id/:id", userByIdController);
 // /* Address /adresses POST */

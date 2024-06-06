@@ -35,13 +35,13 @@ This is an express TypeScript Template
 copy the boilerplate template and run an express server in few seconds
 2 routes are defined by default on this template:
  -localhost:PORT/
- -localhost:PORT/usersApi/users
+ -localhost:PORT/api/users
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ### Built With
 
-# Node.js v20.10.0
+# Node.js v20.9.0 (LTS)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,7 +89,11 @@ touch .env
 
 ```sh
  ~/yourProjectDirectory:nvm use
-OR automatic update on bash terminal opening (use bash terminal in vs code with WSL in windows)
+You can change node version with editing .nvmrc at root project.
+
+# OR
+
+automatic update on bash terminal opening (use bash terminal in vs code with WSL in windows)
 edit .bashrc in your ubuntu wsl config
 cd /home/{user_name}
 ~/vi .bashrc (using vi)

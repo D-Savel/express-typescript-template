@@ -1,5 +1,6 @@
 import winston from 'winston'
 import { request, response } from 'express'
+import { CustomError } from '../../utils/errors/CustomError'
 
 // Define your severity levels. 
 // With them, You can create log files, 
@@ -39,17 +40,17 @@ winston.addColors(colors)
 
 // Chose the aspect of your log customizing the log format.
 const format = winston.format.combine(
+  winston.format.errors({ stack: true }),
   // Add the message timestamp with the preferred format
   winston.format.timestamp({ format: 'YYYY-MM-DD HH:mm:ss' }),
   // Tell Winston that the logs must be colored
   // winston.format.colorize(),
   winston.format.label({ label: '[express-server]' }),
   // Define the format of the message showing the timestamp, the level and the message
-  winston.format.printf(
-    (info) => `${info.timestamp} ${info.label} ${info.level}: ${info.message}`,
-  ),
+  winston.format.printf(info => (
+    `${info.timestamp} [${info.label}] ${info.level}: ${info.message}`)
+  )
 )
-
 // Define which transports the logger must use to print out messages. 
 // In this example, we are using three different transports 
 const transports = [
@@ -63,9 +64,9 @@ const transports = [
 
   // Allow to print all the error level messages inside the error.log file
   new winston.transports.File({
+    level: 'error',
     format: winston.format.colorize({ all: false }),
     filename: 'logs/error.log',
-    level: 'error',
   }),
   // Allow to print all the log message inside the all.log file
   // (also the error log that are also printed inside the error.log(

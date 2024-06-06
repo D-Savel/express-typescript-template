@@ -1,0 +1,40 @@
+2024-06-04 16:55:54 [[express-server]] error: Database Error
+2024-06-04 17:11:14 [[express-server]] error: Database Error
+2024-06-05 12:41:15 [[express-server]] error: Unexpected token '"', ""Dany"
+"na"... is not valid JSON
+2024-06-05 12:41:54 [[express-server]] error: Unexpected token '"', ""name":""
+"... is not valid JSON
+2024-06-05 12:42:01 [[express-server]] error: Unexpected token '"', ""name":""
+"... is not valid JSON
+2024-06-05 12:42:15 [[express-server]] error: Unexpected token '"', ""name":""
+"... is not valid JSON
+2024-06-05 12:42:26 [[express-server]] error: Unexpected token '"', ""name":"","... is not valid JSON
+2024-06-06 15:06:47 [[express-server]] error: Route not found
+2024-06-06 15:08:59 [[express-server]] error: Route not found
+2024-06-06 15:09:07 [[express-server]] error: Route not found
+2024-06-06 15:37:18 [[express-server]] error: Database Error
+2024-06-06 15:37:18 [[express-server]] error: Method not implemented.
+2024-06-06 15:43:25 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 15:43:25 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 15:43:52 [[express-server]] error: Database Error
+2024-06-06 15:43:52 [[express-server]] error: Method not implemented.
+2024-06-06 15:45:42 [[express-server]] error: Database Error
+2024-06-06 15:45:42 [[express-server]] error: Database Error
+2024-06-06 16:09:39 [[express-server]] error: Database Error
+2024-06-06 18:23:47 [[express-server]] error: Database Error
+2024-06-06 18:27:03 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:03 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:06 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:06 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:33 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:33 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:28:28 [[express-server]] error: Database Error
+2024-06-06 18:30:49 [[express-server]] error: Database Error
+2024-06-06 18:47:55 [[express-server]] error: Route not found
+2024-06-06 18:53:35 [[express-server]] error: Validation Error
+2024-06-06 18:55:46 [[express-server]] error: Database Error
+2024-06-06 18:56:40 [[express-server]] error: Validation Error
+2024-06-06 19:02:32 [[express-server]] error: Validation Error
+2024-06-06 19:02:54 [[express-server]] error: Validation Error
+2024-06-06 19:03:27 [[express-server]] error: Validation Error
+2024-06-06 19:09:06 [[express-server]] error: Validation Error

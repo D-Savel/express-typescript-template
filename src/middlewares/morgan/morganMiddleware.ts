@@ -9,9 +9,9 @@ const stream: StreamOptions = {
   write: (message) => winstonLogger.http(message),
 };
 
-morgan.token('client-ip', (req => {
-  return `IP: ${req.socket.remoteAddress?.replaceAll("f", "").replaceAll(':', '')}:${req.socket.remotePort} /` || '-';
-}))
+morgan.token('client-ip', (req) => {
+  return `IP: ${req.socket.remoteAddress}:${req.socket.remotePort} /` || '-';
+})
 morgan.token('client-url', (req) => {
   return `URL: - ${req.url}`;
 })

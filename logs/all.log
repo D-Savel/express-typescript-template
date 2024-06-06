@@ -86,3 +86,659 @@
 
 2024-05-28 17:29:03 [express-server] http: IP: 1:47378 / URL: - /users GET 200 50 - 0.727 ms
 
+2024-05-28 17:30:56 [express-server] http: IP: 1:59912 / URL: - / GET 200 83 - 1.385 ms
+
+2024-05-28 17:30:56 [express-server] http: IP: 1:59920 / URL: - /favicon.ico GET 200 83 - 0.721 ms
+
+2024-05-28 17:31:09 [express-server] http: IP: 1:42404 / URL: - /users GET 200 50 - 1.372 ms
+
+2024-05-28 17:32:09 [express-server] http: IP: 1:54110 / URL: - /users GET 304 - - 0.526 ms
+
+2024-05-28 17:35:14 [express-server] http: IP: ::1:42740 / URL: - /users GET 304 - - 1.667 ms
+
+2024-05-28 17:38:59 [express-server] http: IP ::1 URL: - /users GET 304 - - 2.173 ms
+
+2024-05-28 17:39:13 [express-server] http: IP ::1 URL: - / GET 304 - - 0.549 ms
+
+2024-05-28 17:39:25 [express-server] http: IP ::1 URL: - / GET 304 - - 0.642 ms
+
+2024-05-28 17:51:55 [express-server] http: IP: 1:34084 / URL: - / GET 304 - - 1.742 ms
+
+2024-05-28 17:57:26 [express-server] http: IP: 1:46688 / URL: - / GET 200 83 - 1.536 ms
+
+2024-05-28 17:57:26 [express-server] http: IP: 1:46688 / URL: - /favicon.ico GET 200 83 - 0.457 ms
+
+2024-05-29 10:39:56 [express-server] http: IP: 1:39102 / URL: - / GET 200 83 - 1.440 ms
+
+2024-05-29 10:40:05 [express-server] http: IP: 1:44552 / URL: - /origin GET 200 83 - 0.651 ms
+
+2024-05-29 10:40:25 [express-server] http: IP: 1:37026 / URL: - /origin GET 404 145 - 1.764 ms
+
+2024-05-29 10:40:32 [express-server] http: IP: 1:40684 / URL: - /origin GET 404 145 - 0.753 ms
+
+2024-05-29 10:40:33 [express-server] http: IP: 1:40684 / URL: - /origin GET 404 145 - 0.174 ms
+
+2024-05-29 10:48:40 [express-server] http: IP: 1:60658 / URL: - /origin GET 404 145 - 1.434 ms
+
+2024-05-29 10:48:43 [express-server] http: IP: 1:60658 / URL: - /origin GET 404 145 - 0.582 ms
+
+2024-05-29 10:49:18 [express-server] http: IP: 1:47502 / URL: - /origin GET 404 145 - 0.336 ms
+
+2024-05-29 10:49:19 [express-server] http: IP: 1:47502 / URL: - /origin GET 404 145 - 0.270 ms
+
+2024-05-29 10:49:22 [express-server] http: IP: 1:47502 / URL: - /origin GET 404 145 - 0.500 ms
+
+2024-05-29 10:59:03 [express-server] http: IP: 1:49492 / URL: - /origin GET 200 83 - 2.795 ms
+
+2024-05-29 10:59:08 [express-server] http: IP: 1:49508 / URL: - /origin GET 200 83 - 0.540 ms
+
+2024-05-29 10:59:44 [express-server] http: IP: 1:43740 / URL: - /users GET 200 50 - 1.425 ms
+
+2024-05-29 10:59:49 [express-server] http: IP: 1:43742 / URL: - / GET 200 83 - 0.943 ms
+
+2024-05-29 11:00:27 [express-server] http: IP: 1:43294 / URL: - /origin GET 200 83 - 2.033 ms
+
+2024-05-29 11:00:28 [express-server] http: IP: 1:43294 / URL: - /origin GET 200 83 - 0.266 ms
+
+2024-05-29 11:00:33 [express-server] http: IP: 1:43294 / URL: - /rrr GET 200 83 - 0.277 ms
+
+2024-05-29 11:00:33 [express-server] http: IP: 1:43294 / URL: - /rrr GET 200 83 - 0.377 ms
+
+2024-05-29 11:00:55 [express-server] http: IP: 1:33012 / URL: - /rrr GET 200 83 - 4.310 ms
+
+2024-05-29 11:00:58 [express-server] http: IP: 1:33012 / URL: - /rrr GET 200 83 - 0.364 ms
+
+2024-05-29 11:01:14 [express-server] http: IP: 1:42284 / URL: - /rrr GET 200 83 - 3.881 ms
+
+2024-05-29 11:01:31 [express-server] http: IP: 1:51106 / URL: - /api GET 200 83 - 0.943 ms
+
+2024-05-29 11:02:05 [express-server] http: IP: 1:53244 / URL: - /api GET 200 83 - 2.094 ms
+
+2024-05-29 11:02:06 [express-server] http: IP: 1:53244 / URL: - /api GET 200 83 - 0.504 ms
+
+2024-05-29 11:02:07 [express-server] http: IP: 1:53244 / URL: - /api GET 200 83 - 0.386 ms
+
+2024-05-29 11:02:08 [express-server] http: IP: 1:53244 / URL: - /api GET 200 83 - 0.423 ms
+
+2024-05-29 11:02:23 [express-server] http: IP: 1:46214 / URL: - /api GET 200 83 - 1.034 ms
+
+2024-05-29 11:02:24 [express-server] http: IP: 1:46220 / URL: - /favicon.ico GET 200 83 - 0.892 ms
+
+2024-05-29 11:03:49 [express-server] http: IP: 1:56030 / URL: - /api GET 304 - - 4.535 ms
+
+2024-05-29 11:03:52 [express-server] http: IP: 1:56030 / URL: - /api GET 304 - - 0.620 ms
+
+2024-05-29 11:03:54 [express-server] http: IP: 1:44296 / URL: - /api GET 200 83 - 0.536 ms
+
+2024-05-29 11:03:58 [express-server] http: IP: 1:44296 / URL: - / GET 200 83 - 0.724 ms
+
+2024-05-29 11:03:59 [express-server] http: IP: 1:44296 / URL: - / GET 200 83 - 0.259 ms
+
+2024-05-29 11:04:04 [express-server] http: IP: 1:36712 / URL: - /users GET 200 50 - 0.535 ms
+
+2024-05-29 11:05:43 [express-server] http: IP: 1:55210 / URL: - /users GET 200 50 - 1.541 ms
+
+2024-05-29 11:05:47 [express-server] http: IP: 1:55210 / URL: - /api GET 200 83 - 0.774 ms
+
+2024-05-29 11:05:54 [express-server] http: IP: 1:43030 / URL: - /origin GET 200 83 - 0.439 ms
+
+2024-05-29 11:05:56 [express-server] http: IP: 1:43030 / URL: - /origin GET 200 83 - 0.614 ms
+
+2024-05-29 11:07:18 [express-server] http: IP: 1:54472 / URL: - / GET 404 139 - 1.311 ms
+
+2024-05-29 11:07:24 [express-server] http: IP: 1:58628 / URL: - /origin GET 404 145 - 0.909 ms
+
+2024-05-29 11:07:26 [express-server] http: IP: 1:58628 / URL: - /origin GET 404 145 - 0.250 ms
+
+2024-05-29 11:08:34 [express-server] http: IP: 1:47808 / URL: - /origin GET 200 83 - 2.064 ms
+
+2024-05-29 11:08:37 [express-server] http: IP: 1:47808 / URL: - /origin GET 200 83 - 0.459 ms
+
+2024-05-29 11:08:47 [express-server] http: IP: 1:34168 / URL: - /origin GET 200 83 - 1.290 ms
+
+2024-05-29 11:09:08 [express-server] http: IP: 1:54734 / URL: - /origin GET 200 21 - 1.777 ms
+
+2024-05-29 11:09:12 [express-server] http: IP: 1:54734 / URL: - / GET 200 83 - 0.596 ms
+
+2024-05-29 11:09:15 [express-server] http: IP: 1:54734 / URL: - /rrr GET 200 83 - 0.584 ms
+
+2024-05-29 11:10:10 [express-server] http: IP: 1:44334 / URL: - /rrr GET 404 142 - 4.377 ms
+
+2024-05-29 11:10:11 [express-server] http: IP: 1:44334 / URL: - /rrr GET 404 142 - 0.574 ms
+
+2024-05-29 11:10:16 [express-server] http: IP: 1:44334 / URL: - / GET 404 139 - 0.192 ms
+
+2024-05-29 11:10:40 [express-server] http: IP: 1:35396 / URL: - / GET 200 83 - 2.082 ms
+
+2024-05-29 11:10:43 [express-server] http: IP: 1:35396 / URL: - /rrr GET 200 83 - 0.549 ms
+
+2024-05-29 11:10:44 [express-server] http: IP: 1:35396 / URL: - /rrr GET 200 83 - 0.281 ms
+
+2024-05-29 11:16:25 [express-server] http: IP: 1:38388 / URL: - /rrr GET 404 142 - 8.037 ms
+
+2024-05-29 11:16:32 [express-server] http: IP: 1:38402 / URL: - /origin GET 200 21 - 2.643 ms
+
+2024-05-29 11:16:37 [express-server] http: IP: 1:40096 / URL: - / GET 200 83 - 0.926 ms
+
+2024-05-29 11:16:43 [express-server] http: IP: 1:48626 / URL: - /users GET 200 50 - 0.767 ms
+
+2024-05-29 11:16:57 [express-server] http: IP: 1:35038 / URL: - /api/origin GET 404 149 - 0.445 ms
+
+2024-05-29 11:17:01 [express-server] http: IP: 1:35038 / URL: - /origin GET 200 21 - 0.611 ms
+
+2024-05-29 11:17:22 [express-server] http: IP: 1:36992 / URL: - /origin GET 200 21 - 1.493 ms
+
+2024-05-29 11:18:02 [express-server] http: IP: 1:60874 / URL: - /%5E GET 404 142 - 1.471 ms
+
+2024-05-29 11:18:07 [express-server] http: IP: 1:60880 / URL: - /api GET 404 142 - 1.688 ms
+
+2024-05-29 11:18:10 [express-server] http: IP: 1:60880 / URL: - / GET 200 83 - 1.466 ms
+
+2024-05-29 11:18:10 [express-server] http: IP: 1:60880 / URL: - /favicon.ico GET 404 150 - 3.290 ms
+
+2024-05-29 11:20:19 [express-server] http: IP: 1:38506 / URL: - / GET 304 - - 2.291 ms
+
+2024-05-29 11:25:10 [express-server] http: IP: 1:54798 / URL: - / GET 200 83 - 1.762 ms
+
+2024-05-29 11:38:28 [express-server] http: IP: 127.0.0.1:50846 / URL: - / GET 404 139 - 1.755 ms
+
+2024-05-29 11:48:01 [express-server] http: IP: 1:45434 / URL: - / GET 404 139 - 2.322 ms
+
+2024-05-29 11:50:00 [express-server] http: IP: 1:35922 / URL: - /ip GET 404 141 - 1.838 ms
+
+2024-05-29 11:50:30 [express-server] http: IP: 1:38918 / URL: - /ip GET 404 141 - 0.507 ms
+
+2024-05-29 11:50:41 [express-server] http: IP: 1:44460 / URL: - /ip GET 404 141 - 2.416 ms
+
+2024-05-29 11:50:43 [express-server] http: IP: 1:44460 / URL: - /ip GET 404 141 - 0.460 ms
+
+2024-05-29 11:50:47 [express-server] http: IP: 1:44460 / URL: - / GET 404 139 - 0.527 ms
+
+2024-05-29 11:51:27 [express-server] http: IP: 1:57298 / URL: - / GET 200 83 - 1.952 ms
+
+2024-05-29 11:51:27 [express-server] http: IP: 1:57298 / URL: - /favicon.ico GET 404 150 - 2.960 ms
+
+2024-05-29 11:51:33 [express-server] http: IP: 1:57312 / URL: - /ip GET 404 141 - 1.269 ms
+
+2024-05-29 11:53:04 [express-server] http: IP: 1:56264 / URL: - /ip GET 404 141 - 1.577 ms
+
+2024-05-29 11:53:05 [express-server] http: IP: 1:56264 / URL: - /ip GET 404 141 - 1.326 ms
+
+2024-05-29 11:53:59 [express-server] http: IP: 1:35354 / URL: - /ip GET 404 141 - 2.271 ms
+
+2024-05-29 11:54:00 [express-server] http: IP: 1:35354 / URL: - /ip GET 404 141 - 1.502 ms
+
+2024-05-29 11:54:06 [express-server] http: IP: 1:53140 / URL: - /ip GET 404 141 - 0.223 ms
+
+2024-05-29 11:54:55 [express-server] http: IP: 1:51494 / URL: - /ip GET 200 7 - 1.703 ms
+
+2024-05-29 12:03:47 [express-server] http: IP: 1:41656 / URL: - /ip GET 200 7 - 1.609 ms
+
+2024-05-29 12:05:08 [express-server] http: IP: ::1:60072 / URL: - /ip GET 200 7 - 1.417 ms
+
+2024-05-29 12:11:13 [express-server] http: IP: ::1:47272 / URL: - /ip GET 200 7 - 3.153 ms
+
+2024-05-29 12:11:21 [express-server] http: IP: ::1:47288 / URL: - / GET 200 83 - 1.039 ms
+
+2024-05-29 14:46:10 [express-server] http: IP: ::1:50886 / URL: - / GET 200 83 - 5.486 ms
+
+2024-05-29 15:13:09 [express-server] http: IP: ::1:40342 / URL: - / GET 200 83 - 4.632 ms
+
+2024-05-29 15:15:11 [express-server] http: IP: ::ffff:127.0.0.1:55082 / URL: - / GET 200 83 - 1.878 ms
+
+2024-05-29 15:15:22 [express-server] http: IP: ::ffff:127.0.0.1:55018 / URL: - / GET 200 83 - 0.404 ms
+
+2024-05-29 15:20:00 [express-server] http: IP: ::ffff:127.0.0.1:36142 / URL: - / GET 200 83 - 1.483 ms
+
+2024-05-29 15:20:24 [express-server] http: IP: ::1:39670 / URL: - / GET 200 83 - 1.423 ms
+
+2024-05-30 13:58:20 [express-server] http: IP: ::ffff:127.0.0.1:59096 / URL: - / GET 200 83 - 1.480 ms
+
+2024-05-30 14:00:46 [express-server] http: IP: ::ffff:127.0.0.1:34766 / URL: - / GET 200 83 - 1.510 ms
+
+2024-05-30 14:20:48 [express-server] http: IP: ::1:51224 / URL: - /users GET 404 144 - 3.019 ms
+
+2024-05-30 14:24:01 [express-server] http: IP: ::1:48246 / URL: - /api/users GET 500 1486 - 2.672 ms
+
+2024-05-30 14:26:07 [express-server] http: IP: ::1:42186 / URL: - /api/users GET 500 1486 - 5.556 ms
+
+2024-05-30 14:26:09 [express-server] http: IP: ::1:42186 / URL: - /api/users GET 500 1486 - 0.809 ms
+
+2024-05-30 14:26:13 [express-server] http: IP: ::1:42186 / URL: - /api/user GET 404 147 - 1.412 ms
+
+2024-05-30 14:26:16 [express-server] http: IP: ::1:42186 / URL: - /api/users GET 500 1486 - 0.874 ms
+
+2024-05-30 14:29:43 [express-server] http: IP: ::1:50960 / URL: - /users GET 200 50 - 2.783 ms
+
+2024-05-30 14:30:59 [express-server] http: IP: ::1:53052 / URL: - /api/users GET 500 1486 - 4.052 ms
+
+2024-05-30 14:33:15 [express-server] http: IP: ::1:41862 / URL: - /users GET 200 50 - 1.414 ms
+
+2024-05-30 14:43:00 [express-server] http: IP: ::1:48594 / URL: - /users GET 200 262 - 3.096 ms
+
+2024-05-30 15:06:57 [express-server] http: IP: ::1:39942 / URL: - / GET 200 83 - 4.594 ms
+
+2024-05-30 15:07:46 [express-server] http: IP: ::1:46824 / URL: - /users GET - - - - ms
+
+2024-05-30 15:11:54 [express-server] http: IP: ::1:42160 / URL: - /users GET 200 200 - 2004.601 ms
+
+2024-05-30 15:12:25 [express-server] http: IP: ::1:45306 / URL: - /users GET 200 200 - 1006.419 ms
+
+2024-05-30 15:13:27 [express-server] http: IP: ::1:49736 / URL: - /users GET 200 238 - 1004.231 ms
+
+2024-05-30 15:15:31 [express-server] http: IP: ::1:60912 / URL: - / GET 200 83 - 3.317 ms
+
+2024-05-30 15:15:37 [express-server] http: IP: ::1:60916 / URL: - /users GET 200 238 - 1002.819 ms
+
+2024-05-30 15:16:26 [express-server] http: IP: ::1:40094 / URL: - /users GET 200 52 - 1006.900 ms
+
+2024-05-30 15:16:59 [express-server] http: IP: ::1:53260 / URL: - /users GET 200 52 - 1.572 ms
+
+2024-05-30 15:17:03 [express-server] http: IP: ::1:53260 / URL: - /users GET 200 52 - 0.469 ms
+
+2024-05-30 15:17:04 [express-server] http: IP: ::1:53260 / URL: - /users GET 200 52 - 0.240 ms
+
+2024-05-30 15:17:11 [express-server] http: IP: ::1:34002 / URL: - / GET 200 83 - 1.278 ms
+
+2024-05-30 15:17:14 [express-server] http: IP: ::1:34002 / URL: - /users GET 200 52 - 1.873 ms
+
+2024-05-30 15:17:39 [express-server] http: IP: ::1:46650 / URL: - /users GET 200 50 - 1.575 ms
+
+2024-05-30 15:17:43 [express-server] http: IP: ::1:46650 / URL: - /users GET 200 50 - 0.367 ms
+
+2024-05-30 15:18:10 [express-server] http: IP: ::1:54410 / URL: - /users GET 200 238 - 1006.619 ms
+
+2024-05-30 15:56:51 [express-server] http: IP: ::1:60580 / URL: - / GET 200 83 - 1.959 ms
+
+2024-05-30 15:56:57 [express-server] http: IP: ::1:60594 / URL: - /users GET 200 238 - 1003.023 ms
+
+2024-05-30 15:57:25 [express-server] http: IP: ::1:37562 / URL: - /users GET 200 238 - 5010.624 ms
+
+2024-05-30 15:57:32 [express-server] http: IP: ::1:58170 / URL: - / GET 200 83 - 1.122 ms
+
+2024-05-30 15:57:48 [express-server] http: IP: ::1:57600 / URL: - /users GET 200 238 - 5005.333 ms
+
+2024-05-30 16:02:43 [express-server] http: IP: ::ffff:127.0.0.1:46914 / URL: - / GET 200 83 - 2.169 ms
+
+2024-05-30 16:03:19 [express-server] http: IP: ::1:57964 / URL: - /users GET 200 238 - 2003.786 ms
+
+2024-05-30 16:04:02 [express-server] http: IP: ::1:51848 / URL: - / GET 200 83 - 1.185 ms
+
+2024-05-30 17:37:01 [express-server] http: IP: ::1:48902 / URL: - /api/user/ceer POST 404 153 - 4.467 ms
+
+2024-05-31 11:22:36 [express-server] http: IP: ::1:57194 / URL: - /api/user/ceer POST 404 153 - 3.010 ms
+
+2024-05-31 11:23:18 [express-server] http: IP: ::1:44384 / URL: - /api/user/creer POST 404 154 - 0.866 ms
+
+2024-05-31 11:29:09 [express-server] http: IP: ::1:39394 / URL: - /api/user/cree POST 404 153 - 2.066 ms
+
+2024-05-31 12:00:22 [express-server] http: IP: ::1:49116 / URL: - /user/creer POST - - - - ms
+
+2024-05-31 12:02:13 [express-server] http: IP: ::1:35454 / URL: - /user/creer POST 200 247 - 2008.678 ms
+
+2024-05-31 12:03:54 [express-server] http: IP: ::1:36040 / URL: - /user/creer POST 200 247 - 2007.511 ms
+
+2024-05-31 12:04:45 [express-server] http: IP: ::1:57034 / URL: - /user/creer POST 200 247 - 2006.874 ms
+
+2024-05-31 12:06:02 [express-server] http: IP: ::1:60200 / URL: - /user/creer POST 200 314 - 2003.675 ms
+
+2024-05-31 15:02:39 [express-server] http: IP: ::1:40422 / URL: - /user/creer POST 200 311 - 2006.977 ms
+
+2024-05-31 15:03:01 [express-server] http: IP: ::1:58570 / URL: - /users GET 200 305 - 2002.641 ms
+
+2024-05-31 15:03:18 [express-server] http: IP: ::1:58052 / URL: - / GET 200 83 - 0.867 ms
+
+2024-05-31 15:03:24 [express-server] http: IP: ::1:58052 / URL: - /users GET 200 305 - 2002.206 ms
+
+2024-05-31 15:05:06 [express-server] http: IP: ::1:59974 / URL: - /api/user/creer GET 404 153 - 4.128 ms
+
+2024-05-31 15:05:20 [express-server] http: IP: ::1:58838 / URL: - /user/creer POST 200 311 - 2002.422 ms
+
+2024-05-31 15:05:45 [express-server] http: IP: ::1:33458 / URL: - /user/creer POST 200 376 - 2003.323 ms
+
+2024-05-31 15:05:59 [express-server] http: IP: ::1:36280 / URL: - /api/users POST 404 149 - 0.291 ms
+
+2024-05-31 15:06:04 [express-server] http: IP: ::1:36280 / URL: - /api/users POST 404 149 - 1.796 ms
+
+2024-05-31 15:06:38 [express-server] http: IP: ::1:58284 / URL: - /api/users POST 404 149 - 2.232 ms
+
+2024-05-31 15:06:50 [express-server] http: IP: ::1:53194 / URL: - /users GET 200 238 - 2007.112 ms
+
+2024-05-31 15:07:09 [express-server] http: IP: ::1:38712 / URL: - /api/user/creer GET 404 153 - 0.931 ms
+
+2024-05-31 15:07:17 [express-server] http: IP: ::1:38718 / URL: - /user/creer POST 200 309 - 2003.907 ms
+
+2024-05-31 15:07:32 [express-server] http: IP: ::1:48842 / URL: - /user/creer POST 200 376 - 2003.515 ms
+
+2024-05-31 15:07:44 [express-server] http: IP: ::1:53398 / URL: - /users GET 200 370 - 2002.940 ms
+
+2024-05-31 15:10:20 [express-server] http: IP: ::1:50756 / URL: - /users GET 200 238 - 2004.981 ms
+
+2024-05-31 15:11:01 [express-server] http: IP: ::1:46394 / URL: - /user/creer POST 200 311 - 2003.376 ms
+
+2024-05-31 15:11:24 [express-server] http: IP: ::1:45934 / URL: - /users GET 200 305 - 2003.066 ms
+
+2024-05-31 15:24:20 [express-server] http: IP: ::1:38526 / URL: - /users GET - - - - ms
+
+2024-05-31 15:27:29 [express-server] http: IP: ::1:56120 / URL: - /users GET 200 238 - 2005.088 ms
+
+2024-05-31 15:42:32 [express-server] http: IP: ::1:39738 / URL: - /users GET 200 238 - 2006.188 ms
+
+2024-06-04 15:18:59 [express-server] http: IP: ::1:36624 / URL: - / GET 200 83 - 3.910 ms
+
+2024-06-04 15:19:44 [express-server] http: IP: ::1:36624 / URL: - /users GET - - - - ms
+
+2024-06-04 15:19:53 [express-server] http: IP: ::1:54092 / URL: - /api/users POST 404 149 - 1.564 ms
+
+2024-06-04 15:31:11 [express-server] http: IP: ::1:44026 / URL: - / GET 200 83 - 4.011 ms
+
+2024-06-04 15:41:24 [express-server] http: IP: ::1:48108 / URL: - /users GET 500 46 - 2014.541 ms
+
+2024-06-04 15:42:17 [express-server] http: IP: ::1:45130 / URL: - / GET 200 83 - 1.254 ms
+
+2024-06-04 15:42:27 [express-server] http: IP: ::1:45144 / URL: - /users GET 500 46 - 2006.878 ms
+
+2024-06-04 15:58:24 [express-server] http: IP: ::1:33364 / URL: - /users GET 500 46 - 2014.280 ms
+
+2024-06-04 15:58:33 [express-server] http: IP: ::1:34922 / URL: - / GET 200 83 - 1.194 ms
+
+2024-06-04 15:58:55 [express-server] http: IP: ::1:35120 / URL: - /api/users/creer POST 404 155 - 0.846 ms
+
+2024-06-04 16:00:27 [express-server] http: IP: ::1:46042 / URL: - /api/users/creer POST 404 155 - 2.318 ms
+
+2024-06-04 16:00:33 [express-server] http: IP: ::1:46056 / URL: - /api/users/creer POST 404 155 - 0.325 ms
+
+2024-06-04 16:00:45 [express-server] http: IP: ::1:50296 / URL: - /user/creer POST 200 311 - 2006.192 ms
+
+2024-06-04 16:00:55 [express-server] http: IP: ::1:40372 / URL: - /api/users/creer POST 404 155 - 2.435 ms
+
+2024-06-04 16:05:08 [express-server] http: IP: ::1:36998 / URL: - /api/users/creer POST 404 155 - 2.466 ms
+
+2024-06-04 16:05:36 [express-server] http: IP: ::1:37598 / URL: - /user/creer POST 200 311 - 2005.789 ms
+
+2024-06-04 16:05:51 [express-server] http: IP: ::1:44478 / URL: - /api/users POST 404 149 - 0.819 ms
+
+2024-06-04 16:06:03 [express-server] http: IP: ::1:47706 / URL: - /users GET 500 46 - 2011.916 ms
+
+2024-06-04 16:18:03 [express-server] http: IP: ::1:36500 / URL: - /users GET 500 46 - 2015.695 ms
+
+2024-06-04 16:23:48 [[express-server]] http: IP: ::1:38118 / URL: - /users GET 500 46 - 2014.016 ms
+
+2024-06-04 16:27:41 [[express-server]] http: IP: ::1:50758 / URL: - /users GET 500 46 - 2011.336 ms
+
+2024-06-04 16:30:37 [[express-server]] http: IP: ::1:41512 / URL: - /users GET 500 46 - 2015.301 ms
+
+2024-06-04 16:32:51 [[express-server]] http: IP: ::1:53328 / URL: - /users GET 500 46 - 2013.397 ms
+
+2024-06-04 16:34:04 [[express-server]] http: IP: ::1:37032 / URL: - /users GET 500 46 - 2014.377 ms
+
+2024-06-04 16:55:54 [[express-server]] error: Database Error
+2024-06-04 16:55:54 [[express-server]] http: IP: ::1:56602 / URL: - /users GET 500 46 - 2020.535 ms
+
+2024-06-04 17:11:14 [[express-server]] error: Database Error
+2024-06-04 17:11:14 [[express-server]] http: IP: ::1:49164 / URL: - /users GET 500 46 - 2013.797 ms
+
+2024-06-04 17:14:52 [[express-server]] http: IP: ::1:45294 / URL: - /users GET 200 238 - 2007.231 ms
+
+2024-06-04 18:37:43 [[express-server]] http: IP: ::1:33796 / URL: - /users GET 200 238 - 2007.802 ms
+
+2024-06-04 18:37:53 [[express-server]] http: IP: ::1:44302 / URL: - /users GET 200 238 - 2002.029 ms
+
+2024-06-04 18:38:11 [[express-server]] http: IP: ::1:59382 / URL: - /users GET 200 238 - 2003.938 ms
+
+2024-06-04 18:39:57 [[express-server]] http: IP: ::1:40268 / URL: - /users GET 200 238 - 2007.499 ms
+
+2024-06-04 18:41:54 [[express-server]] http: IP: ::1:34450 / URL: - /user/creer POST - - - - ms
+
+2024-06-05 11:42:17 [[express-server]] http: IP: ::1:33256 / URL: - /user/creer POST - - - - ms
+
+2024-06-05 11:44:36 [[express-server]] http: IP: ::1:33248 / URL: - /user/creer POST - - - - ms
+
+2024-06-05 11:52:56 [[express-server]] http: IP: ::1:49606 / URL: - /user/creer POST - - - - ms
+
+2024-06-05 12:04:59 [[express-server]] http: IP: ::1:40172 / URL: - /user/creer POST - - - - ms
+
+2024-06-05 12:05:02 [[express-server]] http: IP: ::1:43912 / URL: - /users GET 200 305 - 2007.974 ms
+
+2024-06-05 12:05:12 [[express-server]] http: IP: ::1:41966 / URL: - / GET 200 83 - 1.584 ms
+
+2024-06-05 12:05:41 [[express-server]] http: IP: ::1:56396 / URL: - /users GET 200 305 - 2003.431 ms
+
+2024-06-05 12:08:24 [[express-server]] http: IP: ::1:36706 / URL: - /api/user/creer GET 404 153 - 3.043 ms
+
+2024-06-05 12:11:15 [[express-server]] http: IP: ::1:52054 / URL: - /user/creer POST 200 311 - 1005.767 ms
+
+2024-06-05 12:12:00 [[express-server]] http: IP: ::1:38066 / URL: - /users GET 200 305 - 2003.481 ms
+
+2024-06-05 12:13:16 [[express-server]] http: IP: ::1:49304 / URL: - /users GET 200 238 - 2010.236 ms
+
+2024-06-05 12:35:59 [[express-server]] http: IP: ::1:55770 / URL: - /user/creer POST 200 311 - 1010.426 ms
+
+2024-06-05 12:36:14 [[express-server]] http: IP: ::1:44552 / URL: - /user/creer POST 200 375 - 1005.032 ms
+
+2024-06-05 12:36:56 [[express-server]] http: IP: ::1:45826 / URL: - /user/creer POST 422 146 - 1.464 ms
+
+2024-06-05 12:41:15 [[express-server]] error: Unexpected token '"', ""Dany"
+"na"... is not valid JSON
+2024-06-05 12:41:54 [[express-server]] error: Unexpected token '"', ""name":""
+"... is not valid JSON
+2024-06-05 12:42:01 [[express-server]] error: Unexpected token '"', ""name":""
+"... is not valid JSON
+2024-06-05 12:42:15 [[express-server]] error: Unexpected token '"', ""name":""
+"... is not valid JSON
+2024-06-05 12:42:26 [[express-server]] error: Unexpected token '"', ""name":"","... is not valid JSON
+2024-06-05 14:52:48 [[express-server]] http: IP: ::1:51334 / URL: - / GET 200 83 - 5.367 ms
+
+2024-06-05 14:53:20 [[express-server]] http: IP: ::1:53484 / URL: - / GET 200 83 - 1.321 ms
+
+2024-06-06 14:27:34 [[express-server]] http: IP: ::1:36556 / URL: - /user/creer POST 200 307 - 1009.795 ms
+
+2024-06-06 14:41:29 [[express-server]] http: IP: ::1:46000 / URL: - /user/creer POST 422 164 - 6.469 ms
+
+2024-06-06 14:42:53 [[express-server]] http: IP: ::1:46416 / URL: - /user/creer POST 422 165 - 6.214 ms
+
+2024-06-06 14:43:09 [[express-server]] http: IP: ::1:57590 / URL: - /user/creer POST 422 178 - 5.519 ms
+
+2024-06-06 14:43:26 [[express-server]] http: IP: ::1:35866 / URL: - /user/creer POST 422 179 - 3.662 ms
+
+2024-06-06 14:43:38 [[express-server]] http: IP: ::1:46470 / URL: - /user/creer POST 200 311 - 1003.343 ms
+
+2024-06-06 15:00:10 [[express-server]] http: IP: ::1:52948 / URL: - /user/creer POST 200 311 - 1009.670 ms
+
+2024-06-06 15:02:58 [[express-server]] http: IP: ::1:36994 / URL: - /api/user POST 404 1362 - 1.722 ms
+
+2024-06-06 15:03:02 [[express-server]] http: IP: ::1:36994 / URL: - /api/user POST 404 1362 - 0.555 ms
+
+2024-06-06 15:03:41 [[express-server]] http: IP: ::1:36212 / URL: - /api/user/creer POST 404 1362 - 0.626 ms
+
+2024-06-06 15:03:44 [[express-server]] http: IP: ::1:36212 / URL: - /api/user/creer POST 404 1362 - 0.640 ms
+
+2024-06-06 15:03:46 [[express-server]] http: IP: ::1:36212 / URL: - /api/user/creer POST 404 1362 - 0.499 ms
+
+2024-06-06 15:04:31 [[express-server]] http: IP: ::1:60822 / URL: - /api/user POST 404 1362 - 2.412 ms
+
+2024-06-06 15:04:52 [[express-server]] http: IP: ::1:35270 / URL: - / POST 404 1362 - 0.720 ms
+
+2024-06-06 15:04:56 [[express-server]] http: IP: ::1:35270 / URL: - / POST 404 1362 - 0.690 ms
+
+2024-06-06 15:04:57 [[express-server]] http: IP: ::1:35270 / URL: - / POST 404 1362 - 0.495 ms
+
+2024-06-06 15:05:04 [[express-server]] http: IP: ::1:37920 / URL: - / POST 404 1362 - 2.351 ms
+
+2024-06-06 15:06:47 [[express-server]] error: Route not found
+2024-06-06 15:06:47 [[express-server]] http: IP: ::1:50898 / URL: - / POST 404 36 - 3.119 ms
+
+2024-06-06 15:08:59 [[express-server]] error: Route not found
+2024-06-06 15:08:59 [[express-server]] http: IP: ::1:52028 / URL: - / POST 404 36 - 1.945 ms
+
+2024-06-06 15:09:07 [[express-server]] error: Route not found
+2024-06-06 15:09:07 [[express-server]] http: IP: ::1:50904 / URL: - / POST 404 58 - 3.730 ms
+
+2024-06-06 15:13:56 [[express-server]] http: IP: ::1:43810 / URL: - / POST 404 1362 - 1.893 ms
+
+2024-06-06 15:21:17 [[express-server]] http: IP: ::1:36870 / URL: - / POST 500 39 - 4.988 ms
+
+2024-06-06 15:26:09 [[express-server]] http: IP: ::1:33664 / URL: - / POST 200 39 - 1.908 ms
+
+2024-06-06 15:26:20 [[express-server]] http: IP: ::1:34626 / URL: - / POST 200 39 - 2.903 ms
+
+2024-06-06 15:26:48 [[express-server]] http: IP: ::1:56252 / URL: - / POST 404 1119 - 6.457 ms
+
+2024-06-06 15:28:05 [[express-server]] http: IP: ::1:33266 / URL: - / POST 404 140 - 0.973 ms
+
+2024-06-06 15:28:28 [[express-server]] http: IP: ::1:44378 / URL: - / GET 200 83 - 3.810 ms
+
+2024-06-06 15:28:46 [[express-server]] http: IP: ::1:50138 / URL: - / GET 200 83 - 2.390 ms
+
+2024-06-06 15:28:54 [[express-server]] http: IP: ::1:50146 / URL: - / POST 404 1119 - 1.584 ms
+
+2024-06-06 15:29:43 [[express-server]] http: IP: ::1:59558 / URL: - / POST 404 1118 - 2.557 ms
+
+2024-06-06 15:29:46 [[express-server]] http: IP: ::1:59558 / URL: - / POST 404 1118 - 0.666 ms
+
+2024-06-06 15:29:58 [[express-server]] http: IP: ::1:50974 / URL: - / POST 404 1118 - 2.826 ms
+
+2024-06-06 15:31:23 [[express-server]] http: IP: ::1:44040 / URL: - / POST 404 19 - 1.887 ms
+
+2024-06-06 15:31:53 [[express-server]] http: IP: ::1:43474 / URL: - / POST 404 20 - 1.626 ms
+
+2024-06-06 15:37:18 [[express-server]] http: IP: ::1:48472 / URL: - /users GET 200 47 - 2016.451 ms
+
+2024-06-06 15:37:18 [[express-server]] error: Database Error
+2024-06-06 15:37:18 [[express-server]] error: Method not implemented.
+2024-06-06 15:38:59 [[express-server]] http: IP: ::1:37922 / URL: - /api/users GET 404 20 - 1.746 ms
+
+2024-06-06 15:39:04 [[express-server]] http: IP: ::1:37930 / URL: - /api/users GET 404 20 - 0.637 ms
+
+2024-06-06 15:39:35 [[express-server]] http: IP: ::1:34562 / URL: - /api/users GET 404 20 - 1.281 ms
+
+2024-06-06 15:39:37 [[express-server]] http: IP: ::1:34562 / URL: - /api/users GET 404 20 - 1.567 ms
+
+2024-06-06 15:39:54 [[express-server]] http: IP: ::1:46110 / URL: - /api/users GET 404 20 - 2.176 ms
+
+2024-06-06 15:40:35 [[express-server]] http: IP: ::1:47470 / URL: - /users GET 200 254 - 2006.397 ms
+
+2024-06-06 15:43:25 [[express-server]] http: IP: ::1:56628 / URL: - /users GET 500 254 - 2006.930 ms
+
+2024-06-06 15:43:25 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 15:43:25 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 15:43:52 [[express-server]] error: Database Error
+2024-06-06 15:43:52 [[express-server]] error: Method not implemented.
+2024-06-06 15:43:52 [[express-server]] http: IP: ::1:58268 / URL: - /users GET 500 47 - 2020.779 ms
+
+2024-06-06 15:45:42 [[express-server]] error: Database Error
+2024-06-06 15:45:42 [[express-server]] error: Database Error
+2024-06-06 15:45:42 [[express-server]] http: IP: ::1:47308 / URL: - /api/users GET 500 1431 - 2011.288 ms
+
+2024-06-06 15:48:28 [[express-server]] http: IP: ::1:37966 / URL: - /user/creer POST 422 146 - 9.907 ms
+
+2024-06-06 15:49:11 [[express-server]] http: IP: ::1:45746 / URL: - /user/creer POST 422 163 - 7.269 ms
+
+2024-06-06 16:02:44 [[express-server]] http: IP: ::1:45704 / URL: - /api/user/creer GET 404 1118 - 4.502 ms
+
+2024-06-06 16:03:27 [[express-server]] http: IP: ::1:57402 / URL: - /api/user/creer GET 404 20 - 2.334 ms
+
+2024-06-06 16:07:10 [[express-server]] http: IP: ::1:42252 / URL: - /api/user/creer GET 404 70 - 3.746 ms
+
+2024-06-06 16:07:38 [[express-server]] http: IP: ::1:38070 / URL: - /user/creer POST 422 163 - 5.476 ms
+
+2024-06-06 16:08:29 [[express-server]] http: IP: ::1:59938 / URL: - /user/creer POST 422 163 - 6.286 ms
+
+2024-06-06 16:08:32 [[express-server]] http: IP: ::1:59938 / URL: - /user/creer POST 422 163 - 1.301 ms
+
+2024-06-06 16:08:34 [[express-server]] http: IP: ::1:59938 / URL: - /user/creer POST 422 163 - 1.215 ms
+
+2024-06-06 16:09:23 [[express-server]] http: IP: ::1:45782 / URL: - /api/users POST 404 70 - 2.281 ms
+
+2024-06-06 16:09:39 [[express-server]] error: Database Error
+2024-06-06 16:09:39 [[express-server]] http: IP: ::1:49152 / URL: - /users GET 500 55 - 2012.392 ms
+
+2024-06-06 16:10:25 [[express-server]] http: IP: ::1:38034 / URL: - /user/creer POST 200 327 - 1018.454 ms
+
+2024-06-06 16:10:47 [[express-server]] http: IP: ::1:56576 / URL: - /user/creer POST 422 163 - 4.065 ms
+
+2024-06-06 18:23:36 [[express-server]] http: IP: ::1:40546 / URL: - /api/users POST 404 70 - 0.705 ms
+
+2024-06-06 18:23:47 [[express-server]] error: Database Error
+2024-06-06 18:23:47 [[express-server]] http: IP: ::1:34628 / URL: - /users GET 500 55 - 2006.894 ms
+
+2024-06-06 18:25:28 [[express-server]] http: IP: ::1:57570 / URL: - /api/users GET 404 70 - 5.461 ms
+
+2024-06-06 18:26:32 [[express-server]] http: IP: ::1:45164 / URL: - /api/users GET 404 70 - 3.193 ms
+
+2024-06-06 18:27:03 [[express-server]] http: IP: ::1:33726 / URL: - /users GET 500 254 - 2008.252 ms
+
+2024-06-06 18:27:03 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:03 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:06 [[express-server]] http: IP: ::1:33738 / URL: - /users GET 500 254 - 2003.635 ms
+
+2024-06-06 18:27:06 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:06 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:33 [[express-server]] http: IP: ::1:38732 / URL: - /users GET 500 254 - 2006.186 ms
+
+2024-06-06 18:27:33 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:27:33 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-06 18:28:07 [[express-server]] http: IP: ::1:53386 / URL: - /users GET 200 254 - 2007.576 ms
+
+2024-06-06 18:28:28 [[express-server]] error: Database Error
+2024-06-06 18:28:28 [[express-server]] http: IP: ::1:55072 / URL: - /users GET 500 55 - 2009.461 ms
+
+2024-06-06 18:30:49 [[express-server]] error: Database Error
+2024-06-06 18:30:49 [[express-server]] http: IP: ::1:38058 / URL: - /users GET 500 94 - 2020.333 ms
+
+2024-06-06 18:47:55 [[express-server]] error: Route not found
+2024-06-06 18:47:55 [[express-server]] http: IP: ::1:43210 / URL: - /users GET 404 91 - 2017.786 ms
+
+2024-06-06 18:53:35 [[express-server]] error: Validation Error
+2024-06-06 18:53:35 [[express-server]] http: IP: ::1:50290 / URL: - /users GET 400 57 - 2017.546 ms
+
+2024-06-06 18:55:46 [[express-server]] error: Database Error
+2024-06-06 18:55:46 [[express-server]] http: IP: ::1:59696 / URL: - /users GET 500 94 - 2025.552 ms
+
+2024-06-06 18:56:09 [[express-server]] http: IP: ::1:55460 / URL: - /user/creer POST 422 163 - 13.949 ms
+
+2024-06-06 18:56:40 [[express-server]] error: Validation Error
+2024-06-06 18:56:40 [[express-server]] http: IP: ::1:45516 / URL: - /user/creer POST 400 57 - 2.569 ms
+
+2024-06-06 19:02:24 [[express-server]] http: IP: ::1:47708 / URL: - /user/creer POST 200 327 - 1009.752 ms
+
+2024-06-06 19:02:32 [[express-server]] error: Validation Error
+2024-06-06 19:02:32 [[express-server]] http: IP: ::1:36030 / URL: - /user/creer POST 400 54 - 2.997 ms
+
+2024-06-06 19:02:54 [[express-server]] error: Validation Error
+2024-06-06 19:02:54 [[express-server]] http: IP: ::1:47698 / URL: - /user/creer POST 400 54 - 2.526 ms
+
+2024-06-06 19:03:27 [[express-server]] error: Validation Error
+2024-06-06 19:03:27 [[express-server]] http: IP: ::1:59014 / URL: - /user/creer POST 400 54 - 7.194 ms
+
+2024-06-06 19:09:06 [[express-server]] error: Validation Error
+2024-06-06 19:09:06 [[express-server]] http: IP: ::1:46638 / URL: - /user/creer POST 400 54 - 11.550 ms
+
+2024-06-06 19:11:43 [[express-server]] http: IP: ::1:47808 / URL: - /user/creer POST 422 135 - 5.656 ms
+
+2024-06-06 19:14:52 [[express-server]] http: IP: ::1:60388 / URL: - /user/creer POST 422 135 - 8.185 ms
+
+2024-06-06 19:16:16 [[express-server]] http: IP: ::1:49014 / URL: - /user/creer POST 422 135 - 11.376 ms
+
+2024-06-06 19:18:25 [[express-server]] http: IP: ::1:48782 / URL: - /user/creer POST 422 135 - 5.275 ms
+
+2024-06-06 19:25:08 [[express-server]] http: IP: ::1:57568 / URL: - /user/creer POST 422 135 - 5.699 ms
+
+2024-06-06 19:26:20 [[express-server]] http: IP: ::1:44306 / URL: - /user/creer POST 422 135 - 6.184 ms
+
+2024-06-06 19:26:37 [[express-server]] http: IP: ::1:48482 / URL: - /user/creer POST 422 135 - 5.301 ms
+
+2024-06-06 19:29:00 [[express-server]] http: IP: ::1:43928 / URL: - /user/creer POST 422 135 - 32.284 ms
+
+2024-06-06 19:29:29 [[express-server]] http: IP: ::1:60090 / URL: - /api/users POST 404 70 - 1.957 ms
+
+2024-06-06 19:31:08 [[express-server]] http: IP: ::1:45176 / URL: - /api/users POST 404 70 - 5.115 ms
+
+2024-06-06 19:32:17 [[express-server]] http: IP: ::1:34316 / URL: - /user/creer POST 422 135 - 5.827 ms
+
+2024-06-06 19:35:53 [[express-server]] http: IP: ::1:54446 / URL: - /user/creer POST 200 323 - 1006.058 ms
+
+2024-06-06 19:37:07 [[express-server]] http: IP: ::1:46592 / URL: - /user/creer POST 200 386 - 1002.536 ms
+
+2024-06-06 19:37:48 [[express-server]] http: IP: ::1:40000 / URL: - /user/creer POST 422 135 - 5.487 ms
+
