@@ -8,12 +8,13 @@ export const errorHandler = (
   res: Response,
   next: NextFunction
 ) => {
-  if (error instanceof CustomError) {
+  console.log('errorHandler');
+  if (error && error instanceof CustomError) {
     winstonLogger.error(error.message);
     return res.status(error.statusCode).send({ response: false, statusCodeError: error.statusCode, errors: error.formatErrors() });
   }
-  if (error instanceof Error) {
+  if (error && error instanceof Error) {
     winstonLogger.error(error.message);
-    return res.status(500).send({ errors: [{ message: "Something went wrong" }] });
+    return res.status(500).send({ [error.name]: [{ message: error.message }] });
   }
 };

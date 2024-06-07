@@ -38,3 +38,28 @@
 2024-06-06 19:02:54 [[express-server]] error: Validation Error
 2024-06-06 19:03:27 [[express-server]] error: Validation Error
 2024-06-06 19:09:06 [[express-server]] error: Validation Error
+2024-06-07 11:50:37 [[express-server]] error: Database Error
+2024-06-07 11:51:55 [[express-server]] error: Route not found
+2024-06-07 11:52:57 [[express-server]] error: Validation Error
+2024-06-07 11:54:49 [[express-server]] error: Validation Error
+2024-06-07 12:00:10 [[express-server]] error: Database Error
+2024-06-07 12:03:29 [[express-server]] error: Database Error
+2024-06-07 12:05:05 [[express-server]] error: Database Error
+2024-06-07 14:48:00 [[express-server]] error: Database Error
+2024-06-07 14:52:34 [[express-server]] error: Database Error
+2024-06-07 14:53:33 [[express-server]] error: Database Error
+2024-06-07 15:06:48 [[express-server]] error: Validation Error
+2024-06-07 15:06:48 [[express-server]] error: Method not implemented.
+2024-06-07 15:09:33 [[express-server]] error: Database Error
+2024-06-07 15:18:03 [[express-server]] error: Database Error
+2024-06-07 15:30:48 [[express-server]] error: Route Not Found
+2024-06-07 15:32:17 [[express-server]] error: Database Error
+2024-06-07 15:33:34 [[express-server]] error: Database Error
+2024-06-07 15:35:06 [[express-server]] error: Route Not Found
+2024-06-07 15:35:22 [[express-server]] error: Route Not Found
+2024-06-07 15:35:34 [[express-server]] error: Database Error
+2024-06-07 15:37:24 [[express-server]] error: Route Not Found
+2024-06-07 15:37:56 [[express-server]] error: Route Not Found
+2024-06-07 15:38:05 [[express-server]] error: Database Error
+2024-06-07 15:38:31 [[express-server]] error: Request parameters validation Error
+2024-06-07 15:38:31 [[express-server]] error: Cannot set headers after they are sent to the client

@@ -2,11 +2,13 @@ import { CustomError } from "../utils/errors/CustomError";
 
 export class NotFoundError extends CustomError {
   statusCode = 404;
+  reason = 'Error route not found';
+
   constructor() {
-    super('Route not found');
+    super('Route Not Found');
     Object.setPrototypeOf(this, NotFoundError.prototype);
   }
   formatErrors() {
-    return [{ message: 'This route does not exist' }];
+    return [{ message: this.reason }];
   }
 }

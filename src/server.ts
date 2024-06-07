@@ -62,18 +62,23 @@ app.use(
 app.use(cors(corsOptions));
 app.use(morganMiddleware)
 
-app.use(errorHandler)
-
 // ==========
 // App routers
 // ==========
 app.use("/", routes);
 
 // Handles 404 errors
-app.use(function (req: Request, res: Response, next: NextFunction) {
-  res.status(404).send({ response: false, errorStatusCode: '404', message: 'Route not Found' });
-  console.log('TODO: throw new NotFound Error');
-});
+app.use((req: Request, res: Response, next: NextFunction) => {
+  try {
+    throw new NotFoundError
+  } catch (error) {
+    next(error)
+  }
+}
+)
+
+app.use(errorHandler)
+
 
 // ==========
 // App start

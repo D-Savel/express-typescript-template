@@ -7,7 +7,7 @@ import { userValidator } from "../../validators/userValidator";
 const router = express.Router();
 
 /* /create/user POST */
-router.post("/user/creer", validate(userValidator),
+router.post("/users/creer", validate(userValidator),
   createUser);
 
 export default router;

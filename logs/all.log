@@ -742,3 +742,136 @@
 
 2024-06-06 19:37:48 [[express-server]] http: IP: ::1:40000 / URL: - /user/creer POST 422 135 - 5.487 ms
 
+2024-06-07 11:50:22 [[express-server]] http: IP: ::1:32850 / URL: - /api/users POST 404 70 - 6.826 ms
+
+2024-06-07 11:50:37 [[express-server]] error: Database Error
+2024-06-07 11:50:37 [[express-server]] http: IP: ::1:33984 / URL: - /users GET 500 94 - 2032.839 ms
+
+2024-06-07 11:51:55 [[express-server]] error: Route not found
+2024-06-07 11:51:55 [[express-server]] http: IP: ::1:58998 / URL: - /users GET 404 91 - 2017.236 ms
+
+2024-06-07 11:52:57 [[express-server]] error: Validation Error
+2024-06-07 11:52:57 [[express-server]] http: IP: ::1:51248 / URL: - /users GET 400 57 - 2020.355 ms
+
+2024-06-07 11:54:49 [[express-server]] error: Validation Error
+2024-06-07 11:54:49 [[express-server]] http: IP: ::1:37706 / URL: - /users GET 400 57 - 18.678 ms
+
+2024-06-07 11:57:27 [[express-server]] http: IP: ::1:43222 / URL: - /users GET - - - - ms
+
+2024-06-07 11:57:40 [[express-server]] http: IP: ::1:52382 / URL: - /users GET - - - - ms
+
+2024-06-07 11:57:50 [[express-server]] http: IP: ::1:50304 / URL: - /api/users POST 404 70 - 1.587 ms
+
+2024-06-07 11:58:00 [[express-server]] http: IP: ::1:53900 / URL: - /api/creer POST 404 70 - 0.537 ms
+
+2024-06-07 11:58:12 [[express-server]] http: IP: ::1:54280 / URL: - /user/creer POST 200 327 - 1008.857 ms
+
+2024-06-07 12:00:10 [[express-server]] error: Database Error
+2024-06-07 12:00:10 [[express-server]] http: IP: ::1:43262 / URL: - /users GET 500 94 - 6.355 ms
+
+2024-06-07 12:03:29 [[express-server]] error: Database Error
+2024-06-07 12:03:29 [[express-server]] http: IP: ::1:49856 / URL: - /users GET 500 94 - 3.998 ms
+
+2024-06-07 12:03:56 [[express-server]] http: IP: ::1:39396 / URL: - /user/creer POST 200 327 - 1009.586 ms
+
+2024-06-07 12:04:05 [[express-server]] http: IP: ::1:57342 / URL: - /user/creer POST 422 135 - 4.138 ms
+
+2024-06-07 12:05:05 [[express-server]] http: IP: ::1:45920 / URL: - /user/creer POST 422 135 - 6.350 ms
+
+2024-06-07 12:05:05 [[express-server]] error: Database Error
+2024-06-07 14:35:08 [[express-server]] http: IP: ::1:58710 / URL: - /api/users POST 404 70 - 2.121 ms
+
+2024-06-07 14:37:34 [[express-server]] http: IP: ::1:48638 / URL: - /api/users POST 404 70 - 1.522 ms
+
+2024-06-07 14:41:30 [[express-server]] http: IP: ::1:52092 / URL: - /api/users POST 404 70 - 5.335 ms
+
+2024-06-07 14:42:37 [[express-server]] http: IP: ::1:49800 / URL: - /api/users POST 404 149 - 1.511 ms
+
+2024-06-07 14:45:17 [[express-server]] http: IP: ::1:52916 / URL: - /api/users POST 404 149 - 1.500 ms
+
+2024-06-07 14:45:27 [[express-server]] http: IP: ::1:50666 / URL: - /api/users POST 404 149 - 0.961 ms
+
+2024-06-07 14:45:38 [[express-server]] http: IP: ::1:37848 / URL: - /api/users POST 404 149 - 1.876 ms
+
+2024-06-07 14:46:24 [[express-server]] http: IP: ::1:54124 / URL: - /api/users POST 404 149 - 1.405 ms
+
+2024-06-07 14:48:00 [[express-server]] error: Database Error
+2024-06-07 14:48:00 [[express-server]] http: IP: ::1:34856 / URL: - /users GET 500 94 - 13.682 ms
+
+2024-06-07 14:52:34 [[express-server]] error: Database Error
+2024-06-07 14:52:34 [[express-server]] http: IP: ::1:56110 / URL: - /users GET 500 94 - 4.959 ms
+
+2024-06-07 14:53:24 [[express-server]] http: IP: ::1:36624 / URL: - /api/users/creer GET 404 154 - 1.616 ms
+
+2024-06-07 14:53:33 [[express-server]] error: Database Error
+2024-06-07 14:53:33 [[express-server]] http: IP: ::1:36630 / URL: - /users/creer POST 500 94 - 7.331 ms
+
+2024-06-07 15:06:48 [[express-server]] error: Validation Error
+2024-06-07 15:06:48 [[express-server]] error: Method not implemented.
+2024-06-07 15:06:48 [[express-server]] http: IP: ::1:35928 / URL: - /api/users/creer POST 500 49 - 8.973 ms
+
+2024-06-07 15:08:16 [[express-server]] http: IP: ::1:42230 / URL: - /users/creer POST 422 135 - 11.714 ms
+
+2024-06-07 15:08:39 [[express-server]] http: IP: ::1:50558 / URL: - /users/creer POST 422 301 - 1.643 ms
+
+2024-06-07 15:09:33 [[express-server]] error: Database Error
+2024-06-07 15:09:33 [[express-server]] http: IP: ::1:51096 / URL: - /users GET 500 94 - 2.349 ms
+
+2024-06-07 15:18:03 [[express-server]] error: Database Error
+2024-06-07 15:18:03 [[express-server]] http: IP: ::1:50636 / URL: - /users GET 500 94 - 5.871 ms
+
+2024-06-07 15:18:25 [[express-server]] http: IP: ::1:42172 / URL: - /api/users.creer GET 404 154 - 3.809 ms
+
+2024-06-07 15:18:37 [[express-server]] http: IP: ::1:44672 / URL: - /api/users.creer POST 404 155 - 0.315 ms
+
+2024-06-07 15:18:48 [[express-server]] http: IP: ::1:51684 / URL: - /users/creer POST 422 301 - 5.726 ms
+
+2024-06-07 15:19:47 [[express-server]] http: IP: ::1:50262 / URL: - /users/creer POST 422 301 - 4.598 ms
+
+2024-06-07 15:23:12 [[express-server]] http: IP: ::1:53318 / URL: - /users/creer POST 422 301 - 7.193 ms
+
+2024-06-07 15:23:23 [[express-server]] http: IP: ::1:37870 / URL: - /api/users POST 404 149 - 0.900 ms
+
+2024-06-07 15:30:48 [[express-server]] error: Route Not Found
+2024-06-07 15:30:48 [[express-server]] http: IP: ::1:54250 / URL: - /api/users POST 404 87 - 5.042 ms
+
+2024-06-07 15:32:17 [[express-server]] error: Database Error
+2024-06-07 15:32:17 [[express-server]] http: IP: ::1:56216 / URL: - /users GET 500 94 - 1.729 ms
+
+2024-06-07 15:33:34 [[express-server]] error: Database Error
+2024-06-07 15:33:34 [[express-server]] http: IP: ::1:37868 / URL: - /users GET 500 94 - 10.635 ms
+
+2024-06-07 15:33:49 [[express-server]] http: IP: ::1:34828 / URL: - /api/users POST 404 149 - 0.580 ms
+
+2024-06-07 15:33:55 [[express-server]] http: IP: ::1:47234 / URL: - /api/users POST 404 149 - 0.267 ms
+
+2024-06-07 15:34:08 [[express-server]] http: IP: ::1:60138 / URL: - /api/users POST 404 149 - 1.993 ms
+
+2024-06-07 15:34:15 [[express-server]] http: IP: ::1:47100 / URL: - /api/users POST 404 149 - 0.633 ms
+
+2024-06-07 15:34:23 [[express-server]] http: IP: ::1:47106 / URL: - /api/users POST 404 149 - 2.529 ms
+
+2024-06-07 15:34:44 [[express-server]] http: IP: ::1:57654 / URL: - /api.users POST 404 149 - 1.187 ms
+
+2024-06-07 15:35:06 [[express-server]] error: Route Not Found
+2024-06-07 15:35:06 [[express-server]] http: IP: ::1:50820 / URL: - /api.users POST 404 87 - 5.541 ms
+
+2024-06-07 15:35:22 [[express-server]] error: Route Not Found
+2024-06-07 15:35:22 [[express-server]] http: IP: ::1:48716 / URL: - /api/users POST 404 87 - 4.385 ms
+
+2024-06-07 15:35:34 [[express-server]] error: Database Error
+2024-06-07 15:35:34 [[express-server]] http: IP: ::1:50824 / URL: - /users GET 500 94 - 2.886 ms
+
+2024-06-07 15:37:24 [[express-server]] error: Route Not Found
+2024-06-07 15:37:24 [[express-server]] http: IP: ::1:57538 / URL: - /api/user/creer POST 404 87 - 9.438 ms
+
+2024-06-07 15:37:56 [[express-server]] error: Route Not Found
+2024-06-07 15:37:56 [[express-server]] http: IP: ::1:41798 / URL: - /api/user/creer POST 404 87 - 1.888 ms
+
+2024-06-07 15:38:05 [[express-server]] error: Database Error
+2024-06-07 15:38:05 [[express-server]] http: IP: ::1:36458 / URL: - /users GET 500 94 - 1.299 ms
+
+2024-06-07 15:38:31 [[express-server]] http: IP: ::1:39024 / URL: - /users/creer POST 422 301 - 19.732 ms
+
+2024-06-07 15:38:31 [[express-server]] error: Request parameters validation Error
+2024-06-07 15:38:31 [[express-server]] error: Cannot set headers after they are sent to the client
