@@ -63,3 +63,16 @@
 2024-06-07 15:38:05 [[express-server]] error: Database Error
 2024-06-07 15:38:31 [[express-server]] error: Request parameters validation Error
 2024-06-07 15:38:31 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 13:55:52 [[express-server]] error: Request parameters validation Error
+2024-06-10 13:55:52 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 13:56:19 [[express-server]] error: Request parameters validation Error
+2024-06-10 13:56:19 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 14:21:23 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:21:23 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 14:36:04 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:36:04 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 14:36:27 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:36:51 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:37:40 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:37:59 [[express-server]] error: Route Not Found
+2024-06-10 14:38:09 [[express-server]] error: Database Error

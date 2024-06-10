@@ -13,15 +13,7 @@ const validate = (validations: any) => {
       if (errors.isEmpty()) {
         next()
       } else {
-        const response = errors.array().map((error) => {
-          return {
-            title: error,
-            detail: error.msg,
-            code: 422,
-          };
-        })
-        res.status(422).send(response)
-        throw new RequestValidationError(response as any)
+        throw new RequestValidationError(errors)
       };
     } catch (error) {
       next(error)

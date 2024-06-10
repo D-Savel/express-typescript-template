@@ -875,3 +875,36 @@
 
 2024-06-07 15:38:31 [[express-server]] error: Request parameters validation Error
 2024-06-07 15:38:31 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 13:55:52 [[express-server]] http: IP: ::1:54122 / URL: - /users/creer POST 422 301 - 7.699 ms
+
+2024-06-10 13:55:52 [[express-server]] error: Request parameters validation Error
+2024-06-10 13:55:52 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 13:56:19 [[express-server]] http: IP: ::1:44604 / URL: - /users/creer POST 422 301 - 13.421 ms
+
+2024-06-10 13:56:19 [[express-server]] error: Request parameters validation Error
+2024-06-10 13:56:19 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 14:21:23 [[express-server]] http: IP: ::1:51640 / URL: - /users/creer POST 422 301 - 5.287 ms
+
+2024-06-10 14:21:23 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:21:23 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 14:36:04 [[express-server]] http: IP: ::1:56260 / URL: - /users/creer POST 422 281 - 6.328 ms
+
+2024-06-10 14:36:04 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:36:04 [[express-server]] error: Cannot set headers after they are sent to the client
+2024-06-10 14:36:27 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:36:27 [[express-server]] http: IP: ::1:49124 / URL: - /users/creer POST 422 268 - 10.040 ms
+
+2024-06-10 14:36:51 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:36:51 [[express-server]] http: IP: ::1:39860 / URL: - /users/creer POST 422 268 - 2.483 ms
+
+2024-06-10 14:37:40 [[express-server]] error: Request parameters validation Error
+2024-06-10 14:37:40 [[express-server]] http: IP: ::1:53974 / URL: - /users/creer POST 422 268 - 9.296 ms
+
+2024-06-10 14:37:59 [[express-server]] error: Route Not Found
+2024-06-10 14:37:59 [[express-server]] http: IP: ::1:38480 / URL: - /api/users POST 404 87 - 4.297 ms
+
+2024-06-10 14:38:09 [[express-server]] error: Database Error
+2024-06-10 14:38:09 [[express-server]] http: IP: ::1:51496 / URL: - /users GET 500 94 - 3.054 ms
+
+2024-06-10 14:38:47 [[express-server]] http: IP: ::1:37806 / URL: - /users/creer POST 200 327 - 1005.361 ms
+

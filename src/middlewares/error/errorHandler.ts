@@ -8,7 +8,6 @@ export const errorHandler = (
   res: Response,
   next: NextFunction
 ) => {
-  console.log('errorHandler');
   if (error && error instanceof CustomError) {
     winstonLogger.error(error.message);
     return res.status(error.statusCode).send({ response: false, statusCodeError: error.statusCode, errors: error.formatErrors() });
