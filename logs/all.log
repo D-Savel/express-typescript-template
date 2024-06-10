@@ -908,3 +908,106 @@
 
 2024-06-10 14:38:47 [[express-server]] http: IP: ::1:37806 / URL: - /users/creer POST 200 327 - 1005.361 ms
 
+2024-06-10 14:51:56 [[express-server]] http: IP: ::1:43100 / URL: - /users/creer POST 200 331 - 1013.068 ms
+
+2024-06-10 14:53:52 [[express-server]] http: IP: ::1:39564 / URL: - /users/creer POST 200 329 - 1010.418 ms
+
+2024-06-10 14:55:30 [[express-server]] http: IP: ::1:58760 / URL: - /users/creer POST 200 343 - 1021.567 ms
+
+2024-06-10 15:04:58 [[express-server]] http: IP: ::1:48474 / URL: - /users/creer POST 200 332 - 1017.921 ms
+
+2024-06-10 15:08:42 [[express-server]] http: IP: ::1:43406 / URL: - /users/creer POST - - - - ms
+
+2024-06-10 15:09:00 [[express-server]] http: IP: ::1:35932 / URL: - /users/creer POST - - - - ms
+
+2024-06-10 15:13:39 [[express-server]] http: IP: ::1:41918 / URL: - /users/creer POST 200 348 - 1023.378 ms
+
+2024-06-10 15:17:34 [[express-server]] http: IP: ::1:48354 / URL: - /users/creer POST 200 348 - 1017.934 ms
+
+2024-06-10 15:18:21 [[express-server]] error: Route Not Found
+2024-06-10 15:18:21 [[express-server]] http: IP: ::1:42402 / URL: - /api/users POST 404 87 - 1.729 ms
+
+2024-06-10 15:18:27 [[express-server]] error: Database Error
+2024-06-10 15:18:27 [[express-server]] http: IP: ::1:42404 / URL: - /users GET 500 94 - 0.935 ms
+
+2024-06-10 15:19:15 [[express-server]] http: IP: ::1:60534 / URL: - /users/creer POST 200 415 - 1008.909 ms
+
+2024-06-10 15:19:34 [[express-server]] error: Request parameters validation Error
+2024-06-10 15:19:34 [[express-server]] http: IP: ::1:59412 / URL: - /users/creer POST 422 268 - 2.732 ms
+
+2024-06-10 15:20:44 [[express-server]] error: Request parameters validation Error
+2024-06-10 15:20:44 [[express-server]] http: IP: ::1:39816 / URL: - /users/creer POST 422 268 - 10.204 ms
+
+2024-06-10 15:23:22 [[express-server]] error: Request parameters validation Error
+2024-06-10 15:23:22 [[express-server]] http: IP: ::1:60704 / URL: - /users/creer POST 422 268 - 14.417 ms
+
+2024-06-10 15:23:31 [[express-server]] http: IP: ::1:54348 / URL: - /api/users/creer GET 404 154 - 6.772 ms
+
+2024-06-10 15:31:08 [[express-server]] error: Route Not Found
+2024-06-10 15:31:08 [[express-server]] http: IP: ::1:52686 / URL: - /api/users/creer GET 404 88 - 14.809 ms
+
+2024-06-10 15:34:17 [[express-server]] error: Route Not Found
+2024-06-10 15:34:17 [[express-server]] http: IP: ::1:52456 / URL: - /api/users/creer GET 404 88 - 13.314 ms
+
+2024-06-10 15:38:40 [[express-server]] error: Route Not Found
+2024-06-10 15:38:40 [[express-server]] http: IP: ::1:55216 / URL: - /api/users/creer GET 404 981 - 12.199 ms
+
+2024-06-10 15:40:22 [[express-server]] error: Route Not Found
+2024-06-10 15:40:22 [[express-server]] http: IP: ::1:60370 / URL: - /api/users/creer GET 404 95 - 4.521 ms
+
+2024-06-10 15:40:59 [[express-server]] error: Route Not Found
+2024-06-10 15:40:59 [[express-server]] http: IP: ::1:59718 / URL: - /api/users/creer GET 404 95 - 7.613 ms
+
+2024-06-10 15:41:14 [[express-server]] error: Request parameters validation Error
+2024-06-10 15:41:14 [[express-server]] http: IP: ::1:42642 / URL: - /users/creer POST 422 115 - 5.089 ms
+
+2024-06-10 15:41:21 [[express-server]] error: Request parameters validation Error
+2024-06-10 15:41:21 [[express-server]] http: IP: ::1:58716 / URL: - /users/creer POST 422 115 - 3.605 ms
+
+2024-06-10 15:51:53 [[express-server]] error: Request parameters validation Error
+2024-06-10 15:51:53 [[express-server]] http: IP: ::1:48926 / URL: - /users/creer POST 422 296 - 8.985 ms
+
+2024-06-10 15:52:08 [[express-server]] error: Route Not Found
+2024-06-10 15:52:08 [[express-server]] http: IP: ::1:44618 / URL: - /api/users/creer GET 404 95 - 6.595 ms
+
+2024-06-10 15:52:31 [[express-server]] error: Database Error
+2024-06-10 15:52:31 [[express-server]] http: IP: ::1:48792 / URL: - /users GET 500 94 - 2.860 ms
+
+2024-06-10 16:38:03 [[express-server]] error: Database Error
+2024-06-10 16:38:03 [[express-server]] http: IP: ::1:44946 / URL: - /users GET 500 94 - 4.397 ms
+
+2024-06-10 16:38:19 [[express-server]] error: Database Error
+2024-06-10 16:38:19 [[express-server]] http: IP: ::1:36432 / URL: - /users GET 500 94 - 5.543 ms
+
+2024-06-10 16:40:52 [[express-server]] error: Database Error => user controller error
+2024-06-10 16:40:52 [[express-server]] http: IP: ::1:60398 / URL: - /users GET 500 94 - 3.800 ms
+
+2024-06-10 16:41:03 [[express-server]] error: Route not found => Route doesn't exist
+2024-06-10 16:41:03 [[express-server]] http: IP: ::1:33056 / URL: - /api/users POST 404 95 - 0.901 ms
+
+2024-06-10 16:41:35 [[express-server]] error: Request parameters validation Error => request parameter error
+2024-06-10 16:41:35 [[express-server]] http: IP: ::1:40118 / URL: - /users/creer POST 422 296 - 6.014 ms
+
+2024-06-10 16:46:57 [[express-server]] error: request parameter error
+[object Object]
+2024-06-10 16:46:57 [[express-server]] http: IP: ::1:34914 / URL: - /users/creer POST 422 296 - 7.565 ms
+
+2024-06-10 16:47:44 [[express-server]] error: request parameter error
+function toString() { [native code] }
+2024-06-10 16:47:44 [[express-server]] http: IP: ::1:43738 / URL: - /users/creer POST 422 296 - 7.634 ms
+
+2024-06-10 16:48:34 [[express-server]] error: request parameter error
+[{"message":{"errors":[{"type":"field","value":"","msg":"Name is required","path":"name","location":"body"},{"type":"field","value":"dany.doe@me","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-10 16:48:34 [[express-server]] http: IP: ::1:42048 / URL: - /users/creer POST 422 296 - 23.829 ms
+
+2024-06-10 16:49:51 [[express-server]] error: request parameter error
+[{"message":{"errors":[{"type":"field","value":"","msg":"Name is required","path":"name","location":"body"},{"type":"field","value":"dany.doe@me","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-10 16:49:51 [[express-server]] http: IP: ::1:50818 / URL: - /users/creer POST 422 296 - 4.244 ms
+
+2024-06-10 17:54:11 [[express-server]] error: request parameter error
+[{"message":{"errors":[{"type":"field","value":"","msg":"Name is required","path":"name","location":"body"},{"type":"field","value":"dany.doe@me","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-10 17:54:11 [[express-server]] http: IP: ::1:36472 / URL: - /users/creer POST 422 296 - 8.960 ms
+
+2024-06-10 17:54:46 [[express-server]] error: Route doesn't exist
+2024-06-10 17:54:46 [[express-server]] http: IP: ::1:53958 / URL: - /api/user POST 404 95 - 2.964 ms
+

@@ -7,8 +7,8 @@ import {
 export class DatabaseError extends CustomError {
   statusCode = 500;
   reason = 'Error connecting to database';
-  constructor() {
-    super('Database Error');
+  constructor(ErrorDetail: string) {
+    super('Database Error', ErrorDetail);
     Object.setPrototypeOf(this, DatabaseError.prototype);
   }
   formatErrors() {

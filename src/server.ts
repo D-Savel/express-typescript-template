@@ -70,7 +70,7 @@ app.use("/", routes);
 // Handles 404 errors
 app.use((req: Request, res: Response, next: NextFunction) => {
   try {
-    throw new NotFoundError
+    throw new NotFoundError("Route doesn't exist")
   } catch (error) {
     next(error)
   }

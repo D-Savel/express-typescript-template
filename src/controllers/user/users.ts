@@ -21,7 +21,7 @@ const getUsers = async (req: Request, res: Response, next: NextFunction) => {
     //   res.status(200).send({ response: true, users: response, message: `You're on api/users route` })
     // }
     // uncomment or comment next or previous lines ( const resp.... and if ...) to simulate error or not;
-    throw new DatabaseError
+    throw new DatabaseError('user controller error')
   } catch (error) {
     next(error)
   }

@@ -13,7 +13,7 @@ const validate = (validations: any) => {
       if (errors.isEmpty()) {
         next()
       } else {
-        throw new RequestValidationError(errors)
+        throw new RequestValidationError(errors, 'request parameter error')
       };
     } catch (error) {
       next(error)

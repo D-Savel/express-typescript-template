@@ -1,10 +1,11 @@
 import { Request, Response, NextFunction } from "express";
 import User from "../../types/User";
 import { users } from "../../datas/users";
+import { sendSuccess } from "../../utils/express/sendSuccess";
 
 
 // add user to users without update data in "../../datas/users" to simulate create request
-async function createUser(newUser: User) {
+async function addUser(newUser: User) {
   try {
     users.push(newUser)
   } catch (error) {
@@ -23,17 +24,17 @@ async function fetchUsers(): Promise<User[]> {
 }
 
 
-const userCreate = async (req: Request, res: Response, next: NextFunction) => {
+const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { name, email, password } = req.body
     const newUser = { name, email, password }
-    const response = await createUser(newUser)
+    const response = await addUser(newUser)
     const users = await fetchUsers()
-    res.status(200).send({ response: 'ok', users, message: `You're on api/user/create route` });
+    sendSuccess(res, 200, "youre are on api/user/create route", users)
   } catch (error) {
     next(error)
     console.log(error);
   }
 }
 
-export default userCreate;
+export default createUser;
