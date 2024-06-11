@@ -33,9 +33,13 @@
 
 This is an express TypeScript Template
 copy the boilerplate template and run an express server in few seconds
-2 routes are defined by default on this template:
+4 routes are defined by default on this template:
  -localhost:PORT/
  -localhost:PORT/api/users
+ -localhost:PORT/api/users/creer
+ -localhost:PORT/docs => doc for API usage and test
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
