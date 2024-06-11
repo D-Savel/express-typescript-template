@@ -6,10 +6,10 @@ import morganMiddleware from './middlewares/morgan/morganMiddleware';
 import { overAllLimiter } from './config/express-rate-limit/rateLimit';
 import { errorHandler } from './middlewares/error/errorHandler';
 import routes from './routes'
-import { networkInterfaces } from 'os';
-import { CustomError } from './utils/errors/CustomError';
 import { NotFoundError } from './errors/NotFoundError';
-import { error } from 'console';
+import swaggerJSDoc from "swagger-jsdoc";
+import swaggerUi from "swagger-ui-express";
+
 
 // ==========
 // App initialization
@@ -23,6 +23,24 @@ const PORT = process.env.PORT || 9000
 // middlewares config
 // ==========
 
+// Swagger
+
+const swaggerOptions = {
+  definition: {
+    openapi: "3.0.1",
+    info: {
+      title: "express template Documentation",
+      version: "1.0.0",
+    },
+    schemes: ["http", "https"],
+    servers: [{ url: "http://localhost:9000/" }],
+  },
+  // looks for configuration in specified directories
+  apis: [`${__dirname}/routes/**/*.ts`],
+};
+
+const swaggerSpec = swaggerJSDoc(swaggerOptions);
+
 // Cors
 const corsOptions = {
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
@@ -33,6 +51,7 @@ const corsOptions = {
 };
 
 // Middlewares
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(overAllLimiter)
@@ -86,5 +105,5 @@ app.use(errorHandler)
 
 app.listen(PORT,
   () => {
-    console.log(`😓 Server is listening on port ${PORT}  😓 `);
+    console.log(`😓 Server is listening on port ${PORT});  😓 `);
   });

@@ -1,15 +1,15 @@
 import { body } from "express-validator"
 
 export const userValidator = [
-  body('name').escape()
+  body('username').escape()
     .trim()
     .escape()
     .exists()
     .notEmpty()
-    .withMessage('Name is required')
+    .withMessage('username is required')
     .bail()
     .isString()
-    .withMessage('Name is not valid, must be a string')
+    .withMessage('username is not valid, must be a string')
     .customSanitizer((userName) => {
       return userName.replace(/^\w/, (c: string) => c.toUpperCase())
     }),
@@ -18,7 +18,7 @@ export const userValidator = [
     .escape()
     .exists()
     .notEmpty()
-    .withMessage('Email address is required')
+    .withMessage('email address is required')
     .bail()
     .isEmail()
     .withMessage('Please provide valid email')
@@ -30,9 +30,9 @@ export const userValidator = [
     .escape()
     .exists()
     .notEmpty()
-    .withMessage('Password is required')
+    .withMessage('password is required')
     .bail()
     .isString()
     .isLength({ min: 4, max: 20 })
-    .withMessage('Password must be between 4 and 20 characters'),
+    .withMessage('password must be between 4 and 20 characters'),
 ]

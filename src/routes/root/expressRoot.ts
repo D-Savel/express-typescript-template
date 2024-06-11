@@ -5,8 +5,23 @@ import expressStatusController from "../../controllers/express/expressStatus";
 
 const router = express.Router();
 
-/* / GET */
-router.get("/", expressStatusController);
+/** GET Methods */
+/**
+    * @openapi
+    * '/':
+    *  get:
+    *     tags:
+    *     - express controller
+    *     summary: express startup message
+ *     responses:
+ *      200:
+ *        description: express server strarted
+ *      404:
+ *        description: Not Found
+ *      500:
+ *        description: Server Error
+ */
+router.get('/', expressStatusController);
 
 
 export default router;

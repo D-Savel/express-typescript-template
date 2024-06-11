@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-import User from "../../types/User";
-import { users } from "../../datas/users";
-import { sendSuccess } from "../../utils/express/sendSuccess";
+import User from "../../../types/User";
+import { users } from "../../../datas/users";
+import { sendSuccess } from "../../../utils/express/sendSuccess";
 
 
 // add user to users without update data in "../../datas/users" to simulate create request
@@ -26,11 +26,11 @@ async function fetchUsers(): Promise<User[]> {
 
 const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const { name, email, password } = req.body
-    const newUser = { name, email, password }
+    const { username, email, password } = req.body
+    const newUser = { username, email, password }
     const response = await addUser(newUser)
     const users = await fetchUsers()
-    sendSuccess(res, 200, "youre are on api/user/create route", users)
+    sendSuccess(res, 200, `User ${username} successfull created`, users)
   } catch (error) {
     next(error)
     console.log(error);

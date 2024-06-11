@@ -3,7 +3,7 @@ import { CustomError } from '../utils/errors/CustomError';
 
 export class RequestValidationError extends CustomError {
   statusCode = 422;
-  reason = 'Error route not found';
+  reason = 'Request parameters validation Error';
 
   constructor(public errors: any, errorDetail: string) {
     super('Request parameters validation Error', errorDetail);

@@ -12,11 +12,10 @@ export const errorHandler = (
 ) => {
   if (error && error instanceof CustomError) {
     winstonLogger.error(error instanceof RequestValidationError ? `${error.errorDetail}\n${JSON.stringify(error.formatErrors())}` : `${error.errorDetail}`);
-    return sendError(res, error.statusCode, error instanceof RequestValidationError ? error.formatErrors() : error.message, [{ content: null }], error.name || 'none');
+    return sendError(res, error.statusCode, error instanceof RequestValidationError ? error.formatErrors() : error.message, error.errorDetail || 'none');
   }
   if (error && error instanceof Error) {
-    winstonLogger.error(error.message);
-    return sendError(res, 500, error.message, [{ content: null }], `Node error\n${error.stack!}`);
-    return res.status(500).send({ [error.name]: [{ message: error.message }] });
+    winstonLogger.error(`Node server error \n ${error.stack!}`);
+    return sendError(res, 500, `Node server error`, `  Node error \n ${error.stack!}`);
   }
 };
