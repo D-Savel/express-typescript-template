@@ -1,6 +1,8 @@
 import express from "express";
+import validate from "../../middlewares/validation/validationMiddleware";
+import getUserByUsername from "../../controllers/api/users/get UserByUsername";
+import { getUserByUsernameValidator } from "../../validators/users/getUserByUsernameValidator";
 
-import getUsers from "../../controllers/api/users/getUsers";
 // import {...} from "../controllers/...";
 
 const router = express.Router();
@@ -8,21 +10,21 @@ const router = express.Router();
 /** GET Methods */
 /**
 * @openapi
-* '/api/users':
+* '/api/users/user':
 *  get:
 *     tags:
 *       - API User controller
-*     summary: Get users
+*     summary: Get user by username
+*     parameters:
+*      - name: username
+*        in: query
+*        description: The username of the user
+*        type: string
+*        default: John
+*        required: true
 *     responses:
 *      200:
-*        description: return a list of users
-*        content:
-*           application/json:
-*             schema:
-*               $ref: '#/components/schemas/ArrayOfUsers'
-*           text/plain:
-*             schema:
-*               type: string
+*        description: Fetched Successfully
 *      400:
 *        description: Bad Request
 *      404:
@@ -30,7 +32,7 @@ const router = express.Router();
 *      500:
 *        description: Server Error
 */
-router.get('/api/users', getUsers);
+router.get('/api/users/user', validate(getUserByUsernameValidator), getUserByUsername);
 
 // router.get("/id/:id", userByIdController);
 // /* Address /adresses POST */

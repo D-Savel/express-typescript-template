@@ -11,7 +11,7 @@ export const errorHandler = (
   next: NextFunction
 ) => {
   if (error && error instanceof CustomError) {
-    winstonLogger.error(error instanceof RequestValidationError ? `${error.errorDetail}\n${JSON.stringify(error.formatErrors())}` : `${error.errorDetail}`);
+    winstonLogger.error(error instanceof RequestValidationError ? `${error.errorDetail}\n${JSON.stringify(error.formatErrors())}` : `${error} => ${error.errorDetail}`);
     return sendError(res, error.statusCode, error instanceof RequestValidationError ? error.formatErrors() : error.message, error.errorDetail || 'none');
   }
   if (error && error instanceof Error) {

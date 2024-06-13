@@ -1,8 +1,7 @@
 import { body } from "express-validator"
 
-export const userValidator = [
-  body('username').escape()
-    .trim()
+export const createUsersValidator = [
+  body('username')
     .escape()
     .exists()
     .notEmpty()

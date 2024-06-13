@@ -1,7 +1,58 @@
-2024-06-11 16:56:56 [[express-server]] error: Route doesn't exist
-2024-06-11 17:00:04 [[express-server]] error: Route doesn't exist
-2024-06-11 17:00:23 [[express-server]] error: Route doesn't exist
-2024-06-11 17:15:04 [[express-server]] error: user controller error
-2024-06-11 17:45:59 [[express-server]] error: Route doesn't exist
-2024-06-11 17:46:01 [[express-server]] error: Route doesn't exist
-2024-06-11 17:46:55 [[express-server]] error: Route doesn't exist
+
+2024-06-11 18:05:16 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"johndoe@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-12 14:56:15 [[express-server]] error: Route doesn't exist
+2024-06-12 14:58:41 [[express-server]] error: Route doesn't exist
+2024-06-12 14:58:42 [[express-server]] error: Route doesn't exist
+2024-06-12 15:00:13 [[express-server]] error: Route doesn't exist
+2024-06-12 15:00:14 [[express-server]] error: Route doesn't exist
+2024-06-12 15:00:29 [[express-server]] error: Route doesn't exist
+2024-06-12 15:02:11 [[express-server]] error: Route doesn't exist
+2024-06-12 15:10:10 [[express-server]] error: Route doesn't exist
+2024-06-12 15:12:21 [[express-server]] error: Route doesn't exist
+2024-06-12 15:12:23 [[express-server]] error: Route doesn't exist
+2024-06-13 14:34:39 [[express-server]] error: Route doesn't exist
+2024-06-13 14:39:33 [[express-server]] error: Route doesn't exist
+2024-06-13 14:40:01 [[express-server]] error: Route doesn't exist
+2024-06-13 14:40:36 [[express-server]] error: Route doesn't exist
+2024-06-13 14:41:39 [[express-server]] error: Route doesn't exist
+2024-06-13 14:51:28 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johndoe@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-13 14:51:48 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johndoe@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-13 14:51:48 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johndoe@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-13 15:20:07 [[express-server]] error: user controller error
+2024-06-13 15:20:32 [[express-server]] error: user controller error
+2024-06-13 15:22:16 [[express-server]] error: user controller error
+2024-06-13 15:23:37 [[express-server]] error: user controller error
+2024-06-13 15:25:25 [[express-server]] error: user controller error
+2024-06-13 15:27:49 [[express-server]] error: Error: Database Error => user controller error
+2024-06-13 15:28:43 [[express-server]] error: Error: Database Error => user controller error (getUsers
+2024-06-13 15:28:59 [[express-server]] error: Error: Database Error => user controller error (getUsersById
+2024-06-13 15:29:39 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:31:17 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:31:29 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:40:11 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:41:20 [[express-server]] error: Node server error 
+ TypeError: validations.map is not a function
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:10:21
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at Route.dispatch (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:119:3)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at /home/savel/projets/express_typescript_template/node_modules/express/lib/router/index.js:284:15
+    at param (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/index.js:365:14)
+    at param (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/index.js:376:14)
+    at Function.process_params (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/index.js:421:3)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/index.js:280:10)
+2024-06-13 15:42:55 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:43:30 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:43:45 [[express-server]] error: Error: Database Error => user controller error (getUsersById)
+2024-06-13 15:46:51 [[express-server]] error: request parameter error => /api/users/user/1
+[{"message":{"errors":[{"type":"field","value":"1","msg":"username is not valid, must be a UUID","path":"id","location":"params"}]}}]
+2024-06-13 15:47:21 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+[{"message":{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"username is not valid, must be a UUID","path":"id","location":"params"}]}}]
+2024-06-13 15:56:31 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id6127b1a7-edf4-491f-af40-ea5b9495d3d7)
+2024-06-13 15:58:13 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with idJoe)
+2024-06-13 15:58:43 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username Joe)
