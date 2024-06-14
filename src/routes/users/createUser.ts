@@ -37,21 +37,12 @@ const router = express.Router();
 *     responses:
 *      201:
 *        description: Created
-*        content:
-*         application/json:
-*           type: array
-*           items:
-*             type: object
-*             properties:
-*               id:
-*                 type: integer
-*               name:
-*                 type: string
-*           example:
-*             - id: 1
-*               name: Dave
-*             - id: 2
-*               name: John
+*        examples:
+*            application/json:
+*              {
+*                "id": 38,
+*                "title": "T-shirt"
+*              }
 *      404:
 *        description: Not Found
 *      422:

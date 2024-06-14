@@ -262,3 +262,27 @@
 
 2024-06-13 16:36:36 [[express-server]] http: IP: ::1:47250 / URL: - /api/users/creer POST 200 540 - 1016.149 ms
 
+2024-06-14 14:49:01 [[express-server]] http: IP: ::ffff:127.0.0.1:47194 / URL: - / GET 200 83 - 1.372 ms
+
+2024-06-14 14:49:50 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-14 14:49:50 [[express-server]] http: IP: ::ffff:127.0.0.1:51670 / URL: - /users GET 404 95 - 2.245 ms
+
+2024-06-14 14:50:00 [[express-server]] error: Error: Database Error => user controller error (getUsers
+2024-06-14 14:50:00 [[express-server]] http: IP: ::ffff:127.0.0.1:60168 / URL: - /api/users GET 500 106 - 2003.804 ms
+
+2024-06-14 14:51:26 [[express-server]] http: IP: ::ffff:127.0.0.1:37638 / URL: - /api/users GET 200 424 - 2005.241 ms
+
+2024-06-14 14:51:48 [[express-server]] http: IP: ::ffff:127.0.0.1:35156 / URL: - /api/users GET 200 424 - 2003.197 ms
+
+2024-06-14 14:52:20 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-14 14:52:20 [[express-server]] http: IP: ::ffff:127.0.0.1:56758 / URL: - /api/user?username=John GET 404 95 - 3.760 ms
+
+2024-06-14 14:52:31 [[express-server]] http: IP: ::ffff:127.0.0.1:39416 / URL: - /api/users/user?username=John GET 200 207 - 8.159 ms
+
+2024-06-14 14:57:57 [[express-server]] http: IP: ::1:37132 / URL: - / GET 200 83 - 1.747 ms
+
+2024-06-14 14:57:57 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-14 14:57:57 [[express-server]] http: IP: ::1:37132 / URL: - /favicon.ico GET 404 95 - 1.992 ms
+
+2024-06-14 15:06:28 [[express-server]] http: IP: ::1:58458 / URL: - /api/users GET 200 424 - 2004.107 ms
+
