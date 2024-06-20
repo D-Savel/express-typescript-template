@@ -1,7 +1,6 @@
 import express from "express";
 
 import getUsers from "../../controllers/api/users/getUsers";
-// import {...} from "../controllers/...";
 
 const router = express.Router();
 
@@ -20,13 +19,25 @@ const router = express.Router();
 *           content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/UsersResponse'
-*         400:
-*           description: Bad Request
+*                $ref: '#/components/schemas/GetUsersResponse'
 *         404:
-*           description: Not Found
+*           description: Route not found
+*           content:
+*            application/json:
+*              schema:
+*                $ref: '#/components/schemas/Error404Response'
+*         422:
+*           description: Unprocessable Entity (bad body parameters for request)
+*           content:
+*            application/json:
+*              schema:
+*                $ref: '#/components/schemas/Error422Response'
 *         500:
-*           description: Server Error
+*           description: Node Server Error
+*           content:
+*             application/json:
+*              schema:
+*                $ref: '#/components/schemas/Error500'
 * components:
 *  schemas:
 *    User:
@@ -34,17 +45,13 @@ const router = express.Router();
 *      properties:
 *        id:
 *          type: string
-*          example: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
 *        username:
 *          type: string
-*          example: 'John'
 *        email:
 *          type: string
-*          example: 'jDoe@me.fr'
 *        password:
 *          type: string
-*          example: '123Pasword'
-*    UsersResponse:
+*    GetUsersResponse:
 *      type: object
 *      properties:
 *        status:
@@ -56,11 +63,70 @@ const router = express.Router();
 *        data:
 *          type: array
 *          items:
-*            $ref: '#/components/schemas/User'
+*             $ref: '#/components/schemas/User'
+* 
+*          example:
+*           - id: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
+*             username: 'John'
+*             email: 'JDoe@me.fr'
+*             password: '123Password'
+*           - id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0'
+*             username: 'Jane'
+*             email: 'JaneDoe@me.fr'
+*             password: 'Password123'
+*           - id: '196cab8b-0284-4d0a-85c6-d171051b8966'
+*             username: 'Emma'
+*             email: 'EmmaDoe@me.fr'
+*             password: 'Password'
 *        errors:
 *          type: string
 *          example: 'null'
+*    Error404Response:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'error'
+*        message:
+*          type: string
+*          example: 'Route not found'
+*        data:
+*          type: string
+*          nullable: true
+*          example: 'null'
+*        error_detail:
+*          type: string
+*          example: "Route doesn't exist"
+*    Error422Response:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*        message:
+*          type: string
+*        data:
+*          type: string
+*          nullable: true
+*        error_detail:
+*          type: string
+*    Error500:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'error'
+*        message:
+*          type: string
+*          example: 'Node server error'
+*        data:
+*          type: string
+*          nullable: true
+*          example: 'null'
+*        error_detail:
+*          type: string
+*          example: "Node error \n ${error.stack!}"
 */
+
 router.get('/api/users', getUsers);
 
 // router.get("/id/:id", userByIdController);

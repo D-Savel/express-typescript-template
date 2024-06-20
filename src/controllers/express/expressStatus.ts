@@ -1,17 +1,11 @@
-import express, { Express, Request, Response } from 'express';
+import { Request, Response } from 'express';
 import * as dotenv from 'dotenv';
-
-
-// ==========
-// App initialization
-// ==========
-const app: Express = express();
+import { sendSuccess } from '../../utils/express/sendSuccess';
 
 dotenv.config();
 const PORT = process.env.PORT || 9000;
-
 const expressStatusController = (req: Request, res: Response) => {
-  res.status(200).send(`😓  😺  Hello World ! - Express server is running on ${PORT} - great!!  😺  😓`);
+  sendSuccess(res, 200, `Node server is alive`, `😓  😺  Hello World ! - Express server is running on ${PORT} - great!!  😺  😓`);
 };
 
 export default expressStatusController

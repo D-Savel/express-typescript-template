@@ -11,6 +11,6 @@ export class RequestValidationError extends CustomError {
   };
 
   formatErrors() {
-    return [{ message: this.errors }];
+    return this.errors;
   }
 }

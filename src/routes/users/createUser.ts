@@ -1,7 +1,7 @@
 import express from "express";
 import validate from "../../middlewares/validation/validationMiddleware";
 import { createUsersValidator } from "../../validators/users/createUsersValidator";
-import userCreate from "../../controllers/api/users/createUser";
+import createUser from "../../controllers/api/users/createUser";
 // import {...} from "../controllers/...";
 
 const router = express.Router();
@@ -27,7 +27,7 @@ const router = express.Router();
 *            properties:
 *              username:
 *                type: string
-*                default: johnny 
+*                default: Johnny 
 *              email:
 *                type: string
 *                default: johnnye@mail.com
@@ -35,22 +35,124 @@ const router = express.Router();
 *                type: string
 *                default: johnny20!@
 *     responses:
-*      201:
-*        description: Created
-*        examples:
+*         200:
+*           description: Return a list of users with new user created
+*           content:
 *            application/json:
-*              {
-*                "id": 38,
-*                "title": "T-shirt"
-*              }
-*      404:
-*        description: Not Found
-*      422:
-*        description: Unprocessable Entity (bad body parameters for request)
-*      500:
-*        description: Server Error
+*              schema:
+*                $ref: '#/components/schemas/CreateUsersResponse'
+*         404:
+*           description: Route not found
+*           content:
+*            application/json:
+*              schema:
+*                $ref: '#/components/schemas/Error404Response'
+*         422:
+*           description: Unprocessable Entity (bad body parameters for request)
+*           content:
+*            application/json:
+*              schema:
+*                $ref: '#/components/schemas/Error422Response'
+*         500:
+*           description: Node Server Error
+*           content:
+*             application/json:
+*              schema:
+*                $ref: '#/components/schemas/Error500'
+* components:
+*  schemas:
+*    User:
+*      type: object
+*      properties:
+*        id:
+*          type: string
+*        username:
+*          type: string
+*        email:
+*          type: string
+*        password:
+*          type: string
+*    CreateUsersResponse:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'success'
+*        message:
+*          type: string
+*          example: 'Users list successfully retrieved'
+*        data:
+*          type: array
+*          items:
+*             $ref: '#/components/schemas/User'
+* 
+*          example:
+*           - id: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
+*             username: 'John'
+*             email: 'JDoe@me.fr'
+*             password: '123Password'
+*           - id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0'
+*             username: 'Jane'
+*             email: 'JaneDoe@me.fr'
+*             password: 'Password123'
+*           - id: '196cab8b-0284-4d0a-85c6-d171051b8966'
+*             username: 'Emma'
+*             email: 'EmmaDoe@me.fr'
+*             password: 'Password'
+*           - id: 'New random ID'
+*             username: 'Johnny'
+*             email: 'johnnye@mail.com'
+*             password: 'johnny20!@'
+*        errors:
+*          type: string
+*          example: 'null'
+*    Error404Response:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'error'
+*        message:
+*          type: string
+*          example: 'Route not found'
+*        data:
+*          type: string
+*          nullable: true
+*          example: 'null'
+*        error_detail:
+*          type: string
+*          example: "Route doesn't exist"
+*    Error422Response:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*        message:
+*          type: string
+*        data:
+*          type: string
+*          nullable: true
+*        error_detail:
+*          type: string
+*    Error500:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'error'
+*        message:
+*          type: string
+*          example: 'Node server error'
+*        data:
+*          type: string
+*          nullable: true
+*          example: 'null'
+*        error_detail:
+*          type: string
+*          example: "Node error \n ${error.stack!}"
 */
-router.post('/api/users/creer', validate(createUsersValidator), userCreate);
+
+router.post('/api/users/creer', validate(createUsersValidator), createUser);
 
 export default router;
 

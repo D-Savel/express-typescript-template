@@ -2,24 +2,31 @@ import { NextFunction, Request, Response } from "express";
 import { users } from "../../../datas/users";
 import { sendSuccess } from "../../../utils/express/sendSuccess";
 import { DatabaseError } from "../../../errors/DatabaseError";
+import User from "../../../types/User";
 
-function fetchUserById(query: string) {
+function searchUser(id: string) {
   const user = users.find((item) => {
-    return item.id == query
+    return item.id == id
   });
-  return new Promise((resolve, reject) => {
+  return user
+};
+
+function fetchUser(user: User): Promise<User> {
+  return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(user),
-        2000
-    });
+      resolve(user)
+    },
+      2000
+    )
   })
 };
 
 const getUserById = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { id } = req.params;
-    const user = await fetchUserById(id as string);
-    if (user) {
+    const findUser = searchUser(id);
+    if (findUser) {
+      const user = await fetchUser(findUser)
       sendSuccess(res, 200, `User  info for ID: ${id} successfully retreived`, user)
     } else {
       throw new DatabaseError(`{user controller error (getUsersById: No user matches with id ${req.params.id})`);

@@ -60,3 +60,157 @@
 2024-06-14 14:50:00 [[express-server]] error: Error: Database Error => user controller error (getUsers
 2024-06-14 14:52:20 [[express-server]] error: Error: Route not found => Route doesn't exist
 2024-06-14 14:57:57 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-17 11:51:31 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-17 15:46:11 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username john)
+2024-06-17 16:07:37 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-06-17 16:07:38 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-06-17 16:07:39 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-06-17 16:07:40 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-06-17 16:08:36 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-06-17 16:09:18 [[express-server]] error: Error: Database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-06-17 16:32:31 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:32:32 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:32:33 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:44:02 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:46:21 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:47:48 [[express-server]] error: Node server error 
+ TypeError: undefined is not iterable (cannot read property Symbol(Symbol.iterator))
+    at Function.from (<anonymous>)
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:37)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:48:27 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:23)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:42:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:49:07 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:23)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:42:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:50:06 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:41:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:51:21 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:42:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:51:58 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:21:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:42:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:53:00 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at searchUser (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:9:39)
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:30:22)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:54:03 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:28:41)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:54:51 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:27:52)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:55:37 [[express-server]] error: Node server error 
+ TypeError: Cannot read properties of undefined (reading '0')
+    at getUserByUsername (/home/savel/projets/express_typescript_template/src/controllers/api/users/getUserByUsername.ts:27:52)
+    at Layer.handle [as handle_request] (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/savel/projets/express_typescript_template/node_modules/express/lib/router/route.js:149:13)
+    at /home/savel/projets/express_typescript_template/src/middlewares/validation/validationMiddleware.ts:14:9
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2024-06-17 16:56:42 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username John)
+2024-06-17 16:56:52 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username John)
+2024-06-17 16:57:00 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username John)
+2024-06-17 16:59:04 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username John)
+2024-06-17 17:00:10 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username John)
+2024-06-18 16:52:17 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-18 17:02:02 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-18 17:18:04 [[express-server]] error: Node server error 
+ SyntaxError: Bad control character in string literal in JSON at position 18
+    at JSON.parse (<anonymous>)
+    at parse (/home/savel/projets/express_typescript_template/node_modules/body-parser/lib/types/json.js:92:19)
+    at /home/savel/projets/express_typescript_template/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/savel/projets/express_typescript_template/node_modules/raw-body/index.js:238:16)
+    at done (/home/savel/projets/express_typescript_template/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/savel/projets/express_typescript_template/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1408:12)
+2024-06-18 17:18:29 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-20 14:48:58 [[express-server]] error: request parameter error => /api/users/creer
+[{"message":{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}}]
+2024-06-20 15:36:47 [[express-server]] error: request parameter error => /api/users/creer
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-06-20 17:01:29 [[express-server]] error: request parameter error => /api/users/creer
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}

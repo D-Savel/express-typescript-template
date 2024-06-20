@@ -5,7 +5,7 @@ import { sendSuccess } from "../../../utils/express/sendSuccess";
 import crypto from 'crypto';
 
 // add user to users without update data in "../../datas/users" to simulate create request
-async function addUser(newUser: User) {
+function addUser(newUser: User) {
   try {
     users.push(newUser)
   } catch (error) {
@@ -28,10 +28,11 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { username, email, password } = req.body
     const id = crypto.randomUUID()
+    const capitalizedUsername = username[0].toUpperCase() + username.slice(1).toLowerCase()
     const newUser = { id, username, email, password }
-    const response = await addUser(newUser)
+    const newusUsers = addUser(newUser)
     const users = await fetchUsers()
-    sendSuccess(res, 200, `User ${username} successfully created`, users)
+    sendSuccess(res, 201, `User ${username} successfully created`, users)
   } catch (error) {
     next(error)
     console.log(error);
