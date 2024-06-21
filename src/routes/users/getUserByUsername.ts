@@ -10,39 +10,45 @@ const router = express.Router();
 /** GET Methods */
 /**
 * @openapi
-* '/api/users/user':
+* "/api/users/user?username='usernamameQuery'":
 *  get:
-*     tags:
+*    tags:
 *       - API User controller
-*     summary: Get user by username
-*     parameters:
+*    summary: Get user by username
+*    parameters:
 *      - name: username
 *        in: query
 *        description: The username of the user
 *        type: string
 *        default: John
 *        required: true
-*     responses:
-*         200:
-*           description: Return a user for username query
-*           content:
+*    responses:
+*      200:
+*        description: Return a user for username query string
+*        content:
 *            application/json:
 *              schema:
 *                $ref: '#/components/schemas/UserResponse'
-*         400:
-*           description: Bad Request
-*         404:
-*           description: Route not Found
-*           content:
-*            application/json:
-*              schema:
-*                $ref: '#/components/schemas/ErrorResponse'
-*         500:
-*           description: Node Server Error
-*           content:
-*             application/json:
-*              schema:
-*                $ref: '#/components/schemas/Error500'
+*      204:
+*        description: No content => No match(es) for requested data(s)
+*      404:
+*        description: Route not Found
+*        content:
+*         application/json:
+*          schema:
+*           $ref: '#/components/schemas/Error404Response'
+*      422:
+*        description: Unprocessable Entity (bad body parameters for request). Response example for empty username parameter
+*        content:
+*         application/json:
+*          schema:
+*           $ref: '#/components/schemas/ErrorParamsUsernameResponse'
+*      500:
+*        description: Node Server Error
+*        content:
+*         application/json:
+*          schema:
+*           $ref: '#/components/schemas/Error500'
 * components:
 *  schemas:
 *    User:
@@ -60,6 +66,19 @@ const router = express.Router();
 *        password:
 *          type: string
 *          example: '123Pasword'
+*    ParamsError:
+*      type: object
+*      properties:
+*        type:
+*          type: string
+*        value:
+*          type: string
+*        msg:
+*          type: string
+*        path:
+*          type: string
+*        location:
+*          type: string
 *    UserResponse:
 *      type: object
 *      properties:
@@ -75,7 +94,7 @@ const router = express.Router();
 *        errors:
 *          type: string
 *          example: 'null'
-*    ErrorResponse:
+*    Error404Response:
 *      type: object
 *      properties:
 *        status:
@@ -91,6 +110,23 @@ const router = express.Router();
 *        error_detail:
 *          type: string
 *          example: "Route doesn't exist"
+*    ErrorParamsUsernameResponse:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'error'
+*        message:
+*          type: array
+*          items:
+*             $ref: '#/components/schemas/ParamsError'
+*          example:
+* 
+*          - type: "field"
+*            value: ''
+*            msg: "username is required in query string (example: ?username='John')"
+*            path: "username"
+*            location:: "params"
 *    Error500:
 *      type: object
 *      properties:
@@ -108,6 +144,7 @@ const router = express.Router();
 *          type: string
 *          example: "Node error \n ${error.stack!}"
 */
+
 router.get('/api/users/user', validate(getUserByUsernameValidator), getUserByUsername);
 
 // router.get("/id/:id", userByIdController);

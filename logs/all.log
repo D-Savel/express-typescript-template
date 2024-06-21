@@ -610,3 +610,123 @@
 {"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
 2024-06-20 17:01:29 [[express-server]] http: IP: ::1:46264 / URL: - /api/users/creer POST 422 315 - 8.145 ms
 
+2024-06-21 10:21:26 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:21:26 [[express-server]] http: IP: ::1:42812 / URL: - /api/users/user?username=david GET 404 155 - 8.153 ms
+
+2024-06-21 10:28:26 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:28:26 [[express-server]] http: IP: ::1:57484 / URL: - /api/users/user?username=david GET 204 - - 7.852 ms
+
+2024-06-21 10:28:48 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:28:48 [[express-server]] http: IP: ::1:44672 / URL: - /api/users/user?username=david GET 204 - - 3.152 ms
+
+2024-06-21 10:29:07 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:29:07 [[express-server]] http: IP: ::1:55482 / URL: - /api/users/user?username=david GET 204 - - 2.046 ms
+
+2024-06-21 10:29:55 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:29:55 [[express-server]] http: IP: ::1:41640 / URL: - /api/users/user?username=david GET 204 - - 1.752 ms
+
+2024-06-21 10:30:03 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:30:03 [[express-server]] http: IP: ::1:41642 / URL: - /api/users/user?username=david GET 204 - - 1.576 ms
+
+2024-06-21 10:30:42 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:30:42 [[express-server]] http: IP: ::1:34512 / URL: - /api/users/user?username=david GET 204 - - 1.968 ms
+
+2024-06-21 10:31:59 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:31:59 [[express-server]] http: IP: ::1:35096 / URL: - /api/users/user?username=david GET 204 - - 1.665 ms
+
+2024-06-21 10:33:16 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (?username='John')","path":"username","location":"query"}]}
+2024-06-21 10:33:16 [[express-server]] http: IP: ::1:39882 / URL: - /api/users/user GET 422 242 - 2.236 ms
+
+2024-06-21 10:33:17 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-21 10:33:17 [[express-server]] http: IP: ::1:39882 / URL: - /favicon.ico GET 404 95 - 1.560 ms
+
+2024-06-21 10:33:51 [[express-server]] http: IP: ::1:39888 / URL: - /api/users/ GET 200 424 - 2004.039 ms
+
+2024-06-21 10:33:55 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-21 10:33:55 [[express-server]] http: IP: ::1:39888 / URL: - /api/ GET 404 95 - 1.120 ms
+
+2024-06-21 10:36:17 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-06-21 10:36:17 [[express-server]] http: IP: ::1:47602 / URL: - /api/ GET 404 95 - 5.218 ms
+
+2024-06-21 10:36:26 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (?username='John')","path":"username","location":"query"}]}
+2024-06-21 10:36:26 [[express-server]] http: IP: ::1:47608 / URL: - /api/users/user GET 422 242 - 6.708 ms
+
+2024-06-21 10:36:48 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:36:48 [[express-server]] http: IP: ::1:55592 / URL: - /api/users/user?username=david GET 204 - - 3.198 ms
+
+2024-06-21 10:37:23 [[express-server]] error: Error: Database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:37:23 [[express-server]] http: IP: ::1:55378 / URL: - /api/users/user?username=david GET 204 - - 1.677 ms
+
+2024-06-21 10:38:01 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (?username='John')","path":"username","location":"query"}]}
+2024-06-21 10:38:01 [[express-server]] http: IP: ::1:57036 / URL: - /api/users/user GET 422 242 - 2.445 ms
+
+2024-06-21 10:39:37 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (?username='John')","path":"username","location":"query"}]}
+2024-06-21 10:39:37 [[express-server]] http: IP: ::1:38494 / URL: - /api/users/user GET 422 242 - 10.281 ms
+
+2024-06-21 10:39:49 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:39:49 [[express-server]] http: IP: ::1:38506 / URL: - /api/users/user?username=david GET 204 - - 2.895 ms
+
+2024-06-21 10:43:48 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:43:48 [[express-server]] http: IP: ::1:59402 / URL: - /api/users/user?username=david GET 204 - - 4.162 ms
+
+2024-06-21 10:44:02 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username david)
+2024-06-21 10:44:02 [[express-server]] http: IP: ::1:45222 / URL: - /api/users/user?username=david GET 304 - - 1.597 ms
+
+2024-06-21 10:46:26 [[express-server]] error: request parameter error => /api/users/creer
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-06-21 10:46:26 [[express-server]] http: IP: ::1:50154 / URL: - /api/users/creer POST 422 315 - 10.806 ms
+
+2024-06-21 11:04:01 [[express-server]] error: request parameter error => /api/users/creer
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-06-21 11:04:01 [[express-server]] http: IP: ::1:60408 / URL: - /api/users/creer POST 422 315 - 10.621 ms
+
+2024-06-21 11:22:26 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"username is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-06-21 11:22:26 [[express-server]] http: IP: ::1:37816 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d GET 422 300 - 7.411 ms
+
+2024-06-21 11:23:34 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-06-21 11:23:34 [[express-server]] http: IP: ::1:34724 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d GET 422 299 - 18.018 ms
+
+2024-06-21 11:32:27 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-06-21 11:32:27 [[express-server]] http: IP: ::1:50908 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d GET 422 299 - 7.576 ms
+
+2024-06-21 11:45:37 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-06-21 11:45:37 [[express-server]] http: IP: ::1:47228 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d GET 422 299 - 6.954 ms
+
+2024-06-21 11:47:13 [[express-server]] http: IP: ::1:59590 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 GET 200 243 - 2006.843 ms
+
+2024-06-21 11:47:40 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-06-21 11:47:40 [[express-server]] http: IP: ::1:48236 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d GET 422 299 - 3.090 ms
+
+2024-06-21 12:05:36 [[express-server]] http: IP: ::1:41546 / URL: - /api/users/user?username=John GET 200 217 - 2007.258 ms
+
+2024-06-21 12:14:01 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username joh)
+2024-06-21 12:14:01 [[express-server]] http: IP: ::1:40620 / URL: - /api/users/user?username=joh GET 204 - - 7.275 ms
+
+2024-06-21 12:14:52 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username joh)
+2024-06-21 12:14:52 [[express-server]] http: IP: ::1:49714 / URL: - /api/users/user?username=joh GET 304 - - 2.889 ms
+
+2024-06-21 12:15:12 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username joh)
+2024-06-21 12:15:12 [[express-server]] http: IP: ::1:50254 / URL: - /api/users/user?username=joh GET 304 - - 1.474 ms
+
+2024-06-21 12:15:38 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username joh)
+2024-06-21 12:15:38 [[express-server]] http: IP: ::1:45978 / URL: - /api/users/user?username=joh GET 204 - - 2.806 ms
+
+2024-06-21 12:15:48 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username joh)
+2024-06-21 12:15:48 [[express-server]] http: IP: ::1:45994 / URL: - /api/users/user?username=joh GET 204 - - 2.641 ms
+
+2024-06-21 14:31:51 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d9)
+2024-06-21 14:31:51 [[express-server]] http: IP: ::1:43590 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d9 GET 204 - - 7.382 ms
+
+2024-06-21 15:02:06 [[express-server]] http: IP: ::1:58418 / URL: - /api/users/user?username=John GET 200 217 - 2008.095 ms
+
+2024-06-21 15:02:27 [[express-server]] http: IP: ::1:52950 / URL: - /api/users/user?username=john GET 200 217 - 2013.096 ms
+

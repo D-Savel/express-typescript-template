@@ -48,11 +48,11 @@ const router = express.Router();
 *              schema:
 *                $ref: '#/components/schemas/Error404Response'
 *         422:
-*           description: Unprocessable Entity (bad body parameters for request)
+*           description: Unprocessable Entity (bad body parameters for request). Response example for these parameters => empty username and email parameter = johnnye@mail
 *           content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/Error422Response'
+*                $ref: '#/components/schemas/ErrorBodyResponse'
 *         500:
 *           description: Node Server Error
 *           content:
@@ -71,6 +71,19 @@ const router = express.Router();
 *        email:
 *          type: string
 *        password:
+*          type: string
+*    ParamsError:
+*      type: object
+*      properties:
+*        type:
+*          type: string
+*        value:
+*          type: string
+*        msg:
+*          type: string
+*        path:
+*          type: string
+*        location:
 *          type: string
 *    CreateUsersResponse:
 *      type: object
@@ -122,18 +135,28 @@ const router = express.Router();
 *        error_detail:
 *          type: string
 *          example: "Route doesn't exist"
-*    Error422Response:
+*    ErrorBodyResponse:
 *      type: object
 *      properties:
 *        status:
 *          type: string
+*          example: 'error'
 *        message:
-*          type: string
-*        data:
-*          type: string
-*          nullable: true
-*        error_detail:
-*          type: string
+*          type: array
+*          items:
+*             $ref: '#/components/schemas/ParamsError'
+*          example:
+* 
+*           - type: "field"
+*             value: ''
+*             msg: "username is required"
+*             path: "username"
+*             location:: "body"
+*           - type: "field"
+*             value: "johnnye@mail"
+*             msg: "Please provide valid email"
+*             path: "email"
+*             location:: "body"
 *    Error500:
 *      type: object
 *      properties:

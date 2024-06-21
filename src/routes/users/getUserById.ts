@@ -24,17 +24,25 @@ const router = express.Router();
 *        required: true
 *     responses:
 *      200:
-*        description: Fetched Successfully
-*      400:
-*        description: Bad Request
+*        description: Return a user for id query path
+*        content:
+*            application/json:
+*              schema:
+*                $ref: '#/components/schemas/UserResponse'
+*      204:
+*        description: No content => No match(es) for requested data(s)
 *      404:
 *        description: Route not Found
 *        content:
 *         application/json:
 *          schema:
-*           $ref: '#/components/schemas/ErrorResponse'
+*           $ref: '#/components/schemas/Error404Response'
 *      422:
-*        description: Unprocessable Entity (bad body parameters for request)
+*        description: Unprocessable Entity (bad body parameters for request). Response example for non uuid parameter = 6127b1a7-edf4-491f-af40-ea5b9495d3d
+*        content:
+*         application/json:
+*          schema:
+*           $ref: '#/components/schemas/ErrorParamsIdResponse'
 *      500:
 *        description: Node Server Error
 *        content:
@@ -58,6 +66,19 @@ const router = express.Router();
 *        password:
 *          type: string
 *          example: '123Pasword'
+*    ParamsError:
+*      type: object
+*      properties:
+*        type:
+*          type: string
+*        value:
+*          type: string
+*        msg:
+*          type: string
+*        path:
+*          type: string
+*        location:
+*          type: string
 *    UserResponse:
 *      type: object
 *      properties:
@@ -73,7 +94,7 @@ const router = express.Router();
 *        errors:
 *          type: string
 *          example: 'null'
-*    ErrorResponse:
+*    Error404Response:
 *      type: object
 *      properties:
 *        status:
@@ -89,6 +110,23 @@ const router = express.Router();
 *        error_detail:
 *          type: string
 *          example: "Route doesn't exist"
+*    ErrorParamsIdResponse:
+*      type: object
+*      properties:
+*        status:
+*          type: string
+*          example: 'error'
+*        message:
+*          type: array
+*          items:
+*             $ref: '#/components/schemas/ParamsError'
+*          example:
+* 
+*          - type: "field"
+*            value: '6127b1a7-edf4-491f-af40-ea5b9495d3d'
+*            msg: "user id is not valid, must be a UUID version 4"
+*            path: "id"
+*            location:: "params"
 *    Error500:
 *      type: object
 *      properties:
@@ -106,6 +144,7 @@ const router = express.Router();
 *          type: string
 *          example: "Node error \n ${error.stack!}"
 */
+
 router.get('/api/users/user/:id', validate(getUserByIdValidator), getUserById);
 
 export default router;

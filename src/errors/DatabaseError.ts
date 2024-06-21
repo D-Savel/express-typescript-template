@@ -5,10 +5,10 @@ import {
 
 } from "../utils/errors/CustomError";
 export class DatabaseError extends CustomError {
-  statusCode = 500;
-  reason = 'Error connecting to database';
+  statusCode = 204;
+  reason = 'Error fetching data to database';
   constructor(ErrorDetail: string) {
-    super('Database Error', ErrorDetail);
+    super('Fetching data to database Error', ErrorDetail);
     Object.setPrototypeOf(this, DatabaseError.prototype);
   }
   formatErrors() {

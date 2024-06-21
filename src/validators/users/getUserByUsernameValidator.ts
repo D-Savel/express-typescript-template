@@ -6,7 +6,7 @@ export const getUserByUsernameValidator = [
     .escape()
     .exists()
     .notEmpty()
-    .withMessage("username is required in query string (?username='John')")
+    .withMessage("username is required in query string (example: ?username='John')")
     .bail()
     .isString()
     .withMessage('username is not valid, must be a string')

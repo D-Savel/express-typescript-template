@@ -26,12 +26,6 @@ const router = express.Router();
 *            application/json:
 *              schema:
 *                $ref: '#/components/schemas/Error404Response'
-*         422:
-*           description: Unprocessable Entity (bad body parameters for request)
-*           content:
-*            application/json:
-*              schema:
-*                $ref: '#/components/schemas/Error422Response'
 *         500:
 *           description: Node Server Error
 *           content:
@@ -97,18 +91,6 @@ const router = express.Router();
 *        error_detail:
 *          type: string
 *          example: "Route doesn't exist"
-*    Error422Response:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*        message:
-*          type: string
-*        data:
-*          type: string
-*          nullable: true
-*        error_detail:
-*          type: string
 *    Error500:
 *      type: object
 *      properties:
