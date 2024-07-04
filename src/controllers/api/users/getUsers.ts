@@ -9,21 +9,21 @@ function fetchUsers() {
       resolve(users);
     },
       2000
-    )
-  })
+    );
+  });
 }
 
 const getUsers = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    const users = await fetchUsers()
+    const users = await fetchUsers();
     if (users) {
-      sendSuccess(res, 200, `Users list successfully retreived`, users)
+      sendSuccess(res, 200, `Users list successfully retreived`, users);
     }
     // uncomment or comment next or previous lines ( const resp.... and if ...) to simulate error or not;
     // throw new DatabaseError('user controller error (getUsers')
   } catch (error) {
-    next(error)
+    next(error);
   }
-}
+};
 
 export default getUsers;

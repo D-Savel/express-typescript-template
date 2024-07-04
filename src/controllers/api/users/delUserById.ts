@@ -8,35 +8,35 @@ import { DatabaseError } from "../../../errors/DatabaseError";
 
 function findUser(id: string) {
   const user = users.find((item) => {
-    return item.id == id
+    return item.id == id;
   });
-  return user
+  return user;
 };
 
 async function fetchUsers(newUsers: any): Promise<User[]> {
   return new Promise((resolve) => {
     setTimeout(() => {
-      resolve(newUsers)
+      resolve(newUsers);
     },
       1000
-    )
-  })
+    );
+  });
 };
 
 const deleteUserById = async (req: Request, res: Response, next: NextFunction) => {
-  let newUsers: User[]
+  let newUsers: User[];
   try {
-    const { id } = req.params
+    const { id } = req.params;
     if (findUser(id)) {
-      newUsers = users.filter((user) => (user.id !== id))
-      const usersResponse = await fetchUsers(newUsers)
-      sendSuccess(res, 200, `User with Id: ${req.params.id} has been successfully deleted`, usersResponse)
+      newUsers = users.filter((user) => (user.id !== id));
+      const usersResponse = await fetchUsers(newUsers);
+      sendSuccess(res, 200, `User with Id: ${req.params.id} has been successfully deleted`, usersResponse);
     } else {
       throw new DatabaseError(`{user controller error (delUsersById: No user matches with id ${req.params.id})`);
     }
   } catch (error) {
-    next(error)
+    next(error);
   }
-}
+};
 
 export default deleteUserById;

@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { CustomError } from "../../utils/errors/CustomError"
+import { CustomError } from "../../utils/errors/CustomError";
 import winstonLogger from "../../config/winston/winston";
 import { sendError } from "../../utils/express/sendError";
 import { RequestValidationError } from "../../errors/RequestValidationError";
