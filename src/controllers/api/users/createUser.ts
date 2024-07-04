@@ -9,7 +9,6 @@ function addUser(newUser: User) {
   try {
     users.push(newUser)
   } catch (error) {
-    console.log(error)
   }
 };
 
@@ -35,7 +34,6 @@ const createUser = async (req: Request, res: Response, next: NextFunction) => {
     sendSuccess(res, 201, `User ${username} successfully created`, users)
   } catch (error) {
     next(error)
-    console.log(error);
   }
 };
 

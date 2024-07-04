@@ -29,8 +29,8 @@ const router = express.Router();
 *            application/json:
 *              schema:
 *                $ref: '#/components/schemas/UserResponse'
-*      204:
-*        description: No content => No match(es) for requested data(s)
+*      400:
+*        description: Bad request => No match(es) for id query path data
 *      404:
 *        description: Route not Found
 *        content:

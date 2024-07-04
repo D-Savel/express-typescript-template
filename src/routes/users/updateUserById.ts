@@ -1,46 +1,52 @@
 import express from "express";
 import validate from "../../middlewares/validation/validationMiddleware";
 import { createUsersValidator } from "../../validators/users/createUsersValidator";
-import createUser from "../../controllers/api/users/createUser";
+import updateUserById from "../../controllers/api/users/updateUserById";
+import { updateUserValidator } from "../../validators/users/updateUserByIdValidator";
 // import {...} from "../controllers/...";
 
 const router = express.Router();
 
-/** POST Methods */
+/** PUT Methods */
 /**
 * @openapi
-* '/api/users/create':
-*  post:
+* '/api/users/user/{id}':
+*  put:
 *     tags:
 *       - API User controller
-*     summary: Create a user
+*     summary: Update a user by id
+*     parameters:
+*      - name: id
+*        in: path
+*        description: The user ID
+*        type: string
+*        default: 196cab8b-0284-4d0a-85c6-d171051b8966
+*        required: true
 *     requestBody:
 *      required: true
 *      content:
 *        application/json:
 *           schema:
 *            type: object
-*            required:
-*              - username
-*              - email
-*              - password
 *            properties:
 *              username:
 *                type: string
-*                default: Johnny 
+*                default: updatedUsername 
 *              email:
 *                type: string
-*                default: johnnye@mail.com
+*                default: updatedUsername@mail.com
 *              password:
 *                type: string
-*                default: johnny20!@
+*                default: updatedPassword
 *     responses:
-*         200:
-*           description: Return a list of users with new user created
+*         201:
+*           description: Return a list of users with user updated for id query path
 *           content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/CreateUsersResponse'
+*                $ref: '#/components/schemas/UpdatedUsersResponse'
+*         400:
+*           description: Bad request => No match(es) for id query path data
 *         404:
 *           description: Route not found
 *           content:
@@ -85,7 +91,7 @@ const router = express.Router();
 *          type: string
 *        location:
 *          type: string
-*    CreateUsersResponse:
+*    UpdatedUsersResponse:
 *      type: object
 *      properties:
 *        status:
@@ -93,7 +99,7 @@ const router = express.Router();
 *          example: 'success'
 *        message:
 *          type: string
-*          example: 'Users list successfully retrieved'
+*          example: 'updated Users list successfully retrieved'
 *        data:
 *          type: array
 *          items:
@@ -109,13 +115,9 @@ const router = express.Router();
 *             email: 'JaneDoe@me.fr'
 *             password: 'Password123'
 *           - id: '196cab8b-0284-4d0a-85c6-d171051b8966'
-*             username: 'Emma'
-*             email: 'EmmaDoe@me.fr'
-*             password: 'Password'
-*           - id: 'New random ID'
-*             username: 'Johnny'
-*             email: 'johnnye@mail.com'
-*             password: 'johnny20!@'
+*             username: 'updatedUsername'
+*             email: 'updatedUsername@mail.com'
+*             password: 'updatedPassword'
 *        errors:
 *          type: string
 *          example: 'null'
@@ -175,8 +177,6 @@ const router = express.Router();
 *          example: "Node error \n ${error.stack!}"
 */
 
-router.post('/api/users/create', validate(createUsersValidator), createUser);
+router.put('/api/users/user/:id', validate(updateUserValidator), updateUserById);
 
 export default router;
-
-

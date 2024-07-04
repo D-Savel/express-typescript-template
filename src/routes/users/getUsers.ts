@@ -58,7 +58,6 @@ const router = express.Router();
 *          type: array
 *          items:
 *             $ref: '#/components/schemas/User'
-* 
 *          example:
 *           - id: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
 *             username: 'John'

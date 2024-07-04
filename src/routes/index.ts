@@ -4,19 +4,22 @@ import express from "express";
 // ex: import ...Router from "./...Router";
 import usersRouter from "./users/getUsers";
 import createUserRouter from "./users/createUser"
+import UpdateUserRouter from "./users/updateUserById";
 import getUserByUsernameRouter from "./users/getUserByUsername";
 import getUserByIdRouter from "./users/getUserById"
 import expressRootRouter from "./root/expressRoot";
-import { errorHandler } from "../middlewares/error/errorHandler";
+import delUserByIdRouter from './users/delUserById'
 
 
 
 const router = express.Router();
 
-router.use('', usersRouter, errorHandler);
-router.use('', createUserRouter, errorHandler);
 router.use('', expressRootRouter);
+router.use('', usersRouter);
+router.use('', createUserRouter);
+router.use('', UpdateUserRouter);
 router.use('', getUserByUsernameRouter);
 router.use('', getUserByIdRouter);
+router.use('', delUserByIdRouter)
 
 export default router;

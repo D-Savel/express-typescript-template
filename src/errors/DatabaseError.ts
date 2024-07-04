@@ -5,7 +5,7 @@ import {
 
 } from "../utils/errors/CustomError";
 export class DatabaseError extends CustomError {
-  statusCode = 204;
+  statusCode = 400;
   reason = 'Error fetching data to database';
   constructor(ErrorDetail: string) {
     super('Fetching data to database Error', ErrorDetail);
