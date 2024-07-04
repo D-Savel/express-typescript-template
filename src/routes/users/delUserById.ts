@@ -28,7 +28,7 @@ const router = express.Router();
 *        content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/UsersResponse'
+*                $ref: '#/components/schemas/delUsersResponse'
 *      400:
 *        description: Bad request => No match(es) for id query path data
 *      404:
@@ -66,7 +66,7 @@ const router = express.Router();
 *        password:
 *          type: string
 *          example: '123Pasword'
-*    UsersResponse:
+*    delUsersResponse:
 *      type: object
 *      properties:
 *        status:
@@ -101,21 +101,6 @@ const router = express.Router();
 *          type: string
 *        location:
 *          type: string
-*    UserResponse:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*          example: 'success'
-*        message:
-*          type: string
-*          example: 'User with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8 successfully deletded'
-*        data:
-*          type: object
-*          $ref: '#/components/schemas/Users'
-*        errors:
-*          type: string
-*          example: 'null'
 *    Error404Response:
 *      type: object
 *      properties:

@@ -1,5 +1,0 @@
-
-2024-07-04 11:35:54 [[express-server]] error: Error: Route not found => Route doesn't exist
-2024-07-04 11:44:30 [[express-server]] error: Error: Fetching data to database Error => {user controller error (delUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d5)
-2024-07-04 11:44:46 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
-{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}

@@ -1,24 +1,2 @@
-2024-07-04 11:35:54 [[express-server]] error: Error: Route not found => Route doesn't exist
-2024-07-04 11:35:54 [[express-server]] http: IP: ::1:56450 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 404 95 - 4.163 ms
-
-2024-07-04 11:38:04 [[express-server]] http: IP: ::1:34802 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 361 - 1005.314 ms
-
-2024-07-04 11:42:53 [[express-server]] http: IP: ::1:46106 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 361 - 1009.646 ms
-
-2024-07-04 11:43:48 [[express-server]] http: IP: ::1:48000 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 361 - 1009.131 ms
-
-2024-07-04 11:44:07 [[express-server]] http: IP: ::1:54832 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 361 - 1005.439 ms
-
-2024-07-04 11:44:30 [[express-server]] error: Error: Fetching data to database Error => {user controller error (delUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d5)
-2024-07-04 11:44:30 [[express-server]] http: IP: ::1:50656 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d5 DELETE 400 191 - 4.516 ms
-
-2024-07-04 11:44:46 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
-{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
-2024-07-04 11:44:46 [[express-server]] http: IP: ::1:56498 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d DELETE 422 299 - 3.349 ms
-
-2024-07-04 11:46:29 [[express-server]] http: IP: ::1:34674 / URL: - /api/users/user?username=John GET 304 - - 2004.275 ms
-
-2024-07-04 11:46:48 [[express-server]] http: IP: ::1:58856 / URL: - /api/users/user?username=john GET 200 217 - 2004.336 ms
-
-2024-07-04 11:52:17 [[express-server]] http: IP: ::1:54906 / URL: - /api/users GET 200 424 - 2007.150 ms
+2024-07-04 15:35:04 [[express-server]] http: IP: ::1:53318 / URL: - /api/users GET 200 424 - 2002.382 ms
 
