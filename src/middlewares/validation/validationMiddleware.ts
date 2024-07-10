@@ -12,15 +12,15 @@ const validate = (validations: any) => {
       );
       const errors = validationResult(req);
       if (errors.isEmpty()) {
-        next()
+        next();
       } else {
-        throw new RequestValidationError(errors, `request parameter error => ${req.url}`)
+        throw new RequestValidationError(errors, `request parameter error => ${req.url}`);
       };
       // verify data request in body, if request data optional for validation dont return data in body
       const data = matchedData(req);
     } catch (error) {
-      next(error)
+      return next(error);
     }
   };
-}
+};
 export default validate;

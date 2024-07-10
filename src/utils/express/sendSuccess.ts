@@ -1,5 +1,5 @@
-import { Request, Response, NextFunction } from "express"
+import { Response } from "express";
 
 export const sendSuccess = async (res: Response, codeStatus: number, message: string, data: Object) => {
-  res.status(codeStatus).send({ status: 'success', message, data, errors: 'null' })
+  res.status(codeStatus).send({ status: 'success', message, data, errors: null });
 };

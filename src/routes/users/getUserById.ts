@@ -20,7 +20,7 @@ const router = express.Router();
 *        in: path
 *        description: The user ID
 *        type: string
-*        default: 6127b1a7-edf4-491f-af40-ea5b9495d3d8
+*        default: 45cc8cdc-e36e-4970-af37-fee9088e2fb0
 *        required: true
 *     responses:
 *      200:

@@ -24,11 +24,11 @@ const router = express.Router();
 *        required: true
 *     responses:
 *      200:
-*        description: Return new users list after delete oeration
+*        description: Return deleted user
 *        content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/delUsersResponse'
+*                $ref: '#/components/schemas/deletedUserResponse'
 *      400:
 *        description: Bad request => No match(es) for id query path data
 *      404:
@@ -66,28 +66,21 @@ const router = express.Router();
 *        password:
 *          type: string
 *          example: '123Pasword'
-*    delUsersResponse:
+*    deletedUserResponse:
 *      type: object
 *      properties:
-*        status:
+*        id:
 *          type: string
-*          example: 'success'
-*        message:
+*          example: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
+*        username:
 *          type: string
-*          example: 'Users list successfully retrieved'
-*        data:
-*          type: array
-*          items:
-*             $ref: '#/components/schemas/User'
-*          example:
-*           - id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0'
-*             username: 'Jane'
-*             email: 'JaneDoe@me.fr'
-*             password: 'Password123'
-*           - id: '196cab8b-0284-4d0a-85c6-d171051b8966'
-*             username: 'Emma'
-*             email: 'EmmaDoe@me.fr'
-*             password: 'Password'
+*          example: 'John'
+*        email:
+*          type: string
+*          example: 'jDoe@me.fr'
+*        password:
+*          type: string
+*          example: '123Pasword'
 *    ParamsError:
 *      type: object
 *      properties:

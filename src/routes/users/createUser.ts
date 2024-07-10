@@ -35,12 +35,12 @@ const router = express.Router();
 *                type: string
 *                default: johnny20!@
 *     responses:
-*         200:
-*           description: Return a list of users with new user created
+*         201:
+*           description: Return created user
 *           content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/CreateUsersResponse'
+*                $ref: '#/components/schemas/CreatedUserResponse'
 *         404:
 *           description: Route not found
 *           content:
@@ -61,17 +61,21 @@ const router = express.Router();
 *                $ref: '#/components/schemas/Error500'
 * components:
 *  schemas:
-*    User:
+*    CreatedUser:
 *      type: object
 *      properties:
 *        id:
 *          type: string
+*          example: new random uuid
 *        username:
 *          type: string
+*          example: Jhonny
 *        email:
 *          type: string
+*          example: johnnye@mail.com
 *        password:
 *          type: string
+*          example: johnny20!@
 *    ParamsError:
 *      type: object
 *      properties:
@@ -85,7 +89,7 @@ const router = express.Router();
 *          type: string
 *        location:
 *          type: string
-*    CreateUsersResponse:
+*    CreatedUserResponse:
 *      type: object
 *      properties:
 *        status:
@@ -93,29 +97,10 @@ const router = express.Router();
 *          example: 'success'
 *        message:
 *          type: string
-*          example: 'Users list successfully retrieved'
+*          example: 'User Jhonny successfully created'
 *        data:
-*          type: array
-*          items:
-*             $ref: '#/components/schemas/User'
-* 
-*          example:
-*           - id: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
-*             username: 'John'
-*             email: 'JDoe@me.fr'
-*             password: '123Password'
-*           - id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0'
-*             username: 'Jane'
-*             email: 'JaneDoe@me.fr'
-*             password: 'Password123'
-*           - id: '196cab8b-0284-4d0a-85c6-d171051b8966'
-*             username: 'Emma'
-*             email: 'EmmaDoe@me.fr'
-*             password: 'Password'
-*           - id: 'New random ID'
-*             username: 'Johnny'
-*             email: 'johnnye@mail.com'
-*             password: 'johnny20!@'
+*          type: object
+*          $ref: '#/components/schemas/CreatedUser'
 *        errors:
 *          type: string
 *          example: 'null'

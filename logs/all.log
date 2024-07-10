@@ -1,2 +1,341 @@
 2024-07-04 15:35:04 [[express-server]] http: IP: ::1:53318 / URL: - /api/users GET 200 424 - 2002.382 ms
 
+2024-07-04 16:07:33 [[express-server]] http: IP: ::1:36194 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 362 - 1011.084 ms
+
+2024-07-04 17:34:54 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-04 17:34:54 [[express-server]] http: IP: ::ffff:127.0.0.1:35646 / URL: - /clients/users GET 404 95 - 5.296 ms
+
+2024-07-04 17:36:29 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-04 17:36:29 [[express-server]] http: IP: ::ffff:127.0.0.1:54750 / URL: - /clients/users GET 404 95 - 3.737 ms
+
+2024-07-04 17:59:50 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-04 17:59:50 [[express-server]] http: IP: ::ffff:127.0.0.1:49574 / URL: - /clients/users GET 404 95 - 5.378 ms
+
+2024-07-04 18:00:58 [[express-server]] http: IP: ::ffff:127.0.0.1:58760 / URL: - /api/users GET 200 424 - 2006.893 ms
+
+2024-07-04 18:01:26 [[express-server]] http: IP: ::ffff:127.0.0.1:35058 / URL: - /api/users GET 200 424 - 2005.797 ms
+
+2024-07-04 18:02:26 [[express-server]] http: IP: ::ffff:127.0.0.1:37572 / URL: - /api/users GET 200 424 - 2002.620 ms
+
+2024-07-04 18:03:52 [[express-server]] http: IP: ::ffff:127.0.0.1:36594 / URL: - /api/users GET 200 424 - 1567.482 ms
+
+2024-07-04 18:06:01 [[express-server]] http: IP: ::ffff:127.0.0.1:60040 / URL: - /api/users GET 200 424 - 2005.404 ms
+
+2024-07-04 18:06:59 [[express-server]] http: IP: ::ffff:127.0.0.1:57798 / URL: - /api/users GET 200 424 - 1507.449 ms
+
+2024-07-04 18:07:59 [[express-server]] http: IP: ::ffff:127.0.0.1:60686 / URL: - /api/users GET 200 424 - 1508.980 ms
+
+2024-07-04 18:08:21 [[express-server]] http: IP: ::ffff:127.0.0.1:39898 / URL: - /api/users GET 200 424 - 1505.164 ms
+
+2024-07-04 18:08:52 [[express-server]] http: IP: ::ffff:127.0.0.1:43704 / URL: - /api/users GET 200 424 - 1506.552 ms
+
+2024-07-04 18:10:05 [[express-server]] http: IP: ::ffff:127.0.0.1:42362 / URL: - /api/users GET 200 422 - 1507.656 ms
+
+2024-07-04 18:15:01 [[express-server]] http: IP: ::ffff:127.0.0.1:60248 / URL: - /api/users GET 200 422 - 1507.256 ms
+
+2024-07-04 18:21:36 [[express-server]] http: IP: ::ffff:127.0.0.1:42068 / URL: - /api/users GET 200 422 - 1504.676 ms
+
+2024-07-04 18:30:17 [[express-server]] http: IP: ::ffff:127.0.0.1:34308 / URL: - /api/users GET 200 422 - 1507.153 ms
+
+2024-07-04 18:31:43 [[express-server]] http: IP: ::1:47830 / URL: - /api/users/create POST 201 538 - 1007.458 ms
+
+2024-07-05 15:02:44 [[express-server]] http: IP: ::1:54756 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1007.298 ms
+
+2024-07-05 15:06:39 [[express-server]] http: IP: ::1:38098 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1014.352 ms
+
+2024-07-05 15:07:10 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-05 15:07:10 [[express-server]] http: IP: ::1:46564 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d DELETE 422 299 - 2.156 ms
+
+2024-07-05 15:07:33 [[express-server]] error: Error: Fetching data to database Error => {user controller error (delUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d6)
+2024-07-05 15:07:33 [[express-server]] http: IP: ::1:40074 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d6 DELETE 400 191 - 1.683 ms
+
+2024-07-05 15:12:39 [[express-server]] http: IP: ::1:59128 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 497 - 1010.110 ms
+
+2024-07-05 15:13:26 [[express-server]] http: IP: ::1:49634 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 497 - 1003.137 ms
+
+2024-07-05 15:28:47 [[express-server]] http: IP: ::1:40774 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1010.549 ms
+
+2024-07-05 15:52:38 [[express-server]] http: IP: ::1:44192 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1009.447 ms
+
+2024-07-05 15:52:55 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 15:52:55 [[express-server]] http: IP: ::1:44868 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 400 194 - 3.801 ms
+
+2024-07-05 15:53:22 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 15:53:22 [[express-server]] http: IP: ::1:54340 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 400 194 - 6.985 ms
+
+2024-07-05 15:54:23 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 15:54:23 [[express-server]] http: IP: ::1:44090 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 GET 400 191 - 3.686 ms
+
+2024-07-05 15:54:50 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 15:54:50 [[express-server]] http: IP: ::1:33566 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 GET 400 191 - 1.259 ms
+
+2024-07-05 15:54:54 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 15:54:54 [[express-server]] http: IP: ::1:33566 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 GET 400 191 - 2.030 ms
+
+2024-07-05 17:10:33 [[express-server]] http: IP: ::1:57142 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 GET 200 241 - 1509.944 ms
+
+2024-07-05 17:12:12 [[express-server]] http: IP: ::1:55664 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1009.332 ms
+
+2024-07-05 17:12:57 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 17:12:57 [[express-server]] http: IP: ::1:41632 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 GET 400 191 - 8.554 ms
+
+2024-07-05 17:14:37 [[express-server]] http: IP: ::1:44564 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 200 246 - 1509.103 ms
+
+2024-07-05 17:14:53 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1005.134 ms
+
+2024-07-05 17:14:58 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:14:58 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.820 ms
+
+2024-07-05 17:15:00 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:00 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.742 ms
+
+2024-07-05 17:15:05 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:05 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.997 ms
+
+2024-07-05 17:15:05 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:05 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.472 ms
+
+2024-07-05 17:15:06 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:06 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 2.183 ms
+
+2024-07-05 17:15:07 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:07 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.397 ms
+
+2024-07-05 17:15:08 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:08 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.386 ms
+
+2024-07-05 17:15:09 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:09 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.251 ms
+
+2024-07-05 17:15:09 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:09 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 2.369 ms
+
+2024-07-05 17:15:11 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:11 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.521 ms
+
+2024-07-05 17:15:12 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:12 [[express-server]] http: IP: ::1:45948 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 400 191 - 1.192 ms
+
+2024-07-05 17:15:23 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 17:15:23 [[express-server]] http: IP: ::1:50094 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 400 194 - 3.487 ms
+
+2024-07-05 17:16:57 [[express-server]] http: IP: ::1:37452 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1009.527 ms
+
+2024-07-05 17:17:29 [[express-server]] http: IP: ::1:58256 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1003.233 ms
+
+2024-07-05 17:17:41 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 17:17:41 [[express-server]] http: IP: ::1:57364 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 400 194 - 3.243 ms
+
+2024-07-05 17:19:06 [[express-server]] http: IP: ::1:32960 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1011.050 ms
+
+2024-07-05 17:19:20 [[express-server]] http: IP: ::1:48938 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1007.598 ms
+
+2024-07-05 17:19:38 [[express-server]] http: IP: ::1:52096 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 243 - 1004.023 ms
+
+2024-07-05 17:20:11 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 17:20:11 [[express-server]] http: IP: ::1:33114 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 400 194 - 3.483 ms
+
+2024-07-05 17:22:17 [[express-server]] http: IP: ::1:49924 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 127 - 1009.917 ms
+
+2024-07-05 17:22:31 [[express-server]] http: IP: ::1:51142 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1007.532 ms
+
+2024-07-05 17:23:49 [[express-server]] http: IP: ::1:55352 / URL: - / GET 200 160 - 1.575 ms
+
+2024-07-05 17:24:04 [[express-server]] http: IP: ::1:36944 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 127 - 1011.631 ms
+
+2024-07-05 17:24:13 [[express-server]] http: IP: ::1:52968 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 200 246 - 1505.157 ms
+
+2024-07-05 17:24:25 [[express-server]] http: IP: ::1:43764 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1005.025 ms
+
+2024-07-05 17:24:38 [[express-server]] http: IP: ::1:58864 / URL: - /api/users/user?username=John GET 200 215 - 1504.393 ms
+
+2024-07-05 17:24:55 [[express-server]] http: IP: ::1:43514 / URL: - /api/users/user?username=john GET 200 215 - 1502.587 ms
+
+2024-07-05 17:25:12 [[express-server]] http: IP: ::1:45478 / URL: - /api/users GET 200 451 - 1503.660 ms
+
+2024-07-05 17:25:38 [[express-server]] http: IP: ::1:46524 / URL: - /api/users GET 304 - - 1503.038 ms
+
+2024-07-05 17:25:54 [[express-server]] http: IP: ::1:44384 / URL: - / GET 200 160 - 0.906 ms
+
+2024-07-05 17:26:12 [[express-server]] http: IP: ::1:36614 / URL: - /api/users GET 304 - - 1502.816 ms
+
+2024-07-05 17:27:05 [[express-server]] http: IP: ::1:46082 / URL: - /api/users GET 200 422 - 1501.646 ms
+
+2024-07-05 17:27:24 [[express-server]] http: IP: ::1:59942 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1006.987 ms
+
+2024-07-05 17:27:33 [[express-server]] http: IP: ::1:41884 / URL: - /api/users GET 200 451 - 1503.270 ms
+
+2024-07-05 17:28:15 [[express-server]] http: IP: ::1:60354 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 248 - 1008.629 ms
+
+2024-07-05 17:28:31 [[express-server]] http: IP: ::1:49376 / URL: - /api/users GET 200 427 - 1502.793 ms
+
+2024-07-09 15:03:19 [[express-server]] http: IP: ::1:53636 / URL: - /api/users GET 200 422 - 1506.813 ms
+
+2024-07-09 15:04:15 [[express-server]] http: IP: ::1:60732 / URL: - /api/users GET 304 - - 1503.345 ms
+
+2024-07-09 15:35:43 [[express-server]] http: IP: ::1:53140 / URL: - / GET 200 171 - 1.720 ms
+
+2024-07-09 15:36:28 [[express-server]] http: IP: ::1:40480 / URL: - /api/users GET 200 422 - 1505.235 ms
+
+2024-07-09 15:36:52 [[express-server]] http: IP: ::1:38620 / URL: - /api/users/user?username=John GET 200 215 - 1512.909 ms
+
+2024-07-09 15:50:03 [[express-server]] http: IP: ::1:45452 / URL: - /api/users/create POST 201 538 - 6.546 ms
+
+2024-07-09 15:52:44 [[express-server]] http: IP: ::1:51726 / URL: - /api/users/create POST 201 203 - 7.353 ms
+
+2024-07-09 16:02:56 [[express-server]] http: IP: ::1:48958 / URL: - /api/users/create POST 201 203 - 5.813 ms
+
+2024-07-09 16:04:02 [[express-server]] http: IP: ::1:41592 / URL: - /api/users/create POST 201 203 - 2.033 ms
+
+2024-07-09 16:04:04 [[express-server]] http: IP: ::1:41592 / URL: - /api/users/create POST 201 203 - 1.653 ms
+
+2024-07-09 16:07:43 [[express-server]] http: IP: ::1:53540 / URL: - /api/users/create POST 201 203 - 5.963 ms
+
+2024-07-09 16:08:54 [[express-server]] http: IP: ::1:43446 / URL: - /api/users/create POST 201 203 - 2.526 ms
+
+2024-07-09 16:08:55 [[express-server]] http: IP: ::1:43446 / URL: - /api/users/create POST 201 203 - 1.331 ms
+
+2024-07-09 17:35:29 [[express-server]] http: IP: ::1:42954 / URL: - / GET 304 - - 1.606 ms
+
+2024-07-09 17:38:51 [[express-server]] http: IP: ::1:60476 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 304 - - 1506.715 ms
+
+2024-07-09 17:42:41 [[express-server]] http: IP: ::1:48286 / URL: - /api/users/user?username=John GET 304 - - 1504.446 ms
+
+2024-07-09 17:42:57 [[express-server]] http: IP: ::1:43160 / URL: - /api/users/user?username=John GET 304 - - 1503.210 ms
+
+2024-07-09 17:43:54 [[express-server]] http: IP: ::1:35246 / URL: - /api/users/user?username=John GET 304 - - 1506.581 ms
+
+2024-07-09 17:44:16 [[express-server]] http: IP: ::1:43244 / URL: - /api/users/create POST 201 203 - 12.805 ms
+
+2024-07-10 11:43:12 [[express-server]] http: IP: ::1:57732 / URL: - / GET 200 171 - 1.410 ms
+
+2024-07-10 11:44:24 [[express-server]] http: IP: ::1:37142 / URL: - /api/users/create POST 201 203 - 8.943 ms
+
+2024-07-10 11:44:50 [[express-server]] http: IP: ::1:40980 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d8 DELETE 200 127 - 1006.363 ms
+
+2024-07-10 11:45:10 [[express-server]] http: IP: ::1:44270 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 304 - - 1004.816 ms
+
+2024-07-10 11:45:57 [[express-server]] http: IP: ::1:45548 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 201 272 - 1004.791 ms
+
+2024-07-10 11:46:19 [[express-server]] http: IP: ::1:53622 / URL: - /api/users/user?username=John GET 304 - - 1003.779 ms
+
+2024-07-10 11:46:43 [[express-server]] http: IP: ::1:56280 / URL: - /api/users GET 200 568 - 1001.821 ms
+
+2024-07-10 11:47:29 [[express-server]] error: request parameter error => /api/users/create
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"}]}
+2024-07-10 11:47:29 [[express-server]] http: IP: ::1:59324 / URL: - /api/users/create POST 422 208 - 6.262 ms
+
+2024-07-10 11:47:39 [[express-server]] error: request parameter error => /api/users/create
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:47:39 [[express-server]] http: IP: ::1:59908 / URL: - /api/users/create POST 422 316 - 2.998 ms
+
+2024-07-10 11:47:56 [[express-server]] error: Error: Fetching data to database Error => {user controller error (delUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d5)
+2024-07-10 11:47:56 [[express-server]] http: IP: ::1:59842 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d5 DELETE 400 191 - 5.610 ms
+
+2024-07-10 11:48:16 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 11:48:16 [[express-server]] http: IP: ::1:37762 / URL: - /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d DELETE 422 299 - 2.675 ms
+
+2024-07-10 11:48:34 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb5)
+2024-07-10 11:48:34 [[express-server]] http: IP: ::1:34246 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb5 GET 400 191 - 2.531 ms
+
+2024-07-10 11:48:45 [[express-server]] error: request parameter error => /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb
+{"errors":[{"type":"field","value":"45cc8cdc-e36e-4970-af37-fee9088e2fb","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 11:48:45 [[express-server]] http: IP: ::1:55528 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb GET 422 299 - 2.258 ms
+
+2024-07-10 11:49:15 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b89)
+2024-07-10 11:49:15 [[express-server]] http: IP: ::1:49546 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b89 PUT 400 192 - 4.151 ms
+
+2024-07-10 11:49:41 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8968)
+2024-07-10 11:49:41 [[express-server]] http: IP: ::1:36052 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8968 PUT 400 194 - 5.380 ms
+
+2024-07-10 11:49:58 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8968
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"},{"type":"field","value":"updatedUsername@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:49:58 [[express-server]] http: IP: ::1:41350 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8968 PUT 422 380 - 2.200 ms
+
+2024-07-10 11:51:08 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"},{"type":"field","value":"updatedUsername@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:51:08 [[express-server]] http: IP: ::1:38660 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 422 380 - 3.577 ms
+
+2024-07-10 11:51:10 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"},{"type":"field","value":"updatedUsername@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:51:10 [[express-server]] http: IP: ::1:38660 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966 PUT 422 380 - 1.145 ms
+
+2024-07-10 11:51:34 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b896)
+2024-07-10 11:51:34 [[express-server]] http: IP: ::1:36770 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b896 PUT 400 193 - 3.177 ms
+
+2024-07-10 11:51:47 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b896
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"}]}
+2024-07-10 11:51:47 [[express-server]] http: IP: ::1:34606 / URL: - /api/users/user/196cab8b-0284-4d0a-85c6-d171051b896 PUT 422 263 - 2.607 ms
+
+2024-07-10 11:52:16 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username Joh)
+2024-07-10 11:52:16 [[express-server]] http: IP: ::1:47628 / URL: - /api/users/user?username=Joh GET 400 170 - 2.178 ms
+
+2024-07-10 11:52:26 [[express-server]] http: IP: ::1:55720 / URL: - /api/users/user?username=john GET 304 - - 1002.554 ms
+
+2024-07-10 11:53:37 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &#x27;usernamameQuery&#x27;)
+2024-07-10 11:53:37 [[express-server]] http: IP: ::1:48138 / URL: - /api/users/user?username=%27usernamameQuery%27 GET 400 194 - 40.975 ms
+
+2024-07-10 11:54:57 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &quot;&quot;)
+2024-07-10 11:54:57 [[express-server]] http: IP: ::1:33480 / URL: - /api/users/user?username=%22%22 GET 400 179 - 2.638 ms
+
+2024-07-10 11:55:17 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username null)
+2024-07-10 11:55:17 [[express-server]] http: IP: ::1:34054 / URL: - /api/users/user?username=null GET 400 171 - 2.564 ms
+
+2024-07-10 11:55:26 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &#x27;usernamameQuery&#x27;)
+2024-07-10 11:55:26 [[express-server]] http: IP: ::1:54236 / URL: - /api/users/user?username=%27usernamameQuery%27 GET 400 194 - 2.482 ms
+
+2024-07-10 11:56:21 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &#x27;usernamameQuery&#x27;)
+2024-07-10 11:56:21 [[express-server]] http: IP: ::1:51334 / URL: - /api/users/user?username=%27usernamameQuery%27 GET 400 194 - 3.069 ms
+
+2024-07-10 11:58:08 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John')","path":"username","location":"query"}]}
+2024-07-10 11:58:08 [[express-server]] http: IP: ::1:35336 / URL: - /api/users/user GET 422 251 - 2.190 ms
+
+2024-07-10 12:03:20 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username or is required in query string (example: ?username='John')","path":"username","location":"query"}]}
+2024-07-10 12:03:20 [[express-server]] http: IP: ::1:48840 / URL: - /api/users/user/ GET 422 255 - 8.680 ms
+
+2024-07-10 12:03:49 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username or is required in query string (example: ?username='John')","path":"username","location":"query"}]}
+2024-07-10 12:03:49 [[express-server]] http: IP: ::1:46292 / URL: - /api/users/user/ GET 422 255 - 4.165 ms
+
+2024-07-10 12:03:49 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:03:49 [[express-server]] http: IP: ::1:46292 / URL: - /favicon.ico GET 404 95 - 1.275 ms
+
+2024-07-10 12:05:44 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:05:44 [[express-server]] http: IP: ::1:46694 / URL: - /api/users/user/ GET 422 329 - 7.362 ms
+
+2024-07-10 12:05:44 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:05:44 [[express-server]] http: IP: ::1:46694 / URL: - /favicon.ico GET 404 95 - 1.395 ms
+
+2024-07-10 12:05:46 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:05:46 [[express-server]] http: IP: ::1:46696 / URL: - /api/users/user GET 422 328 - 2.009 ms
+
+2024-07-10 12:05:56 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:05:56 [[express-server]] http: IP: ::1:46740 / URL: - /api/users/user/ GET 422 329 - 1.716 ms
+
+2024-07-10 12:05:56 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:05:56 [[express-server]] http: IP: ::1:46750 / URL: - /favicon.ico GET 404 95 - 1.261 ms
+
+2024-07-10 12:07:43 [[express-server]] http: IP: ::1:60342 / URL: - /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0 GET 200 246 - 1005.506 ms
+
+2024-07-10 12:12:12 [[express-server]] error: request parameter error => /api/users/user/%7Bid%7D
+{"errors":[{"type":"field","value":"{id}","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 12:12:12 [[express-server]] http: IP: ::1:46344 / URL: - /api/users/user/%7Bid%7D PUT 422 241 - 7.448 ms
+
+2024-07-10 12:12:20 [[express-server]] error: request parameter error => /api/users/user/%7Bid%7D
+{"errors":[{"type":"field","value":"{id}","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 12:12:20 [[express-server]] http: IP: ::1:33118 / URL: - /api/users/user/%7Bid%7D PUT 422 241 - 6.232 ms
+
+2024-07-10 12:13:05 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:13:06 [[express-server]] http: IP: ::1:35896 / URL: - /api/users/user/ GET 422 329 - 6.253 ms
+
+2024-07-10 12:13:06 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:13:06 [[express-server]] http: IP: ::1:35902 / URL: - /favicon.ico GET 404 95 - 1.129 ms
+

@@ -1,6 +1,5 @@
 import express from "express";
 import validate from "../../middlewares/validation/validationMiddleware";
-import { createUsersValidator } from "../../validators/users/createUsersValidator";
 import updateUserById from "../../controllers/api/users/updateUserById";
 import { updateUserValidator } from "../../validators/users/updateUserByIdValidator";
 // import {...} from "../controllers/...";
@@ -21,7 +20,6 @@ const router = express.Router();
 *        description: The user ID
 *        type: string
 *        default: 196cab8b-0284-4d0a-85c6-d171051b8966
-*        required: true
 *     requestBody:
 *      required: true
 *      content:
@@ -40,11 +38,11 @@ const router = express.Router();
 *                default: updatedPassword
 *     responses:
 *         201:
-*           description: Return a list of users with user updated for id query path
+*           description: Return updated user
 *           content:
 *            application/json:
 *              schema:
-*                $ref: '#/components/schemas/UpdatedUsersResponse'
+*                $ref: '#/components/schemas/DeletedUser'
 *         400:
 *           description: Bad request => No match(es) for id query path data
 *         404:
@@ -67,17 +65,18 @@ const router = express.Router();
 *                $ref: '#/components/schemas/Error500'
 * components:
 *  schemas:
-*    User:
-*      type: object
-*      properties:
-*        id:
-*          type: string
-*        username:
-*          type: string
-*        email:
-*          type: string
-*        password:
-*          type: string
+*    DeletedUser:
+*            type: object
+*            properties:
+*              username:
+*                type: string
+*                default: updatedUsername 
+*              email:
+*                type: string
+*                default: updatedUsername@mail.com
+*              password:
+*                type: string
+*                default: updatedPassword
 *    ParamsError:
 *      type: object
 *      properties:
@@ -104,16 +103,7 @@ const router = express.Router();
 *          type: array
 *          items:
 *             $ref: '#/components/schemas/User'
-* 
 *          example:
-*           - id: '6127b1a7-edf4-491f-af40-ea5b9495d3d8'
-*             username: 'John'
-*             email: 'JDoe@me.fr'
-*             password: '123Password'
-*           - id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0'
-*             username: 'Jane'
-*             email: 'JaneDoe@me.fr'
-*             password: 'Password123'
 *           - id: '196cab8b-0284-4d0a-85c6-d171051b8966'
 *             username: 'updatedUsername'
 *             email: 'updatedUsername@mail.com'

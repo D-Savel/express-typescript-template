@@ -11,10 +11,10 @@ const stream: StreamOptions = {
 
 morgan.token('client-ip', (req) => {
   return `IP: ${req.socket.remoteAddress}:${req.socket.remotePort} /` || '-';
-})
+});
 morgan.token('client-url', (req) => {
   return `URL: - ${req.url}`;
-})
+});
 
 // Build the morgan middleware
 const morganMiddleware = morgan(

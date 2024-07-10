@@ -1,0 +1,75 @@
+2024-07-04 17:34:54 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-04 17:36:29 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-04 17:59:50 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-05 15:07:10 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-05 15:07:33 [[express-server]] error: Error: Fetching data to database Error => {user controller error (delUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d6)
+2024-07-05 15:52:55 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 15:53:22 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 15:54:23 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 15:54:50 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 15:54:54 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 17:12:57 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d8)
+2024-07-05 17:14:58 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:00 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:05 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:05 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:06 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:07 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:08 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:09 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:09 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:11 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:12 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb0)
+2024-07-05 17:15:23 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 17:17:41 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-05 17:20:11 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8966)
+2024-07-10 11:47:29 [[express-server]] error: request parameter error => /api/users/create
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"}]}
+2024-07-10 11:47:39 [[express-server]] error: request parameter error => /api/users/create
+{"errors":[{"type":"field","value":"","msg":"username is required","path":"username","location":"body"},{"type":"field","value":"johnnye@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:47:56 [[express-server]] error: Error: Fetching data to database Error => {user controller error (delUsersById: No user matches with id 6127b1a7-edf4-491f-af40-ea5b9495d3d5)
+2024-07-10 11:48:16 [[express-server]] error: request parameter error => /api/users/user/6127b1a7-edf4-491f-af40-ea5b9495d3d
+{"errors":[{"type":"field","value":"6127b1a7-edf4-491f-af40-ea5b9495d3d","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 11:48:34 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersById: No user matches with id 45cc8cdc-e36e-4970-af37-fee9088e2fb5)
+2024-07-10 11:48:45 [[express-server]] error: request parameter error => /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb
+{"errors":[{"type":"field","value":"45cc8cdc-e36e-4970-af37-fee9088e2fb","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 11:49:15 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b89)
+2024-07-10 11:49:41 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b8968)
+2024-07-10 11:49:58 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8968
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"},{"type":"field","value":"updatedUsername@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:51:08 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"},{"type":"field","value":"updatedUsername@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:51:10 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b8966
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"},{"type":"field","value":"updatedUsername@mail","msg":"Please provide valid email","path":"email","location":"body"}]}
+2024-07-10 11:51:34 [[express-server]] error: Error: Fetching data to database Error => {user controller error (updateUsersById: No user matches with id 196cab8b-0284-4d0a-85c6-d171051b896)
+2024-07-10 11:51:47 [[express-server]] error: request parameter error => /api/users/user/196cab8b-0284-4d0a-85c6-d171051b896
+{"errors":[{"type":"field","value":"","msg":"username data is required to update value","path":"username","location":"body"}]}
+2024-07-10 11:52:16 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username Joh)
+2024-07-10 11:53:37 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &#x27;usernamameQuery&#x27;)
+2024-07-10 11:54:57 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &quot;&quot;)
+2024-07-10 11:55:17 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username null)
+2024-07-10 11:55:26 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &#x27;usernamameQuery&#x27;)
+2024-07-10 11:56:21 [[express-server]] error: Error: Fetching data to database Error => {user controller error (getUsersByUsername: No user matches with username &#x27;usernamameQuery&#x27;)
+2024-07-10 11:58:08 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John')","path":"username","location":"query"}]}
+2024-07-10 12:03:20 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username or is required in query string (example: ?username='John')","path":"username","location":"query"}]}
+2024-07-10 12:03:49 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username or is required in query string (example: ?username='John')","path":"username","location":"query"}]}
+2024-07-10 12:03:49 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:05:44 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:05:44 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:05:46 [[express-server]] error: request parameter error => /api/users/user
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:05:56 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:05:56 [[express-server]] error: Error: Route not found => Route doesn't exist
+2024-07-10 12:12:12 [[express-server]] error: request parameter error => /api/users/user/%7Bid%7D
+{"errors":[{"type":"field","value":"{id}","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 12:12:20 [[express-server]] error: request parameter error => /api/users/user/%7Bid%7D
+{"errors":[{"type":"field","value":"{id}","msg":"user id is not valid, must be a UUID version 4","path":"id","location":"params"}]}
+2024-07-10 12:13:05 [[express-server]] error: request parameter error => /api/users/user/
+{"errors":[{"type":"field","value":"","msg":"username is required in query string (example: ?username='John') or id in path (example: /api/users/user/45cc8cdc-e36e-4970-af37-fee9088e2fb0","path":"username","location":"query"}]}
+2024-07-10 12:13:06 [[express-server]] error: Error: Route not found => Route doesn't exist

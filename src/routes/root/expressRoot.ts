@@ -15,7 +15,7 @@ const router = express.Router();
 *     summary: express startup message
 *     responses:
 *      200:
-*        description: express server strarted
+*        description: express server started
 *      404:
 *        description: Route not Found
 *        content:

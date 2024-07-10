@@ -21,7 +21,6 @@ const router = express.Router();
 *        description: The username of the user
 *        type: string
 *        default: John
-*        required: true
 *    responses:
 *      200:
 *        description: Return a user for username query string

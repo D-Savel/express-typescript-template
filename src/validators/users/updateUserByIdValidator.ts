@@ -1,7 +1,17 @@
 import { body } from 'express-validator';
+import { param } from "express-validator";
 
 
 export const updateUserValidator = [
+  param("id")
+    .trim()
+    .escape()
+    .exists()
+    .notEmpty()
+    .withMessage('user id is required in url path = http://serverHost/api/users/user/{id}')
+    .bail()
+    .isUUID(4)
+    .withMessage('user id is not valid, must be a UUID version 4'),
   body('username')
     .trim()
     .escape()
@@ -11,7 +21,7 @@ export const updateUserValidator = [
     .isString()
     .withMessage('username is not valid, must be a string')
     .customSanitizer((userName) => {
-      return userName.replace(/^\w/, (c: string) => c.toUpperCase())
+      return userName.replace(/^\w/, (c: string) => c.toUpperCase());
     }),
   body('email')
     .trim()
@@ -23,7 +33,7 @@ export const updateUserValidator = [
     .isEmail()
     .withMessage('Please provide valid email')
     .customSanitizer((email) => {
-      return email.toLowerCase()
+      return email.toLowerCase();
     }), ,
   body('password')
     .trim()
