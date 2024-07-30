@@ -9,13 +9,14 @@ import routes from './routes';
 import { NotFoundError } from './errors/NotFoundError';
 import swaggerJSDoc from "swagger-jsdoc";
 import swaggerUi from "swagger-ui-express";
+import { apiDocumentation } from './docs/apidoc';
 
 
 // ==========
 // App initialization
 // ==========
 
-export const app: Express = express();  // export for testing
+const app: Express = express();  // export for testing
 
 dotenv.config();
 const PORT = process.env.PORT || 9000;
@@ -52,7 +53,7 @@ const corsOptions = {
 };
 
 // Middlewares
-app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(apiDocumentation));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(overAllLimiter);
@@ -112,3 +113,5 @@ app.listen(PORT,
   () => {
     console.log(`😓 Server is listening on port ${PORT} 😓 `);
   });
+
+export default app;

@@ -1,7 +1,11 @@
-import express from "express";
+import express, { NextFunction, Request, Response } from "express";
 
 import getUsers from "../../controllers/api/users/getUsers";
-
+import getUsersByQueryString from "../../controllers/api/users/getUsersByQueryString";
+import validate from "../../middlewares/validation/validationMiddleware";
+import { getUserByValidator } from "../../validators/users/getUserByValidator";
+import isQueryString from "../../middlewares/users/isQueryString";
+import { ValidationChain } from "express-validator";
 const router = express.Router();
 
 /** GET Methods */
@@ -74,22 +78,6 @@ const router = express.Router();
 *        errors:
 *          type: string
 *          example: 'null'
-*    Error404Response:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*          example: 'error'
-*        message:
-*          type: string
-*          example: 'Route not found'
-*        data:
-*          type: string
-*          nullable: true
-*          example: 'null'
-*        error_detail:
-*          type: string
-*          example: "Route doesn't exist"
 *    Error500:
 *      type: object
 *      properties:
@@ -108,7 +96,7 @@ const router = express.Router();
 *          example: "Node error \n ${error.stack!}"
 */
 
-router.get('/api/users', getUsers);
+
 
 // router.get("/id/:id", userByIdController);
 // /* Address /adresses POST */
@@ -117,6 +105,12 @@ router.get('/api/users', getUsers);
 // router.put("/:id/modifier", updateUserController);
 // /* Address /adresses DELETE */
 // router.delete("/:id/supprimer", deleteUserControler);
+
+
+//Apply isQueryString middleware to redirect query string request
+
+router.get('/api/users', isQueryString, validate(getUserByValidator as unknown as ValidationChain[]), getUsersByQueryString);
+
 
 
 export default router;

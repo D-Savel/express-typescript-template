@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from 'express';
-import { ValidationError, validationResult } from 'express-validator';
+import { ValidationChain, validationResult } from 'express-validator';
 import { matchedData } from 'express-validator';
 import { RequestValidationError } from '../../errors/RequestValidationError';
 

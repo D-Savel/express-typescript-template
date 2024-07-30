@@ -32,9 +32,7 @@ export const updateUserValidator = [
     .bail()
     .isEmail()
     .withMessage('Please provide valid email')
-    .customSanitizer((email) => {
-      return email.toLowerCase();
-    }), ,
+  ,
   body('password')
     .trim()
     .escape()

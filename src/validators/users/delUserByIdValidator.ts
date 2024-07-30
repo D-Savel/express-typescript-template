@@ -1,4 +1,4 @@
-import { param } from "express-validator"
+import { param } from "express-validator";
 
 export const delUserByIdValidator = [
   param("id")
@@ -6,8 +6,8 @@ export const delUserByIdValidator = [
     .escape()
     .exists()
     .notEmpty()
-    .withMessage('user id is required in url path = http://serverHost/api/users/user/{id}')
+    .withMessage('user id is required in url path = http://serverHost/api/users/{id}')
     .bail()
     .isUUID(4)
     .withMessage('user id is not valid, must be a UUID version 4')
-]
+];

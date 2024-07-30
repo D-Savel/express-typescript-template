@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { users } from "../../../datas/users";
 import { sendSuccess } from "../../../utils/express/sendSuccess";
 import { DatabaseError } from "../../../errors/DatabaseError";
-import User from "../../../types/User";
+import User from "../../../types/Users/User";
 import fetchUser from "../../../services/users/fetchUser";
 import findUserById from "../../../services/users/findUserById";
 import updateUser from "../../../services/users/updateUser";

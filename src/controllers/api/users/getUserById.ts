@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { users } from "../../../datas/users";
 import { sendSuccess } from "../../../utils/express/sendSuccess";
 import { DatabaseError } from "../../../errors/DatabaseError";
-import User from "../../../types/User";
+import User from "../../../types/Users/User";
 import fetchUser from "../../../services/users/fetchUser";
 import findUserById from "../../../services/users/findUserById";
 
@@ -10,6 +10,7 @@ import findUserById from "../../../services/users/findUserById";
 
 const getUserById = async (req: Request, res: Response, next: NextFunction) => {
   try {
+    console.log('GetUsersByIdController');
     const { id } = req.params;
     if (findUserById(id)) {
       const user = await fetchUser(findUserById(id)!);

@@ -1,8 +1,9 @@
-import User from "../../types/User";
+import User from "../../types/Users/User";
 
 //Simulate asynchrone fetching data
 
 async function fetchUsers(_users: User[]): Promise<User[]> {
+  console.log('pass through asynchrone task');
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(_users);

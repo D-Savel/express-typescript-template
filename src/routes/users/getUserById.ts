@@ -94,39 +94,6 @@ const router = express.Router();
 *        errors:
 *          type: string
 *          example: 'null'
-*    Error404Response:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*          example: 'error'
-*        message:
-*          type: string
-*          example: 'Route not found'
-*        data:
-*          type: string
-*          nullable: true
-*          example: 'null'
-*        error_detail:
-*          type: string
-*          example: "Route doesn't exist"
-*    ErrorParamsIdResponse:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*          example: 'error'
-*        message:
-*          type: array
-*          items:
-*             $ref: '#/components/schemas/ParamsError'
-*          example:
-* 
-*          - type: "field"
-*            value: '6127b1a7-edf4-491f-af40-ea5b9495d3d'
-*            msg: "user id is not valid, must be a UUID version 4"
-*            path: "id"
-*            location:: "params"
 *    Error500:
 *      type: object
 *      properties:
@@ -145,6 +112,6 @@ const router = express.Router();
 *          example: "Node error \n ${error.stack!}"
 */
 
-router.get('/api/users/user/:id', validate(getUserByIdValidator), getUserById);
+router.get('/api/users/:id', validate(getUserByIdValidator), getUserById);
 
 export default router;

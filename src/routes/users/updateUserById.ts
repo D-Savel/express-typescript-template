@@ -111,44 +111,6 @@ const router = express.Router();
 *        errors:
 *          type: string
 *          example: 'null'
-*    Error404Response:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*          example: 'error'
-*        message:
-*          type: string
-*          example: 'Route not found'
-*        data:
-*          type: string
-*          nullable: true
-*          example: 'null'
-*        error_detail:
-*          type: string
-*          example: "Route doesn't exist"
-*    ErrorBodyResponse:
-*      type: object
-*      properties:
-*        status:
-*          type: string
-*          example: 'error'
-*        message:
-*          type: array
-*          items:
-*             $ref: '#/components/schemas/ParamsError'
-*          example:
-* 
-*           - type: "field"
-*             value: ''
-*             msg: "username is required"
-*             path: "username"
-*             location:: "body"
-*           - type: "field"
-*             value: "johnnye@mail"
-*             msg: "Please provide valid email"
-*             path: "email"
-*             location:: "body"
 *    Error500:
 *      type: object
 *      properties:
@@ -167,6 +129,6 @@ const router = express.Router();
 *          example: "Node error \n ${error.stack!}"
 */
 
-router.put('/api/users/user/:id', validate(updateUserValidator), updateUserById);
+router.put('/api/users/:id', validate(updateUserValidator), updateUserById);
 
 export default router;

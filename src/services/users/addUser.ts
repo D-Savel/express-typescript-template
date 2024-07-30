@@ -1,13 +1,21 @@
 import { users } from "../../datas/users";
-import User from "../../types/User";
+import User from "../../types/Users/User";
 
 // add user to users without update data in "../../datas/users" to simulate create request
-function addUser(_newUser: User): User {
+
+async function addUser(_newUser: User): Promise<User> {
+  console.log('pass through asynchrone task');
   try {
     users.push(_newUser);
   } catch (error) {
   }
-  return (_newUser);
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(_newUser);
+    },
+      1500
+    );
+  });
 };
 
 export default addUser;
