@@ -1,12 +1,13 @@
 import { error404Schema, error422Schema, error500Schema } from "../errors/errorsSchemas";
 
-const parameter = {
-  Keyname: 'id',
-  value: "45cc8cdc-e36e-4970-af37-fee9088e2fb0",
+const parameters = {
+  dbEntity: 'user', //searched entity in db
+  keyName: 'id', // key for query string in path
+  keyValue: "45cc8cdc-e36e-4970-af37-fee9088e2fb0",// value for query string in path
 };
 
 const getUserById = {
-  tags: ['Users API'],
+  tags: ['Users'],
   summary: 'Get a user on a single ID',
   description: 'Get a user  on a single ID',
   operationId: 'getUserById',
@@ -15,13 +16,13 @@ const getUserById = {
       bearerAuth: [],
     },
   ],
-  "parameters": [
+  parameters: [
     {
-      "name": "id",
+      "name": parameters.keyName,
       "in": "path",
       "description": "User id",
       "type": "string",
-      "default": parameter.value,
+      "default": parameters.keyValue,
     }
   ],
   responses: {
@@ -38,11 +39,17 @@ const getUserById = {
               },
               message: {
                 type: 'string',
-                example: `User with Id: ${parameter.value} has been successfully retrieved`,
+                example: `User with Id: ${parameters.keyValue} has been successfully retrieved`,
               },
               data: {
                 type: 'object',
-                $ref: '#/components/schemas/userResponseSchema',
+                example: {
+                  id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0',
+                  username: "Jane",
+                  email: "jane.doe@me.fr",
+                  password: "Password123"
+
+                },
               },
               errors: {
                 type: null,
@@ -54,7 +61,7 @@ const getUserById = {
       },
     },
     '404': error404Schema,
-    '422': error422Schema(parameter.Keyname, 'user', parameter.value.slice(1, -1)),
+    '422': error422Schema(parameters.keyName, parameters.dbEntity, parameters.keyValue.slice(1, -1)),
     '500': error500Schema,
   }
 };

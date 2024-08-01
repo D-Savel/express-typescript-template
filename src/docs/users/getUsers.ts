@@ -1,7 +1,7 @@
 import { error404Schema, error422Schema, error500Schema } from "../errors/errorsSchemas";
 
 const getUsers = {
-  tags: ['Users API'],
+  tags: ['Users'],
   summary: 'Get list of users (Get filtered users with optional query string parameters: username & email)',
   description: 'Get list of users (Get filtered users with optional query string parameters: username &email)',
   operationId: 'getUsers or getUsersBy',
@@ -31,7 +31,7 @@ const getUsers = {
       description: 'Users retrieved successfully!',
       content: {
         'application/json': {
-          schema: { $ref: '#/components/schemas/responseUsersSchema' },
+          schema: { $ref: '#/components/schemas/UsersResponseSchema' },
           examples: {
             usersExample: {
               $ref: '#/components/examples/usersExample'

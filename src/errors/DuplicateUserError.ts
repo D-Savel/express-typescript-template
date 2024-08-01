@@ -1,12 +1,12 @@
 
 import { CustomError } from "../utils/errors/CustomError";
 
-export class DatabaseError extends CustomError {
-  statusCode = 422;
+export class DuplicateUserError extends CustomError {
+  statusCode = 400;
   reason = 'Error fetching data to database';
   constructor(ErrorDetail: string) {
-    super('Fetching data to database', ErrorDetail);
-    Object.setPrototypeOf(this, DatabaseError.prototype);
+    super('Duplicate User', ErrorDetail);
+    Object.setPrototypeOf(this, DuplicateUserError.prototype);
   }
   formatErrors() {
     return [{ message: this.reason }];

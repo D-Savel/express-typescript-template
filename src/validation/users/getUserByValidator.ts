@@ -24,7 +24,7 @@ export const getUserByValidator = [
       .withMessage('Please provide valid email'),
     ],
     {
-      message: 'some fields are not valid',
+      message: 'invalid field()s in query',
     }
   )
 ];

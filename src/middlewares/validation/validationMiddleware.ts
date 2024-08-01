@@ -4,19 +4,19 @@ import { matchedData } from 'express-validator';
 import { RequestValidationError } from '../../errors/RequestValidationError';
 
 
-const validate = (validations: any) => {
+const validate = (validations: ValidationChain[]) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
       await Promise.all(
-        validations.map((validation: any) => validation.run(req))
+        validations.map((validation) => validation.run(req))
       );
       const errors = validationResult(req);
       if (errors.isEmpty()) {
         next();
       } else {
-        throw new RequestValidationError(errors, `request parameter error => ${req.url}`);
+        throw new RequestValidationError(`request parameter error => ${req.url}`, errors);
       };
-      // verify data request in body, if request data optional for validation dont return data in body
+      // verify data request in body, if request data optional for validation dont return data in body and extract matched data from request
       const data = matchedData(req);
     } catch (error) {
       return next(error);

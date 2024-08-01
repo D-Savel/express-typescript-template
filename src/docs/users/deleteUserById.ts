@@ -3,11 +3,11 @@ import { error404Schema, error422Schema, error500Schema } from "../errors/errors
 const parameters = {
   dbEntity: 'user', //searched entity in db
   keyName: 'id',  // key for query string in path
-  value: "6127b1a7-edf4-491f-af40-ea5b9495d3d8", // value for query string in path
+  keyValue: "6127b1a7-edf4-491f-af40-ea5b9495d3d8", // value for query string in path
 };
 
 const deleteUser = {
-  tags: ['Users API'],
+  tags: ['Users'],
   summary: 'Delete a user on a single ID',
   description: 'Delete a user  on a single ID',
   operationId: 'delUserById',
@@ -22,7 +22,7 @@ const deleteUser = {
       "in": "path",
       "description": "User id",
       "type": "string",
-      "default": parameters.value,
+      "default": parameters.keyValue,
     }
   ],
   responses: {
@@ -39,7 +39,7 @@ const deleteUser = {
               },
               message: {
                 type: 'string',
-                example: `User with Id: ${parameters.value} has been successfully deleted`,
+                example: `User with Id: ${parameters.keyValue} has been successfully deleted`,
               },
               data: {
                 type: null,
@@ -54,7 +54,7 @@ const deleteUser = {
         },
       },
     },
-    '422': error422Schema(parameters.keyName, parameters.dbEntity, parameters.value.slice(1, -1)),
+    '422': error422Schema(parameters.keyName, parameters.dbEntity, parameters.keyValue.slice(1, -1)),
     '500': error500Schema,
   }
 };

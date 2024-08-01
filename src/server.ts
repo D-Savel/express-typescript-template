@@ -1,10 +1,10 @@
-import express, { Express, NextFunction, Request, Response } from 'express';
+import express, { Application, Express, NextFunction, Request, Response } from 'express';
 import cors from "cors";
 import helmet from "helmet";
 import * as dotenv from 'dotenv';
 import morganMiddleware from './middlewares/morgan/morganMiddleware';
 import { overAllLimiter } from './config/express-rate-limit/rateLimit';
-import { errorHandler } from './middlewares/error/errorHandler';
+import errorHandler from './middlewares/error/errorHandler';
 import routes from './routes';
 import { NotFoundError } from './errors/NotFoundError';
 import swaggerJSDoc from "swagger-jsdoc";

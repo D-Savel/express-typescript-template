@@ -1,28 +1,43 @@
-import { error404Schema, error400BodySchema, error500Schema } from "../errors/errorsSchemas";
+import { error404Schema, error400BodySchema, error422Schema, error500Schema } from "../errors/errorsSchemas";
 
-const createUser = {
+const parameters = {
+  dbEntity: 'user', //searched entity in db
+  keyName: 'id', // key for query string in path
+  keyValue: "45cc8cdc-e36e-4970-af37-fee9088e2fb0", // value for query string in path
+};
+
+const updateUser = {
   tags: ['Users'],
-  summary: 'Create a new user',
-  description: 'Create a new user',
-  operationId: 'createUser',
+  summary: 'Update a user',
+  description: 'Update a user',
+  operationId: 'UpdateUser',
   security: [
     {
       bearerAuth: [],
     },
   ],
+  parameters: [
+    {
+      "name": parameters.keyName,
+      "in": "path",
+      "description": "User id",
+      "type": "string",
+      "default": parameters.keyValue,
+    }
+  ],
   requestBody: {
     content: {
       'application/json': {
         schema: {
-          $ref: '#/components/schemas/UserBodySchema',
+          $ref: '#/components/schemas/UserUpdateBodySchema',
         },
       },
     },
     required: true,
   },
   responses: {
-    '201': {
-      description: "User created successfully => return user(new user) properties",
+    '200': {
+      description: "User update successfully => return user(new user) properties",
       content: {
         'application/json': {
           schema: {
@@ -57,10 +72,11 @@ const createUser = {
       },
     },
     '400': error400BodySchema('username', 'email', 'johnny@email'),
+    '422': error422Schema(parameters.keyName, parameters.dbEntity, parameters.keyValue.slice(1, -1)),
     '404': error404Schema,
     '500': error500Schema,
   }
 };
 
 
-export default createUser;
+export default updateUser;
