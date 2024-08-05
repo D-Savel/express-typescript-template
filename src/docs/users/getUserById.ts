@@ -44,11 +44,13 @@ const getUserById = {
               data: {
                 type: 'object',
                 example: {
-                  id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0',
-                  username: "Jane",
-                  email: "jane.doe@me.fr",
-                  password: "Password123"
-
+                  user:
+                  {
+                    id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0',
+                    username: "Jane",
+                    email: "jane.doe@me.fr",
+                    password: "Password123"
+                  }
                 },
               },
               errors: {

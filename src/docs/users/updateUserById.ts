@@ -37,7 +37,7 @@ const updateUser = {
   },
   responses: {
     '200': {
-      description: "User update successfully => return user(new user) properties",
+      description: "User update successfully => return user(updated user) properties",
       content: {
         'application/json': {
           schema: {
@@ -49,17 +49,18 @@ const updateUser = {
               },
               message: {
                 type: 'string',
-                example: 'User Johnny successfully created',
+                example: 'User for Id: 45cc8cdc-e36e-4970-af37-fee9088e2fb0 has been successfully updated',
               },
               data: {
-                users: {
-                  type: 'object',
-                  example: {
-                    id: 'New random uuid',
-                    username: 'Johnny',
-                    email: 'johnny@email.com',
-                    password: '!1234Johnny#'
-                  },
+                type: 'object',
+                example: {
+                  user:
+                  {
+                    id: '45cc8cdc-e36e-4970-af37-fee9088e2fb0',
+                    username: 'Sahra',
+                    email: 'sahra@email.com',
+                    password: '!1234Sahra'
+                  }
                 }
               },
               errors: {

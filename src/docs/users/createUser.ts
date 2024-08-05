@@ -37,14 +37,15 @@ const createUser = {
                 example: 'User Johnny successfully created',
               },
               data: {
-                users: {
-                  type: 'object',
-                  example: {
+                type: 'object',
+                example: {
+                  user:
+                  {
                     id: 'New random uuid',
                     username: 'Johnny',
                     email: 'johnny@email.com',
                     password: '!1234Johnny#'
-                  },
+                  }
                 }
               },
               errors: {

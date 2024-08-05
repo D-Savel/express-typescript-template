@@ -14,7 +14,7 @@ const getUserById = async (req: Request, res: Response, next: NextFunction) => {
     const { id } = req.params;
     if (findUserById(id)) {
       const user = await fetchUser(findUserById(id)!);
-      sendSuccess(res, 200, `User  info for ID: ${id} successfully retreived`, user);
+      sendSuccess(res, 200, `User  info for ID: ${id} successfully retreived`, { user });
     } else {
       throw new DatabaseError(`{user controller error (getUsersById: No user matches with id ${req.params.id})`);
     }

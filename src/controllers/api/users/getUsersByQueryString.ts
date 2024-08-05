@@ -41,10 +41,9 @@ const getUsersByQueryString = async (req: Request, res: Response, next: NextFunc
       let data = entries.map(([key, val]) => {
         return `${key}=${val}`;
       });
-      sendSuccess(res, 200, `User info for query ${data} successfully retreived`.replace(',', '&'), usersForQuery!);
+      sendSuccess(res, 200, `User info for query ${data} successfully retreived`.replace(',', '&'), { users: usersForQuery! });
     } else {
       // del duplicate string in QueryChain
-      console.log('QueryChain: ', [... new Set(queryChain.split('|'))]);
       queryChain = [... new Set(queryChain.split('|'))].join();
       throw new DatabaseError(`User controller error (getUsersByQuery: No user(s) match(es) with query string ${queryChain}`);
     }

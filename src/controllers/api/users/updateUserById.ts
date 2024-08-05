@@ -14,7 +14,7 @@ const updateUserById = async (req: Request, res: Response, next: NextFunction) =
     if (findUserById(id)) {
       updateUser(req, id, (findUserById(id)!));
       const userResponse = await fetchUser(findUserById(id)!);
-      sendSuccess(res, 201, `User for Id: ${req.params.id} has been successfully updated`, userResponse);
+      sendSuccess(res, 201, `User for Id: ${req.params.id} has been successfully updated`, { user: userResponse });
     } else {
       throw new DatabaseError(`{user controller error (updateUsersById: No user matches with id ${req.params.id})`);
     }

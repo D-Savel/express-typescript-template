@@ -37,9 +37,6 @@ const apiDocumentation = {
       delete: deleteUser,
       put: updateUser
     },
-    '/api/users/{id}/': {
-      get: getUserById,
-    },
     '/api/users/': {
       get: getUsers,
     },

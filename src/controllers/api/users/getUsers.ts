@@ -8,7 +8,7 @@ const getUsers = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const usersResponse = await fetchUsers(users);
     if (usersResponse) {
-      sendSuccess(res, 200, `Users list successfully retreived`, usersResponse);
+      sendSuccess(res, 200, `Users list successfully retreived`, { users: usersResponse });
     }
     // uncomment or comment next or previous lines ( const resp.... and if ...) to simulate error or not;
     // throw new DatabaseError('user controller error (getUsers')
