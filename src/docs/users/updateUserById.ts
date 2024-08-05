@@ -71,7 +71,25 @@ const updateUser = {
         },
       },
     },
-    '400': error400BodySchema('username', 'email', 'johnny@email'),
+    '400': {
+      description: 'Bad Request : Bad body or path parameters for request',
+      content: {
+        'application/json': {
+          schema: { $ref: '#/components/schemas/ErrorResponseSchema' },
+          examples: {
+            Error400BodyExample: {
+              $ref: '#/components/examples/Error400BodyExample'
+            },
+            error400IdExample: {
+              $ref: '#/components/examples/Error400IdExample'
+            },
+            error400BadBodyExample: {
+              $ref: '#/components/examples/Error400BadBodyExample'
+            }
+          }
+        }
+      }
+    },
     '422': error422Schema(parameters.keyName, parameters.dbEntity, parameters.keyValue.slice(1, -1)),
     '404': error404Schema,
     '500': error500Schema,

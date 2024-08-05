@@ -44,7 +44,7 @@ const getUsers = {
       }
     },
     '404': error404Schema,
-    '422': error422Schema,
+    '422': error422Schema('query string', 'user'),
     '500': error500Schema,
   }
 };

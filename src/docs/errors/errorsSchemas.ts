@@ -84,14 +84,22 @@ export const error404Schema: object = {
   }
 };
 
+/* For using with path
 // First parameter pathKeyValue : key use in query path (id for example)
 // Second parameter dbEntity: entity value for search in db(user entity searched in db for exapmle)
 // Third parameter syntaxErrorValue : Path value use in query path(id value use in query path for example)
+*/
 
-export function error422Schema(pathKeyValue: string, dbEntity: string, pathValue: string): object {
+/*parameters: pathValue(optional for use with query path request error),
+*/
+export function error422Schema(pathKeyValue: string, dbEntity: string, pathValue?: string): object {
   return (
     {
-      description: `No match(es) for {${pathKeyValue}} query path data`,
+      description: `${pathValue ?
+        `No match(es) for {${pathKeyValue}} in path with ${pathKeyValue} = ${pathValue}`
+        :
+        `No match(es) for query string (ex: username=Johnnu,email=emma@me.fr)`
+        }`,
       content: {
         'application/json': {
           schema: {
@@ -111,9 +119,15 @@ export function error422Schema(pathKeyValue: string, dbEntity: string, pathValue
               },
               errors: {
                 type: 'string',
-                example: `${dbEntity} controller error (get${dbEntity[0].toUpperCase() + dbEntity.slice(1).toLowerCase()}` +
-                  `By${pathKeyValue[0].toUpperCase() + pathKeyValue.slice(1).toLowerCase()}: ` +
-                  `No ${dbEntity} matches with ${pathKeyValue}: ${pathValue}`
+                example: `${pathValue ?
+                  `${dbEntity} controller error (get${dbEntity[0].toUpperCase()}` + dbEntity.slice(1).toLowerCase() +
+                  `By${pathKeyValue[0].toUpperCase()}` + pathKeyValue.slice(1).toLowerCase() +
+                  `: No ${dbEntity} matches with ${pathKeyValue}: ${pathValue}`
+                  :
+                  `${dbEntity[0].toUpperCase()}${dbEntity.slice(1).toLowerCase()} controller error (get${dbEntity[0].toUpperCase()}` +
+                  `${dbEntity.slice(1).toLowerCase()}` +
+                  `ByQuery` + `: No user(s) match(es) with query string ,username=Johnnu,email=emma@me.fr`
+                  })`
               }
             }
           }

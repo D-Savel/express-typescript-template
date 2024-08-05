@@ -1,6 +1,6 @@
 import createUser from './users/createUser';
-import { UserBodySchema, UserSchema, UserResponseSchema, UsersResponseSchema, UserUpdateBodySchema } from './users/usersSchemas';
-import { usersExample, usersQueryExample } from './users/examples';
+import { UserBodySchema, UserSchema, UserResponseSchema, UsersResponseSchema, UserUpdateBodySchema, ErrorResponseSchema } from './users/usersSchemas';
+import { usersExample, usersQueryExample, Error400BodyExample, Error400IdExample, Error400BadBodyExample } from './users/examples';
 import { deleteUser } from './users/deleteUserById';
 import { getUsers } from './users/getUsers';
 import { getUserById } from './users/getUserById';
@@ -58,11 +58,15 @@ const apiDocumentation = {
       UserSchema,
       UserResponseSchema,
       UsersResponseSchema,
-      UserUpdateBodySchema
+      UserUpdateBodySchema,
+      ErrorResponseSchema
     },
     examples: {
       usersExample,
-      usersQueryExample
+      usersQueryExample,
+      Error400BodyExample,
+      Error400IdExample,
+      Error400BadBodyExample
     }
   }
 };

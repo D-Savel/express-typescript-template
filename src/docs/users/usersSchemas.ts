@@ -132,8 +132,26 @@ const UsersResponseSchema = {
   }
 };
 
+const ErrorResponseSchema = {
+  type: 'object',
+  properties: {
+    status: {
+      type: 'string',
+    },
+    message: {
+      type: 'string',
+    },
+    data: {
+      type: null,
+    },
+    errors: {
+      type: 'array',
+    }
+  }
+};
+
 
 export {
   UserBodySchema, UserResponseSchema, UserSchema,
-  UsersResponseSchema, UserUpdateBodySchema
+  UsersResponseSchema, UserUpdateBodySchema, ErrorResponseSchema
 };

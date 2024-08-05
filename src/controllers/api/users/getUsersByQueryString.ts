@@ -7,17 +7,21 @@ import UserQuery from "../../../types/Users/userQueries";
 import fetchUsers from "../../../services/users/fetchUsers";
 import { DatabaseError } from "../../../errors/DatabaseError";
 
+let queryChain: string = '';
 
 function findUsersBy(queries: UserQueries): User[] | undefined {
+  queryChain = '';
   const arrayOfQuerries = Object.entries(queries);
   let findUser: User[];
   let filteredUsers: User[] = [];
+
 
   for (const query of arrayOfQuerries) {
     findUser = [];
     findUser = users.filter((user) => {
       const userValueForKey = user[query[0]];
       const queryValueForKey = query[1];
+      queryChain = queryChain + '|' + query[0]! + '=' + query[1];
       return userValueForKey!.localeCompare(queryValueForKey!) === 0;
     });
     if (findUser.length) {
@@ -33,14 +37,16 @@ const getUsersByQueryString = async (req: Request, res: Response, next: NextFunc
     const usersForQuery = findUsersBy(req.query as UserQuery);
     const usersResponse = await fetchUsers(usersForQuery!);
     if (usersForQuery!.length) {
-      let entry: string[];
       const entries = Object.entries((req.query));
       let data = entries.map(([key, val]) => {
         return `${key}=${val}`;
       });
       sendSuccess(res, 200, `User info for query ${data} successfully retreived`.replace(',', '&'), usersForQuery!);
     } else {
-      throw new DatabaseError("User controller error (getUsersByQuery: No user(s) match(es) with query ${JSON.stringify(req.query)}");
+      // del duplicate string in QueryChain
+      console.log('QueryChain: ', [... new Set(queryChain.split('|'))]);
+      queryChain = [... new Set(queryChain.split('|'))].join();
+      throw new DatabaseError(`User controller error (getUsersByQuery: No user(s) match(es) with query string ${queryChain}`);
     }
   } catch (error) {
     return next(error);
