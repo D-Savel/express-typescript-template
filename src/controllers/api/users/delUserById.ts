@@ -13,7 +13,6 @@ const deleteUserById = async (req: Request, res: Response, next: NextFunction) =
       const userIndex = users.findIndex(el => el.id === id);
       const [deletedUser] = users.splice(userIndex, 1);
       const response = await fetchUser(deletedUser);
-      console.log(`user ${deletedUser.username} with id ${deletedUser.id} has been deleted`);
       sendSuccess(res, 200, `User with Id: ${req.params.id} has been successfully deleted`, null);
     } else {
       throw new DatabaseError(`user controller error (delUsersById: No user matches with id ${req.params.id}`);

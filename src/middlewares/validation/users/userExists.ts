@@ -4,9 +4,6 @@ import { DuplicateUserError } from "../../../errors/DuplicateUserError";
 
 const userExists = (req: Request, res: Response, next: NextFunction) => {
   const { username, email } = req.body;
-  console.log('Email Body: ', email);
-  console.log('Username Body : ', username);
-  console.log('***********');
   try {
     for (const user of users) {
       if (user.email! === email || user.username! === username) {

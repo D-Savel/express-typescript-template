@@ -6,7 +6,6 @@ import crypto from 'crypto';
 
 const createUser = async (req: Request, res: Response, next: NextFunction) => {
   try {
-    console.log('pass through userCreate controller');
     const { username, email, password } = req.body;
     const id = crypto.randomUUID();
     const capitalizedUsername = username[0].toUpperCase() + username.slice(1).toLowerCase();
