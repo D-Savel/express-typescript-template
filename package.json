@@ -9,7 +9,7 @@
     "build": "npm run clean  && tsc",
     "start": "node ./dist/server.js",
     "dev": "nodemon",
-    "test": "mocha 'dist/tests/**/*.js' --recursive --exit"
+    "test": "mocha 'dist/tests/**/*.test.js' --recursive --exit"
   },
   "keywords": [],
   "author": "",

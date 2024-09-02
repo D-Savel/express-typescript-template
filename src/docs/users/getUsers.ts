@@ -12,6 +12,13 @@ const getUsers = {
   ],
   "parameters": [
     {
+      name: "id",
+      in: "query",
+      description: "User id (uuid)",
+      type: "string",
+      example: '45cc8cdc-e36e-4970-af37-fee9088e2fb0'
+    },
+    {
       name: "username",
       in: "query",
       description: "The first name of the user (letter case ignored)",

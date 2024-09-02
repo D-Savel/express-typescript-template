@@ -20,7 +20,7 @@ const getUserById = {
     {
       "name": parameters.keyName,
       "in": "path",
-      "description": "User id",
+      "description": "User id (uuid)",
       "type": "string",
       "default": parameters.keyValue,
     }

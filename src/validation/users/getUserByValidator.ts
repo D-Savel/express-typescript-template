@@ -2,14 +2,23 @@ import { query, checkExact } from "express-validator";
 
 export const getUserByValidator = [
   checkExact(
-    [query("username")
+    [query("id")
       .trim()
       .escape()
       .optional()
       .notEmpty()
-      .withMessage('username data is required to update value')
+      .withMessage('user id is required in query path')
+      .bail()
+      .isUUID(4)
+      .withMessage('user id is not valid, must be a UUID version 4'),
+    query("username")
+      .trim()
+      .escape()
+      .optional()
+      .notEmpty()
+      .withMessage('username data is required')
       .isString()
-      .withMessage('username is not valid, must be a string')
+      .withMessage('username is not valid, must be a string in query path')
       .customSanitizer((userName) => {
         return userName.replace(/^\w/, (c: string) => c.toUpperCase());
       }),
